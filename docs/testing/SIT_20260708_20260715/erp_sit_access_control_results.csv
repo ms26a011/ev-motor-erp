@@ -1,0 +1,13 @@
+masked_account,employee_name,department,role,expected_access,actual_access,result
+***001,Raja,Procurement,DEPARTMENT_USER,PROC mapped modules,PROC mapped modules,PASS
+***003,Priya,Raw Material Warehouse,DEPARTMENT_USER,RMWH mapped modules,RMWH mapped modules,PASS
+***005,Varshini,Stator Manufacturing,DEPARTMENT_USER,STAT mapped modules,STAT mapped modules,PASS
+***007,Karthik,Rotor Manufacturing,DEPARTMENT_USER,ROTR mapped modules,ROTR mapped modules,PASS
+***009,Gokul,Assembly,DEPARTMENT_USER,ASMB mapped modules,ASMB mapped modules,PASS
+***011,Harish,Finished Goods Warehouse,DEPARTMENT_USER,FGWH mapped modules,FGWH mapped modules,PASS
+***013,Balavidhya S,Procurement,SECTION_HEAD,All modules,All modules,PASS
+***002,Ramesh,Raw Material Warehouse,SECTION_HEAD,All modules,All modules,PASS
+***004,Reshma,Procurement,SECTION_HEAD,All modules,All modules,PASS
+***006,Abitha,Stator Manufacturing,SECTION_HEAD,All modules,All modules,PASS
+***008,Lolita,Rotor Manufacturing,SECTION_HEAD,All modules,All modules,PASS
+***010,Farooq,Assembly,SECTION_HEAD,All modules,All modules,PASS

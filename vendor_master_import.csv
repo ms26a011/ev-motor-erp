@@ -1,0 +1,36 @@
+vendor_code,vendor_name,vendor_type,contact_person,phone,email,rating,lead_time_days,status
+VCW001,RR Shramik Wires Pvt Ltd,Copper Wire,Arun Kumar,9876501001,sales@rrshramik.com,4.8,12,Active
+VCW002,Precision Wires India Ltd,Copper Wire,Vijay Sharma,9876501002,sales@pwil.net,4.7,14,Active
+VCW003,Ram Ratna Wires Ltd,Copper Wire,Suresh Nair,9876501003,marketing@ramratna.com,4.6,15,Active
+VCS001,Tata Steel,Electrical Steel,Rahul Das,9876501004,industrial@tatasteel.com,4.8,20,Active
+VCS002,JSW Steel,Electrical Steel,Manoj Rao,9876501005,sales@jsw.in,4.6,18,Active
+VCS003,POSCO India,Electrical Steel,Kevin Lee,9876501006,sales@poscoindia.com,4.7,25,Active
+VMG001,Electron Energy Corporation,Magnets,Amit Verma,9876501007,sales@eecindia.com,4.8,22,Active
+VMG002,BGR Magnetics,Magnets,Karthik R,9876501008,sales@bgrmagnetics.com,4.5,18,Active
+VMG003,Arnold Magnetic Technologies India,Magnets,John Paul,9876501009,info@arnoldmagnetics.com,4.7,28,Active
+VMC001,Brakes India,Mechanical Components,Prakash S,9876501010,oem@brakesindia.com,4.8,15,Active
+VMC002,Roots Industries,Mechanical Components,Senthil Kumar,9876501011,sales@roots.co.in,4.6,12,Active
+VMC003,Sundaram Fasteners Engineering,Mechanical Components,Mohan Raj,9876501012,industrial@sfl.co.in,4.7,14,Active
+VMC004,Wheels India,Mechanical Components,Ramesh B,9876501013,sales@wheelsindia.com,4.5,16,Active
+VMC005,Amalgamations Group Components,Mechanical Components,Kishore,9876501014,oem@amalgamations.in,4.4,17,Active
+VBR001,SKF India,Bearings,Ajay Mehta,9876501015,industrial@skf.com,4.9,10,Active
+VBR002,Schaeffler India,Bearings,Deepak Jain,9876501016,sales@ina.co.in,4.8,11,Active
+VBR003,NSK India,Bearings,Harish,9876501017,sales@nsk.com,4.7,12,Active
+VEL001,Mouser Electronics India,Electronics,Nikhil,9876501018,india@mouser.com,4.8,9,Active
+VEL002,element14 India,Electronics,Ashwin,9876501019,sales@element14.com,4.7,8,Active
+VEL003,RS Components India,Electronics,Joseph,9876501020,sales@rsdelivers.com,4.8,9,Active
+VEL004,Rabyte Electronics,Electronics,Mani,9876501021,sales@rabyte.com,4.5,10,Active
+VEC001,LAPP India,Electrical Components,Pradeep,9876501022,sales.in@lapp.com,4.8,14,Active
+VEC002,Polycab India,Electrical Components,Rohit,9876501023,industrial@polycab.com,4.7,13,Active
+VEC003,KEI Industries,Electrical Components,Arvind,9876501024,sales@kei-ind.com,4.6,14,Active
+VIN001,Elantas Beck India,Insulation Materials,Vasanth,9876501025,sales@elantas.com,4.8,16,Active
+VIN002,3M India,Insulation Materials,Gowtham,9876501026,industrial@3m.com,4.8,15,Active
+VIN003,Von Roll India,Insulation Materials,Naveen,9876501027,sales@vonroll.com,4.7,20,Active
+VFS001,Sundram Fasteners,Fasteners,Ganesh,9876501028,sales@sundram.com,4.9,8,Active
+VFS002,Unbrako,Fasteners,Ravi,9876501029,sales@unbrako.com,4.8,9,Active
+VFS003,LPS Bossard,Fasteners,Anand,9876501030,sales@bossard.com,4.6,12,Active
+VCN001,Henkel India,Consumables,Dinesh,9876501031,industrial@henkel.com,4.8,10,Active
+VCN002,Castrol India,Consumables,Mukesh,9876501032,b2b@castrol.com,4.7,9,Active
+VCN003,Pidilite Industries,Consumables,Mahesh,9876501033,industrial@pidilite.com,4.7,11,Active
+VPK001,TCPL Packaging,Packaging Materials,Lokesh,9876501034,sales@tcpl.in,4.6,10,Active
+VPK002,Uflex Ltd,Packaging Materials,Vimal,9876501035,sales@uflexltd.com,4.5,12,Active

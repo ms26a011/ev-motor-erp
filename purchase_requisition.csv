@@ -1,0 +1,151 @@
+pr_id,pr_number,requested_by,department_id,pr_date,required_date,remarks,status,approved_by,approved_date
+1,PR202504050001,4,1,2025-04-05,2025-04-25,Monthly material requirement,Approved,8,2025-04-06
+2,PR202504060001,1,1,2025-04-06,2025-04-25,Rejected due to duplicate requirement,Rejected,8,2025-04-08
+3,PR202504070001,4,2,2025-04-07,2025-04-27,Monthly material requirement,Converted to PO,8,2025-04-08
+4,PR202504080001,1,1,2025-04-08,2025-04-28,Monthly material requirement,Converted to PO,8,2025-04-09
+5,PR202504240001,4,1,2025-04-24,2025-05-05,Urgent production requirement,Approved,8,2025-04-27
+6,PR202504290001,4,1,2025-04-29,2025-05-16,Monthly material requirement,Converted to PO,8,2025-04-30
+7,PR202504300001,1,1,2025-04-30,2025-05-10,Monthly material requirement,Converted to PO,8,2025-05-03
+8,PR202505080001,1,2,2025-05-08,2025-05-25,Monthly material requirement,Approved,8,2025-05-10
+9,PR202505080002,1,1,2025-05-08,2025-05-23,Monthly material requirement,Approved,8,2025-05-10
+10,PR202505100001,4,1,2025-05-10,2025-05-22,Monthly material requirement,Converted to PO,8,2025-05-13
+11,PR202505210001,4,1,2025-05-21,2025-06-07,Safety stock replenishment,Converted to PO,8,2025-05-23
+12,PR202505260001,1,1,2025-05-26,2025-06-15,Monthly material requirement,Converted to PO,8,2025-05-27
+13,PR202505290001,4,1,2025-05-29,2025-06-13,Monthly material requirement,Submitted,,
+14,PR202505310001,4,1,2025-05-31,2025-06-18,Urgent production requirement,Converted to PO,8,2025-06-03
+15,PR202506050001,1,1,2025-06-05,2025-06-12,Safety stock replenishment,Submitted,,
+16,PR202506060001,1,2,2025-06-06,2025-06-17,Monthly material requirement,Converted to PO,8,2025-06-09
+17,PR202506120001,1,1,2025-06-12,2025-06-19,Quarterly procurement planning,Converted to PO,8,2025-06-13
+18,PR202506120002,1,1,2025-06-12,2025-06-30,Production shortage prevention,Converted to PO,8,2025-06-15
+19,PR202506160001,4,1,2025-06-16,2025-06-27,Fastener replenishment,Converted to PO,8,2025-06-18
+20,PR202506170001,1,1,2025-06-17,2025-07-06,Safety stock replenishment,Converted to PO,8,2025-06-19
+21,PR202506260001,1,1,2025-06-26,2025-07-06,Monthly material requirement,Converted to PO,8,2025-06-28
+22,PR202506270001,4,1,2025-06-27,2025-07-13,Safety stock replenishment,Converted to PO,8,2025-06-28
+23,PR202506280001,1,1,2025-06-28,2025-07-12,Production shortage prevention,Converted to PO,8,2025-06-30
+24,PR202507060001,4,1,2025-07-06,2025-07-18,Monthly material requirement,Approved,8,2025-07-08
+25,PR202507130001,1,2,2025-07-13,2025-07-25,Safety stock replenishment,Converted to PO,8,2025-07-16
+26,PR202507140001,1,1,2025-07-14,2025-07-29,Stock replenishment request,Approved,8,2025-07-16
+27,PR202507230001,1,1,2025-07-23,2025-08-11,Rejected due to duplicate requirement,Rejected,8,2025-07-24
+28,PR202507240001,4,3,2025-07-24,2025-08-03,Safety stock replenishment,Converted to PO,8,2025-07-26
+29,PR202507270001,1,1,2025-07-27,2025-08-05,Quarterly procurement planning,Converted to PO,8,2025-07-30
+30,PR202507290001,4,2,2025-07-29,2025-08-05,Safety stock replenishment,Converted to PO,8,2025-07-30
+31,PR202507290002,1,2,2025-07-29,2025-08-10,Production shortage prevention,Converted to PO,8,2025-07-30
+32,PR202507300001,4,1,2025-07-30,2025-08-13,Monthly material requirement,Converted to PO,8,2025-07-31
+33,PR202507310001,1,1,2025-07-31,2025-08-19,Quarterly procurement planning,Converted to PO,8,2025-08-02
+34,PR202508030001,1,1,2025-08-03,2025-08-19,Quarterly procurement planning,Converted to PO,8,2025-08-06
+35,PR202508050001,1,1,2025-08-05,2025-08-24,High demand month planning,Converted to PO,8,2025-08-06
+36,PR202508060001,1,1,2025-08-06,2025-08-20,Production shortage prevention,Converted to PO,8,2025-08-09
+37,PR202508090001,1,2,2025-08-09,2025-08-28,Monthly material requirement,Converted to PO,8,2025-08-11
+38,PR202508090002,4,1,2025-08-09,2025-08-20,High demand month planning,Converted to PO,8,2025-08-10
+39,PR202508100001,1,1,2025-08-10,2025-08-21,High demand month planning,Converted to PO,8,2025-08-13
+40,PR202508100002,4,1,2025-08-10,2025-08-22,High demand month planning,Converted to PO,8,2025-08-12
+41,PR202508120001,1,1,2025-08-12,2025-08-20,High demand month planning,Converted to PO,8,2025-08-14
+42,PR202508120002,4,1,2025-08-12,2025-08-25,High demand month planning,Approved,8,2025-08-15
+43,PR202508150001,1,2,2025-08-15,2025-08-31,Production shortage prevention,Converted to PO,8,2025-08-16
+44,PR202508160001,1,1,2025-08-16,2025-09-03,Stock replenishment request,Converted to PO,8,2025-08-17
+45,PR202508180001,4,1,2025-08-18,2025-08-31,Fastener replenishment,Converted to PO,8,2025-08-19
+46,PR202508220001,1,1,2025-08-22,2025-09-01,Monthly material requirement,Converted to PO,8,2025-08-25
+47,PR202508230001,1,1,2025-08-23,2025-09-05,High demand month planning,Converted to PO,8,2025-08-24
+48,PR202508250001,1,1,2025-08-25,2025-09-10,Monthly material requirement,Converted to PO,8,2025-08-26
+49,PR202508260001,1,3,2025-08-26,2025-09-05,High demand month planning,Converted to PO,8,2025-08-29
+50,PR202508280001,1,1,2025-08-28,2025-09-04,Stock replenishment request,Converted to PO,8,2025-08-30
+51,PR202508300001,1,1,2025-08-30,2025-09-11,Safety stock replenishment,Converted to PO,8,2025-08-31
+52,PR202508310001,1,1,2025-08-31,2025-09-13,High demand month planning,Converted to PO,8,2025-09-01
+53,PR202509010001,4,1,2025-09-01,2025-09-08,Production shortage prevention,Converted to PO,8,2025-09-04
+54,PR202509030001,4,1,2025-09-03,2025-09-10,High demand month planning,Converted to PO,8,2025-09-05
+55,PR202509090001,1,1,2025-09-09,2025-09-21,High demand month planning,Converted to PO,8,2025-09-10
+56,PR202509100001,4,1,2025-09-10,2025-09-20,High demand month planning,Converted to PO,8,2025-09-11
+57,PR202509110001,1,3,2025-09-11,2025-09-19,Monthly material requirement,Converted to PO,8,2025-09-13
+58,PR202509120001,1,1,2025-09-12,2025-09-28,Monthly material requirement,Converted to PO,8,2025-09-13
+59,PR202509140001,4,1,2025-09-14,2025-10-03,High demand month planning,Converted to PO,8,2025-09-16
+60,PR202509140002,4,1,2025-09-14,2025-10-03,High demand month planning,Converted to PO,8,2025-09-16
+61,PR202509150001,4,2,2025-09-15,2025-09-26,Safety stock replenishment,Converted to PO,8,2025-09-17
+62,PR202509160001,4,1,2025-09-16,2025-09-28,Quarterly procurement planning,Converted to PO,8,2025-09-19
+63,PR202509170001,4,1,2025-09-17,2025-09-25,High demand month planning,Converted to PO,8,2025-09-18
+64,PR202509180001,4,2,2025-09-18,2025-10-08,Safety stock replenishment,Approved,8,2025-09-20
+65,PR202509190001,4,1,2025-09-19,2025-10-04,High demand month planning,Converted to PO,8,2025-09-20
+66,PR202509190002,4,1,2025-09-19,2025-09-26,High demand month planning,Converted to PO,8,2025-09-21
+67,PR202509210001,4,1,2025-09-21,2025-10-04,Fastener replenishment,Converted to PO,8,2025-09-23
+68,PR202509230001,1,1,2025-09-23,2025-10-13,High demand month planning,Approved,8,2025-09-25
+69,PR202509240001,4,1,2025-09-24,2025-10-12,High demand month planning,Converted to PO,8,2025-09-25
+70,PR202509240002,1,1,2025-09-24,2025-10-12,High demand month planning,Approved,8,2025-09-25
+71,PR202509250001,4,1,2025-09-25,2025-10-03,High demand month planning,Converted to PO,8,2025-09-27
+72,PR202509270001,4,1,2025-09-27,2025-10-16,Urgent production requirement,Converted to PO,8,2025-09-28
+73,PR202509290001,4,1,2025-09-29,2025-10-16,High demand month planning,Converted to PO,8,2025-09-30
+74,PR202510020001,1,1,2025-10-02,2025-10-15,High demand month planning,Converted to PO,8,2025-10-05
+75,PR202510030001,1,1,2025-10-03,2025-10-18,Fastener replenishment,Approved,8,2025-10-06
+76,PR202510030002,4,1,2025-10-03,2025-10-19,Monthly material requirement,Converted to PO,8,2025-10-04
+77,PR202510060001,4,1,2025-10-06,2025-10-14,High demand month planning,Converted to PO,8,2025-10-08
+78,PR202510090001,4,1,2025-10-09,2025-10-25,High demand month planning,Converted to PO,8,2025-10-12
+79,PR202510130001,1,2,2025-10-13,2025-10-21,High demand month planning,Approved,8,2025-10-14
+80,PR202510150001,1,1,2025-10-15,2025-10-22,Stock replenishment request,Approved,8,2025-10-16
+81,PR202510150002,4,1,2025-10-15,2025-11-03,Urgent production requirement,Converted to PO,8,2025-10-16
+82,PR202510160001,4,2,2025-10-16,2025-10-26,Monthly material requirement,Converted to PO,8,2025-10-19
+83,PR202510210001,4,1,2025-10-21,2025-10-30,High demand month planning,Converted to PO,8,2025-10-24
+84,PR202510210002,4,1,2025-10-21,2025-10-29,High demand month planning,Converted to PO,8,2025-10-23
+85,PR202510210003,4,1,2025-10-21,2025-10-31,High demand month planning,Converted to PO,8,2025-10-23
+86,PR202510210004,1,1,2025-10-21,2025-10-31,Monthly material requirement,Submitted,,
+87,PR202510240001,1,1,2025-10-24,2025-11-10,Production shortage prevention,Converted to PO,8,2025-10-26
+88,PR202510250001,4,1,2025-10-25,2025-11-05,Quarterly procurement planning,Converted to PO,8,2025-10-26
+89,PR202510260001,4,1,2025-10-26,2025-11-13,High demand month planning,Approved,8,2025-10-27
+90,PR202510280001,4,1,2025-10-28,2025-11-06,Stock replenishment request,Converted to PO,8,2025-10-31
+91,PR202510280002,4,1,2025-10-28,2025-11-05,High demand month planning,Converted to PO,8,2025-10-31
+92,PR202510290001,4,1,2025-10-29,2025-11-16,High demand month planning,Converted to PO,8,2025-10-31
+93,PR202511020001,1,1,2025-11-02,2025-11-16,Quarterly procurement planning,Converted to PO,8,2025-11-04
+94,PR202511040001,1,1,2025-11-04,2025-11-12,Fastener replenishment,Converted to PO,8,2025-11-07
+95,PR202511040002,4,1,2025-11-04,2025-11-18,Monthly material requirement,Converted to PO,8,2025-11-05
+96,PR202511050001,1,1,2025-11-05,2025-11-12,Quarterly procurement planning,Converted to PO,8,2025-11-06
+97,PR202511070001,1,1,2025-11-07,2025-11-20,High demand month planning,Converted to PO,8,2025-11-10
+98,PR202511080001,4,1,2025-11-08,2025-11-27,Monthly material requirement,Approved,8,2025-11-09
+99,PR202511080002,4,1,2025-11-08,2025-11-15,Production shortage prevention,Converted to PO,8,2025-11-10
+100,PR202511100001,1,1,2025-11-10,2025-11-29,Urgent production requirement,Approved,8,2025-11-12
+101,PR202511140001,1,1,2025-11-14,2025-11-21,Fastener replenishment,Converted to PO,8,2025-11-16
+102,PR202511240001,4,1,2025-11-24,2025-12-01,Fastener replenishment,Submitted,,
+103,PR202512010001,4,1,2025-12-01,2025-12-09,Production shortage prevention,Converted to PO,8,2025-12-03
+104,PR202512040001,4,1,2025-12-04,2025-12-11,Production shortage prevention,Converted to PO,8,2025-12-06
+105,PR202512050001,1,1,2025-12-05,2025-12-15,Fastener replenishment,Converted to PO,8,2025-12-06
+106,PR202512160001,1,1,2025-12-16,2026-01-05,Urgent production requirement,Converted to PO,8,2025-12-18
+107,PR202512180001,1,1,2025-12-18,2025-12-30,Rejected due to duplicate requirement,Rejected,8,2025-12-20
+108,PR202512190001,4,1,2025-12-19,2026-01-04,Packaging material replenishment,Converted to PO,8,2025-12-22
+109,PR202512210001,4,2,2025-12-21,2026-01-09,Fastener replenishment,Converted to PO,8,2025-12-22
+110,PR202512210002,4,1,2025-12-21,2025-12-28,Monthly material requirement,Converted to PO,8,2025-12-23
+111,PR202512230001,4,1,2025-12-23,2025-12-31,Production shortage prevention,Converted to PO,8,2025-12-25
+112,PR202512250001,1,1,2025-12-25,2026-01-03,Monthly material requirement,Converted to PO,8,2025-12-26
+113,PR202512290001,1,1,2025-12-29,2026-01-05,Monthly material requirement,Converted to PO,8,2026-01-01
+114,PR202512300001,4,1,2025-12-30,2026-01-07,Safety stock replenishment,Converted to PO,8,2026-01-02
+115,PR202601010001,4,1,2026-01-01,2026-01-16,Stock replenishment request,Converted to PO,8,2026-01-03
+116,PR202601020001,1,1,2026-01-02,2026-01-14,Production shortage prevention,Approved,8,2026-01-03
+117,PR202601040001,1,1,2026-01-04,2026-01-13,High demand month planning,Approved,8,2026-01-06
+118,PR202601060001,4,1,2026-01-06,2026-01-16,High demand month planning,Converted to PO,8,2026-01-09
+119,PR202601070001,1,2,2026-01-07,2026-01-17,Safety stock replenishment,Converted to PO,8,2026-01-09
+120,PR202601070002,4,1,2026-01-07,2026-01-14,Urgent production requirement,Approved,8,2026-01-08
+121,PR202601160001,1,1,2026-01-16,2026-02-01,Production shortage prevention,Approved,8,2026-01-17
+122,PR202601160002,4,1,2026-01-16,2026-02-02,Monthly material requirement,Approved,8,2026-01-18
+123,PR202601160003,4,1,2026-01-16,2026-02-01,High demand month planning,Approved,8,2026-01-19
+124,PR202601200001,4,1,2026-01-20,2026-02-02,High demand month planning,Converted to PO,8,2026-01-22
+125,PR202601210001,1,1,2026-01-21,2026-02-08,Packaging material replenishment,Approved,8,2026-01-22
+126,PR202601210002,1,1,2026-01-21,2026-02-07,Stock replenishment request,Converted to PO,8,2026-01-22
+127,PR202601240001,4,1,2026-01-24,2026-02-03,High demand month planning,Approved,8,2026-01-26
+128,PR202601250001,4,2,2026-01-25,2026-02-11,Fastener replenishment,Submitted,,
+129,PR202601290001,4,1,2026-01-29,2026-02-10,High demand month planning,Submitted,,
+130,PR202601290002,4,1,2026-01-29,2026-02-06,Fastener replenishment,Converted to PO,8,2026-01-31
+131,PR202601290003,1,1,2026-01-29,2026-02-16,High demand month planning,Converted to PO,8,2026-02-01
+132,PR202601300001,4,3,2026-01-30,2026-02-13,Quarterly procurement planning,Converted to PO,8,2026-01-31
+133,PR202601310001,1,1,2026-01-31,2026-02-12,High demand month planning,Converted to PO,8,2026-02-03
+134,PR202601310002,4,1,2026-01-31,2026-02-08,High demand month planning,Converted to PO,8,2026-02-03
+135,PR202602020001,1,1,2026-02-02,2026-02-13,Stock replenishment request,Approved,8,2026-02-03
+136,PR202602050001,4,1,2026-02-05,2026-02-23,Safety stock replenishment,Converted to PO,8,2026-02-07
+137,PR202602060001,4,1,2026-02-06,2026-02-21,Production shortage prevention,Converted to PO,8,2026-02-07
+138,PR202602140001,4,1,2026-02-14,2026-02-21,Monthly material requirement,Converted to PO,8,2026-02-16
+139,PR202602150001,4,1,2026-02-15,2026-02-24,Urgent production requirement,Converted to PO,8,2026-02-18
+140,PR202602190001,1,1,2026-02-19,2026-02-28,Stock replenishment request,Converted to PO,8,2026-02-20
+141,PR202602220001,4,1,2026-02-22,2026-03-01,Safety stock replenishment,Approved,8,2026-02-23
+142,PR202602250001,4,1,2026-02-25,2026-03-16,Stock replenishment request,Converted to PO,8,2026-02-28
+143,PR202602250002,4,1,2026-02-25,2026-03-17,Urgent production requirement,Approved,8,2026-02-27
+144,PR202603010001,1,1,2026-03-01,2026-03-14,Monthly material requirement,Converted to PO,8,2026-03-04
+145,PR202603080001,1,1,2026-03-08,2026-03-24,Monthly material requirement,Converted to PO,8,2026-03-11
+146,PR202603090001,1,3,2026-03-09,2026-03-25,Safety stock replenishment,Converted to PO,8,2026-03-11
+147,PR202603130001,1,2,2026-03-13,2026-03-31,Urgent production requirement,Submitted,,
+148,PR202603160001,4,1,2026-03-16,2026-03-31,Monthly material requirement,Converted to PO,8,2026-03-19
+149,PR202603170001,1,2,2026-03-17,2026-03-31,Quarterly procurement planning,Converted to PO,8,2026-03-18
+150,PR202603240001,4,1,2026-03-24,2026-03-31,Production shortage prevention,Converted to PO,8,2026-03-25

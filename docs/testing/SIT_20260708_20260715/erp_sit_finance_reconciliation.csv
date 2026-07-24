@@ -1,0 +1,2 @@
+vendor_invoice_total,vendor_payment_total,accounts_payable_outstanding,customer_invoice_total,customer_receipt_total,accounts_receivable_outstanding,journal_debit_total,journal_credit_total,unbalanced_journal_count
+18467354.00,18467354.00,0.00,34084713.00,34084713.00,0.00,150985534.00,150985534.00,0

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EV Motor Manufacturing ERP</title>
+  </head>
+  <body>
+    <div id="root">
+      <div style="font-family: Arial, sans-serif; padding: 32px;">
+        <h1>EV Motor Manufacturing ERP</h1>
+        <p>Loading the application...</p>
+      </div>
+    </div>
+    <script>
+      window.addEventListener('error', function (event) {
+        window.__erpStartupError = event.message || 'Browser script error';
+      });
+
+      window.addEventListener('unhandledrejection', function (event) {
+        window.__erpStartupError = event.reason && event.reason.message
+          ? event.reason.message
+          : 'Browser startup error';
+      });
+
+      setTimeout(function () {
+        var root = document.getElementById('root');
+        if (!root || !root.textContent.includes('Loading the application')) return;
+
+        if (window.location.protocol === 'file:') {
+          root.innerHTML = [
+            '<div style="font-family: Arial, sans-serif; padding: 32px; max-width: 760px;">',
+            '<h1>Open the ERP using localhost</h1>',
+            '<p>This file was opened directly from your computer. The ERP cannot load records that way.</p>',
+            '<p><b>Please double-click:</b></p>',
+            '<p>C:\\Users\\sbvid\\Documents\\Full stack ERP\\ev-motor-erp-fullstack\\START_ERP_APP.bat</p>',
+            '<p>Then open:</p>',
+            '<p><a href="http://localhost:5173/#/">http://localhost:5173/#/</a></p>',
+            '</div>'
+          ].join('');
+          return;
+        }
+
+        var apiBase = 'http://localhost:8000/api';
+        var modules = [
+          { key: 'departments', title: 'Department Master' },
+          { key: 'employees', title: 'Employee Master' },
+          { key: 'vendors', title: 'Vendor Master' },
+          { key: 'items', title: 'Item Master' },
+          { key: 'customers', title: 'Customer Master' }
+        ];
+        var moduleMeta = [];
+
+        function label(name) {
+          return String(name || '').replaceAll('_', ' ');
+        }
+
+        function showMessage(text, type) {
+          var box = document.getElementById('fallback-message');
+          if (!box) return;
+          box.className = 'message ' + (type || 'success');
+          box.textContent = text || '';
+          box.style.display = text ? 'block' : 'none';
+        }
+
+        async function request(path, options) {
+          var response = await fetch(apiBase + path, Object.assign({
+            headers: { 'Content-Type': 'application/json' }
+          }, options || {}));
+          var data = await response.json().catch(function () { return {}; });
+          if (!response.ok) throw new Error(data.detail || data.message || 'Request failed');
+          return data;
+        }
+
+        function shell(content) {
+          root.innerHTML = [
+            '<div class="app-shell">',
+            '<aside class="sidebar"><div class="brand"><div class="brand-mark">EV</div><div><h1>EV Motor ERP</h1><p>Manufacturing Operations</p></div></div>',
+            '<nav class="nav-list"><a href="#/" data-module="">Dashboard</a>',
+            modules.map(function (m) { return '<a href="#/' + m.key + '" data-module="' + m.key + '">' + m.title + '</a>'; }).join(''),
+            '</nav></aside>',
+            '<div class="main-panel"><header class="top-header"><div><span class="eyebrow">Phase 1</span><h2>EV Motor Manufacturing ERP</h2></div><div class="status-pill">Fallback mode</div></header>',
+            '<main class="content-area"><div id="fallback-message" class="message" style="display:none"></div>' + content + '</main></div></div>'
+          ].join('');
+        }
+
+        async function loadModules() {
+          if (moduleMeta.length) return moduleMeta;
+          moduleMeta = await request('/modules');
+          return moduleMeta;
+        }
+
+        async function dashboard() {
+          shell('<div class="empty-state">Loading dashboard...</div>');
+          try {
+            var counts = await request('/dashboard');
+            shell('<div class="page-title"><div><h2>Dashboard</h2><p>Quick view of Phase 1 master data.</p></div></div><div class="metric-grid">' +
+              modules.map(function (m) {
+                return '<article class="metric-card"><span>Total ' + m.title.replace(' Master', 's') + '</span><strong>' + (counts[m.key] || 0) + '</strong></article>';
+              }).join('') + '</div>');
+          } catch (error) {
+            shell('<div class="startup-error"><h1>Backend not connected</h1><p>' + error.message + '</p><small>Keep the backend window open and refresh this page.</small></div>');
+          }
+        }
+
+        async function list(moduleKey) {
+          shell('<div class="empty-state">Loading records...</div>');
+          try {
+            var metas = await loadModules();
+            var meta = metas.find(function (m) { return m.key === moduleKey; });
+            var rows = await request('/' + moduleKey);
+            var pk = (meta.columns.find(function (c) { return c.primary_key; }) || meta.columns[0]).name;
+            shell('<div class="page-title"><div><h2>' + meta.title + '</h2><p>Manage records with add, edit, and delete actions.</p></div><button class="btn primary" data-add="' + moduleKey + '">Add New</button></div><div class="table-wrap"><table><thead><tr>' +
+              meta.columns.map(function (c) { return '<th>' + label(c.name) + '</th>'; }).join('') + '<th>Actions</th></tr></thead><tbody>' +
+              rows.map(function (row) {
+                return '<tr>' + meta.columns.map(function (c) { return '<td>' + (row[c.name] == null || row[c.name] === '' ? '-' : row[c.name]) + '</td>'; }).join('') +
+                  '<td class="row-actions"><button class="btn secondary" data-edit="' + moduleKey + '" data-id="' + row[pk] + '">Edit</button><button class="btn danger" data-delete="' + moduleKey + '" data-id="' + row[pk] + '">Delete</button></td></tr>';
+              }).join('') + '</tbody></table></div>');
+          } catch (error) {
+            shell('<div class="startup-error"><h1>Unable to load records</h1><p>' + error.message + '</p></div>');
+          }
+        }
+
+        async function form(moduleKey, id) {
+          shell('<div class="empty-state">Loading form...</div>');
+          var metas = await loadModules();
+          var meta = metas.find(function (m) { return m.key === moduleKey; });
+          var record = id ? await request('/' + moduleKey + '/' + id) : {};
+          var fields = meta.columns.filter(function (c) { return !c.readonly; });
+          shell('<div class="page-title"><div><h2>' + (id ? 'Edit ' : 'Add ') + meta.title + '</h2><p>Fields marked with * are required.</p></div><button class="btn secondary" data-back="' + moduleKey + '">Back to List</button></div><form class="form-panel" id="fallback-form"><div class="form-grid">' +
+            fields.map(function (c) {
+              return '<label class="field"><span>' + label(c.name) + (c.required ? ' <b>*</b>' : '') + '</span><input name="' + c.name + '" value="' + (record[c.name] == null ? '' : String(record[c.name]).replaceAll('"', '&quot;')) + '"' + (c.required ? ' required' : '') + '></label>';
+            }).join('') + '</div><div class="form-actions"><button class="btn primary" type="submit">' + (id ? 'Update Record' : 'Create Record') + '</button><button class="btn secondary" type="button" data-back="' + moduleKey + '">Cancel</button></div></form>');
+          document.getElementById('fallback-form').addEventListener('submit', async function (event) {
+            event.preventDefault();
+            var payload = {};
+            fields.forEach(function (c) { payload[c.name] = event.target.elements[c.name].value; });
+            try {
+              await request('/' + moduleKey + (id ? '/' + id : ''), {
+                method: id ? 'PUT' : 'POST',
+                body: JSON.stringify(payload)
+              });
+              location.hash = '#/' + moduleKey;
+            } catch (error) {
+              showMessage(error.message, 'error');
+            }
+          });
+        }
+
+        document.addEventListener('click', async function (event) {
+          var target = event.target;
+          if (target.dataset.add) form(target.dataset.add);
+          if (target.dataset.back) list(target.dataset.back);
+          if (target.dataset.edit) form(target.dataset.edit, target.dataset.id);
+          if (target.dataset.delete && confirm('Delete this record?')) {
+            try {
+              await request('/' + target.dataset.delete + '/' + target.dataset.id, { method: 'DELETE' });
+              list(target.dataset.delete);
+            } catch (error) {
+              showMessage(error.message, 'error');
+            }
+          }
+        });
+
+        window.addEventListener('hashchange', function () {
+          var moduleKey = location.hash.replace('#/', '');
+          if (moduleKey) list(moduleKey); else dashboard();
+        });
+
+        if (window.__erpStartupError) {
+          console.error(window.__erpStartupError);
+        }
+        var firstModule = location.hash.replace('#/', '');
+        if (firstModule) list(firstModule); else dashboard();
+      }, 1500);
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

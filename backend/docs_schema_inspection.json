@@ -1,0 +1,5948 @@
+{
+  "purchase_requisition": {
+    "count": 3004,
+    "columns": [
+      {
+        "Field": "pr_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "pr_number",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "requested_by",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "department_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "pr_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "required_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(20)",
+        "Null": "YES",
+        "Key": "",
+        "Default": "Draft",
+        "Extra": ""
+      },
+      {
+        "Field": "approved_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "approved_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      }
+    ]
+  },
+  "purchase_requisition_items": {
+    "count": 6004,
+    "columns": [
+      {
+        "Field": "pr_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "pr_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "requested_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "uom",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "required_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "estimated_unit_cost",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "estimated_total_cost",
+        "Type": "decimal(14,2)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": "STORED GENERATED"
+      },
+      {
+        "Field": "priority",
+        "Type": "enum('Low','Medium','High','Urgent')",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Medium",
+        "Extra": ""
+      },
+      {
+        "Field": "reason_for_requirement",
+        "Type": "varchar(255)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "current_stock_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "reorder_level",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "budget_code",
+        "Type": "varchar(30)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(255)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "enum('Pending','Approved','Rejected','Converted to PO','Cancelled')",
+        "Null": "NO",
+        "Key": "",
+        "Default": "Pending",
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "purchase_order": {
+    "count": 2504,
+    "columns": [
+      {
+        "Field": "po_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "po_number",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "pr_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "vendor_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "department_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "po_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "expected_delivery_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "payment_terms",
+        "Type": "varchar(80)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "delivery_terms",
+        "Type": "varchar(120)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "billing_address",
+        "Type": "varchar(500)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "shipping_address",
+        "Type": "varchar(500)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "subtotal_amount",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "tax_amount",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "freight_charges",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "discount_amount",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "total_po_amount",
+        "Type": "decimal(14,2)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": "STORED GENERATED"
+      },
+      {
+        "Field": "currency",
+        "Type": "char(3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "INR",
+        "Extra": ""
+      },
+      {
+        "Field": "po_status",
+        "Type": "enum('Draft','Issued','Partially Received','Fully Received','Cancelled','Closed')",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Draft",
+        "Extra": ""
+      },
+      {
+        "Field": "approval_status",
+        "Type": "enum('Pending','Approved','Rejected')",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Pending",
+        "Extra": ""
+      },
+      {
+        "Field": "approved_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "approved_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "purchase_order_items": {
+    "count": 5004,
+    "columns": [
+      {
+        "Field": "po_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "po_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "pr_item_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "ordered_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "uom",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "unit_price",
+        "Type": "decimal(14,6)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "line_subtotal",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "tax_rate",
+        "Type": "decimal(5,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "18.00",
+        "Extra": ""
+      },
+      {
+        "Field": "tax_amount",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "discount_amount",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "line_total",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "expected_delivery_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "received_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "pending_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "line_status",
+        "Type": "enum('Ordered','Partially Received','Fully Received','Cancelled','Closed')",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Ordered",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(500)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "goods_receipt": {
+    "count": 2554,
+    "columns": [
+      {
+        "Field": "grn_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "grn_number",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "po_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "vendor_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "received_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "invoice_number",
+        "Type": "varchar(60)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "invoice_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "delivery_challan_number",
+        "Type": "varchar(60)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "received_by",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "warehouse_location",
+        "Type": "varchar(120)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "inspection_required",
+        "Type": "enum('Yes','No')",
+        "Null": "NO",
+        "Key": "",
+        "Default": "Yes",
+        "Extra": ""
+      },
+      {
+        "Field": "grn_status",
+        "Type": "enum('Draft','Received','Under Inspection','Accepted','Partially Accepted','Rejected','Closed')",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Draft",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "goods_receipt_items": {
+    "count": 4503,
+    "columns": [
+      {
+        "Field": "grn_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "grn_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "po_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "ordered_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "received_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "accepted_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "rejected_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "uom",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "unit_price",
+        "Type": "decimal(14,6)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "line_value",
+        "Type": "decimal(14,2)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": "STORED GENERATED"
+      },
+      {
+        "Field": "batch_number",
+        "Type": "varchar(60)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "manufacturing_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "expiry_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "quality_status",
+        "Type": "enum('Pending Inspection','Accepted','Partially Accepted','Rejected')",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Pending Inspection",
+        "Extra": ""
+      },
+      {
+        "Field": "rejection_reason",
+        "Type": "varchar(255)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "storage_location",
+        "Type": "varchar(80)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(500)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "inventory_balance": {
+    "count": 109,
+    "columns": [
+      {
+        "Field": "balance_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "department_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "location_id",
+        "Type": "varchar(40)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "warehouse_location",
+        "Type": "varchar(80)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "quantity_on_hand",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "reserved_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "available_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "reorder_level",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "safety_stock",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "max_stock",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "current_stock",
+        "Type": "decimal(14,3)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "inventory_value",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "last_updated",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(40)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "Active",
+        "Extra": ""
+      },
+      {
+        "Field": "data_issue_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "stock_inward_number",
+        "Type": "varchar(30)",
+        "Null": "YES",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      }
+    ]
+  },
+  "stock_transaction_log": {
+    "count": 5,
+    "columns": [
+      {
+        "Field": "transaction_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "transaction_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "department_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "transaction_type",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "reference_document_type",
+        "Type": "varchar(30)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "reference_document_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "quantity_in",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": "0",
+        "Extra": ""
+      },
+      {
+        "Field": "quantity_out",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": "0",
+        "Extra": ""
+      },
+      {
+        "Field": "balance_after_transaction",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(500)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "stock_transaction_number",
+        "Type": "varchar(30)",
+        "Null": "YES",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      }
+    ]
+  },
+  "move_order": {
+    "count": 306,
+    "columns": [
+      {
+        "Field": "mo_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "mo_number",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "mo_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "requested_by",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "requested_by_department",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "from_department_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "to_department_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "move_order_type",
+        "Type": "varchar(80)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "priority",
+        "Type": "varchar(20)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "source_location",
+        "Type": "varchar(120)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "destination_location",
+        "Type": "varchar(120)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "reason",
+        "Type": "varchar(500)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "required_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "approved_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "approved_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "issued_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "issued_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "received_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "received_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(30)",
+        "Null": "YES",
+        "Key": "",
+        "Default": "Pending",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      }
+    ]
+  },
+  "move_order_items": {
+    "count": 305,
+    "columns": [
+      {
+        "Field": "mo_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "mo_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "requested_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "issued_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "uom",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "unit_cost",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "line_amount",
+        "Type": "decimal(14,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "source_location",
+        "Type": "varchar(120)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "destination_location",
+        "Type": "varchar(120)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "required_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "movement_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "production_order": {
+    "count": 301,
+    "columns": [
+      {
+        "Field": "production_order_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "production_order_number",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "customer_order_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "finished_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "department_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "planned_quantity",
+        "Type": "decimal(12,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "produced_quantity",
+        "Type": "decimal(12,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "rejected_quantity",
+        "Type": "decimal(12,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "uom",
+        "Type": "varchar(10)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "planned_start_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "planned_end_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "actual_start_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "actual_end_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "priority",
+        "Type": "enum('Low','Medium','High','Urgent')",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Medium",
+        "Extra": ""
+      },
+      {
+        "Field": "production_status",
+        "Type": "enum('Planned','Released','In Progress','Completed','Partially Completed','Cancelled','On Hold')",
+        "Null": "NO",
+        "Key": "",
+        "Default": "Planned",
+        "Extra": ""
+      },
+      {
+        "Field": "created_by",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "approved_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "production_order_items": {
+    "count": 301,
+    "columns": [
+      {
+        "Field": "production_order_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "production_order_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "planned_quantity",
+        "Type": "decimal(12,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "produced_quantity",
+        "Type": "decimal(12,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "accepted_quantity",
+        "Type": "decimal(12,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "rejected_quantity",
+        "Type": "decimal(12,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "uom",
+        "Type": "varchar(10)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "production_stage",
+        "Type": "enum('Stator Assembly','Rotor Assembly','Final Motor Assembly','Rework','Testing')",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "line_status",
+        "Type": "enum('Planned','In Progress','Completed','Partially Completed','Rejected','On Hold')",
+        "Null": "NO",
+        "Key": "",
+        "Default": "Planned",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "bom_consumption": {
+    "count": 2616,
+    "columns": [
+      {
+        "Field": "bom_consumption_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "production_order_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "finished_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "consumed_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "planned_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "issued_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "actual_consumed_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "returned_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "wastage_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "uom",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "warehouse_location",
+        "Type": "varchar(100)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "batch_number",
+        "Type": "varchar(60)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "consumption_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "consumed_by",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "transaction_status",
+        "Type": "enum('Planned','Issued','Consumed','Partially Consumed','Returned','Closed')",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Planned",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "finished_goods_receipt": {
+    "count": 340,
+    "columns": [
+      {
+        "Field": "fg_receipt_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "fg_receipt_number",
+        "Type": "varchar(40)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "production_order_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "production_order_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "finished_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "received_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "accepted_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "rejected_quantity",
+        "Type": "decimal(14,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.000",
+        "Extra": ""
+      },
+      {
+        "Field": "uom",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "receipt_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "received_by",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "inspection_status",
+        "Type": "enum('Pending Inspection','Accepted','Partially Accepted','Rejected')",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Pending Inspection",
+        "Extra": ""
+      },
+      {
+        "Field": "warehouse_location",
+        "Type": "varchar(100)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "batch_number",
+        "Type": "varchar(80)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "serial_number_start",
+        "Type": "varchar(80)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "serial_number_end",
+        "Type": "varchar(80)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "customer_order": {
+    "count": 3001,
+    "columns": [
+      {
+        "Field": "co_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "co_number",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "customer_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "order_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "required_delivery_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(30)",
+        "Null": "YES",
+        "Key": "",
+        "Default": "Pending",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      }
+    ]
+  },
+  "customer_order_items": {
+    "count": 6001,
+    "columns": [
+      {
+        "Field": "co_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "co_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "ordered_quantity",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "dispatched_quantity",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": "0",
+        "Extra": ""
+      },
+      {
+        "Field": "pending_quantity",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(500)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      }
+    ]
+  },
+  "dispatch": {
+    "count": 2502,
+    "columns": [
+      {
+        "Field": "dispatch_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "dispatch_number",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "co_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "customer_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "dispatch_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "source_location",
+        "Type": "varchar(120)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "transport_mode",
+        "Type": "varchar(30)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "vehicle_number",
+        "Type": "varchar(30)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "lr_number",
+        "Type": "varchar(50)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "driver_name",
+        "Type": "varchar(100)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "transport_company",
+        "Type": "varchar(100)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "delivery_address",
+        "Type": "varchar(500)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "city",
+        "Type": "varchar(80)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "state",
+        "Type": "varchar(80)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "expected_delivery_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "actual_delivery_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "dispatched_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(30)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": "Dispatched",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      }
+    ]
+  },
+  "dispatch_items": {
+    "count": 5001,
+    "columns": [
+      {
+        "Field": "dispatch_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "dispatch_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "co_item_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_description",
+        "Type": "varchar(255)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "uom",
+        "Type": "varchar(20)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "ordered_quantity",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "dispatched_quantity",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "unit_price",
+        "Type": "decimal(14,2)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "line_amount",
+        "Type": "decimal(14,2)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "batch_no",
+        "Type": "varchar(80)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "serial_no",
+        "Type": "varchar(80)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(500)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      }
+    ]
+  },
+  "vendor_invoice": {
+    "count": 5001,
+    "columns": [
+      {
+        "Field": "vendor_invoice_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "vendor_invoice_no",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "vendor_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "po_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "grn_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "invoice_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "due_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "subtotal_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "tax_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "total_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "paid_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "balance_amount",
+        "Type": "decimal(18,2)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": "STORED GENERATED"
+      },
+      {
+        "Field": "invoice_status",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Draft",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "updated_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "vendor_invoice_items": {
+    "count": 12000,
+    "columns": [
+      {
+        "Field": "vendor_invoice_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "vendor_invoice_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "quantity",
+        "Type": "decimal(18,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "unit_price",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "taxable_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "tax_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "tax_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "line_total",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "vendor_payment": {
+    "count": 4001,
+    "columns": [
+      {
+        "Field": "vendor_payment_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "vendor_payment_no",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "vendor_invoice_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "vendor_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "bank_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "payment_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "payment_mode",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "reference_no",
+        "Type": "varchar(100)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "payment_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "payment_status",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Draft",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "updated_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "customer_invoice": {
+    "count": 4501,
+    "columns": [
+      {
+        "Field": "customer_invoice_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "customer_invoice_no",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "customer_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "customer_order_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "dispatch_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "invoice_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "due_date",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "subtotal_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "tax_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "total_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "received_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "balance_amount",
+        "Type": "decimal(18,2)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": "STORED GENERATED"
+      },
+      {
+        "Field": "invoice_status",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Draft",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "updated_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "customer_invoice_items": {
+    "count": 10000,
+    "columns": [
+      {
+        "Field": "customer_invoice_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "customer_invoice_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "quantity",
+        "Type": "decimal(18,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "unit_price",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "taxable_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "tax_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "tax_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "line_total",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "customer_receipt": {
+    "count": 3801,
+    "columns": [
+      {
+        "Field": "customer_receipt_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "customer_receipt_no",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "customer_invoice_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "customer_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "bank_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "receipt_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "receipt_mode",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "reference_no",
+        "Type": "varchar(100)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "receipt_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "receipt_status",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Draft",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "updated_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "journal_entry": {
+    "count": 17309,
+    "columns": [
+      {
+        "Field": "journal_entry_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "journal_entry_no",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "entry_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "period_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "source_module",
+        "Type": "varchar(50)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "source_document_type",
+        "Type": "varchar(50)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "source_document_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "total_debit",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "total_credit",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "journal_status",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Draft",
+        "Extra": ""
+      },
+      {
+        "Field": "narration",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "updated_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "journal_entry_lines": {
+    "count": 44120,
+    "columns": [
+      {
+        "Field": "journal_entry_line_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "journal_entry_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "account_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "debit_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "credit_amount",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "line_narration",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "reference_type",
+        "Type": "varchar(50)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "reference_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "user_account": {
+    "count": 12,
+    "columns": [
+      {
+        "Field": "account_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "employee_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "username",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "password_hash",
+        "Type": "varchar(255)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "role",
+        "Type": "enum('DEPARTMENT_USER','SECTION_HEAD')",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "is_active",
+        "Type": "tinyint(1)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "1",
+        "Extra": ""
+      },
+      {
+        "Field": "last_login",
+        "Type": "datetime",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "employee_master": {
+    "count": 13,
+    "columns": [
+      {
+        "Field": "employee_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "employee_code",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "employee_name",
+        "Type": "varchar(100)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "department_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "role",
+        "Type": "varchar(100)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "email",
+        "Type": "varchar(100)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "phone",
+        "Type": "varchar(20)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(20)",
+        "Null": "YES",
+        "Key": "",
+        "Default": "Active",
+        "Extra": ""
+      }
+    ]
+  },
+  "department_master": {
+    "count": 6,
+    "columns": [
+      {
+        "Field": "department_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "department_code",
+        "Type": "varchar(10)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "department_name",
+        "Type": "varchar(100)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "department_description",
+        "Type": "varchar(300)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "manager_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "location",
+        "Type": "varchar(100)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(20)",
+        "Null": "YES",
+        "Key": "",
+        "Default": "Active",
+        "Extra": ""
+      }
+    ]
+  },
+  "item_master": {
+    "count": 108,
+    "columns": [
+      {
+        "Field": "item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "item_code",
+        "Type": "varchar(100)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_name",
+        "Type": "varchar(100)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "item_description",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "uom",
+        "Type": "varchar(10)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "category",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "unit_cost",
+        "Type": "decimal(10,2)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "default_vendor_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "reorder_level",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "safety_stock",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "maximum_stock",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "criticality",
+        "Type": "varchar(20)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(20)",
+        "Null": "YES",
+        "Key": "",
+        "Default": "Active",
+        "Extra": ""
+      }
+    ]
+  },
+  "bom_master": {
+    "count": 165,
+    "columns": [
+      {
+        "Field": "bom_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "bom_code",
+        "Type": "varchar(40)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "parent_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "component_item_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "component_name",
+        "Type": "varchar(150)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "component_category",
+        "Type": "varchar(80)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "specification",
+        "Type": "varchar(500)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "quantity_per_unit",
+        "Type": "decimal(12,3)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "uom",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "scrap_factor_percent",
+        "Type": "decimal(5,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "production_stage",
+        "Type": "enum('Stator Assembly','Rotor Assembly','Final Motor Assembly','Testing','Packing')",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "effective_from",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": "curdate()",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "effective_to",
+        "Type": "date",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "enum('Active','Inactive')",
+        "Null": "NO",
+        "Key": "",
+        "Default": "Active",
+        "Extra": ""
+      },
+      {
+        "Field": "remarks",
+        "Type": "varchar(1000)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "chart_of_accounts": {
+    "count": 27,
+    "columns": [
+      {
+        "Field": "account_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "account_code",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "account_name",
+        "Type": "varchar(150)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "account_type",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "account_sub_type",
+        "Type": "varchar(80)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "parent_account_id",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "normal_balance",
+        "Type": "varchar(10)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "opening_balance",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "current_balance",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "Active",
+        "Extra": ""
+      },
+      {
+        "Field": "description",
+        "Type": "varchar(500)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "updated_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "tax_master": {
+    "count": 8,
+    "columns": [
+      {
+        "Field": "tax_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "tax_code",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "tax_name",
+        "Type": "varchar(150)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "tax_type",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "tax_rate",
+        "Type": "decimal(5,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "applicable_on",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "Active",
+        "Extra": ""
+      },
+      {
+        "Field": "description",
+        "Type": "varchar(500)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "updated_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "bank_master": {
+    "count": 4,
+    "columns": [
+      {
+        "Field": "bank_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "bank_account_code",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "bank_name",
+        "Type": "varchar(150)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "branch_name",
+        "Type": "varchar(150)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "account_number",
+        "Type": "varchar(80)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "ifsc_code",
+        "Type": "varchar(20)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "account_type",
+        "Type": "varchar(50)",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "opening_balance",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "current_balance",
+        "Type": "decimal(18,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "0.00",
+        "Extra": ""
+      },
+      {
+        "Field": "linked_account_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Active",
+        "Extra": ""
+      },
+      {
+        "Field": "created_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "updated_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "financial_period": {
+    "count": 24,
+    "columns": [
+      {
+        "Field": "period_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+      },
+      {
+        "Field": "period_code",
+        "Type": "varchar(50)",
+        "Null": "NO",
+        "Key": "UNI",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "financial_year",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "period_name",
+        "Type": "varchar(100)",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "start_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "end_date",
+        "Type": "date",
+        "Null": "NO",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "period_status",
+        "Type": "varchar(20)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "Open",
+        "Extra": ""
+      },
+      {
+        "Field": "created_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "updated_by",
+        "Type": "int",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+      },
+      {
+        "Field": "created_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED"
+      },
+      {
+        "Field": "updated_at",
+        "Type": "timestamp",
+        "Null": "NO",
+        "Key": "",
+        "Default": "CURRENT_TIMESTAMP",
+        "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  "_statuses": {
+    "purchase_requisition.status": [
+      {
+        "value": "Approved",
+        "count": 2596
+      },
+      {
+        "value": "Converted to PO",
+        "count": 398
+      },
+      {
+        "value": "Submitted",
+        "count": 7
+      },
+      {
+        "value": "Rejected",
+        "count": 3
+      }
+    ],
+    "purchase_requisition_items.status": [
+      {
+        "value": "Converted to PO",
+        "count": 5925
+      },
+      {
+        "value": "Approved",
+        "count": 43
+      },
+      {
+        "value": "Pending",
+        "count": 27
+      },
+      {
+        "value": "Rejected",
+        "count": 9
+      }
+    ],
+    "purchase_order.po_status": [
+      {
+        "value": "Issued",
+        "count": 2279
+      },
+      {
+        "value": "Partially Received",
+        "count": 74
+      },
+      {
+        "value": "Fully Received",
+        "count": 72
+      },
+      {
+        "value": "Closed",
+        "count": 38
+      },
+      {
+        "value": "Cancelled",
+        "count": 35
+      },
+      {
+        "value": "Draft",
+        "count": 6
+      }
+    ],
+    "purchase_order.approval_status": [
+      {
+        "value": "Approved",
+        "count": 2445
+      },
+      {
+        "value": "Pending",
+        "count": 59
+      }
+    ],
+    "purchase_order_items.line_status": [
+      {
+        "value": "Fully Received",
+        "count": 4474
+      },
+      {
+        "value": "Ordered",
+        "count": 304
+      },
+      {
+        "value": "Closed",
+        "count": 116
+      },
+      {
+        "value": "Cancelled",
+        "count": 110
+      }
+    ],
+    "goods_receipt.inspection_required": [
+      {
+        "value": "Yes",
+        "count": 2481
+      },
+      {
+        "value": "No",
+        "count": 73
+      }
+    ],
+    "goods_receipt.grn_status": [
+      {
+        "value": "Accepted",
+        "count": 2362
+      },
+      {
+        "value": "Partially Accepted",
+        "count": 116
+      },
+      {
+        "value": "Under Inspection",
+        "count": 50
+      },
+      {
+        "value": "Received",
+        "count": 10
+      },
+      {
+        "value": "Closed",
+        "count": 9
+      },
+      {
+        "value": "Rejected",
+        "count": 5
+      },
+      {
+        "value": "Draft",
+        "count": 2
+      }
+    ],
+    "goods_receipt_items.quality_status": [
+      {
+        "value": "Accepted",
+        "count": 4333
+      },
+      {
+        "value": "Pending Inspection",
+        "count": 100
+      },
+      {
+        "value": "Partially Accepted",
+        "count": 66
+      },
+      {
+        "value": "Rejected",
+        "count": 4
+      }
+    ],
+    "inventory_balance.status": [
+      {
+        "value": "Data Issue - Over Issued",
+        "count": 46
+      },
+      {
+        "value": "Below Reorder",
+        "count": 40
+      },
+      {
+        "value": "Active",
+        "count": 23
+      }
+    ],
+    "move_order.status": [
+      {
+        "value": "Completed",
+        "count": 82
+      },
+      {
+        "value": "Approved",
+        "count": 38
+      },
+      {
+        "value": "In Transit",
+        "count": 38
+      },
+      {
+        "value": "Draft",
+        "count": 37
+      },
+      {
+        "value": "Rejected",
+        "count": 37
+      },
+      {
+        "value": "Requested",
+        "count": 37
+      },
+      {
+        "value": "Cancelled",
+        "count": 37
+      }
+    ],
+    "production_order.production_status": [
+      {
+        "value": "Completed",
+        "count": 76
+      },
+      {
+        "value": "In Progress",
+        "count": 38
+      },
+      {
+        "value": "Released",
+        "count": 38
+      },
+      {
+        "value": "Partially Completed",
+        "count": 38
+      },
+      {
+        "value": "Cancelled",
+        "count": 37
+      },
+      {
+        "value": "Planned",
+        "count": 37
+      },
+      {
+        "value": "On Hold",
+        "count": 37
+      }
+    ],
+    "production_order_items.line_status": [
+      {
+        "value": "Completed",
+        "count": 76
+      },
+      {
+        "value": "Planned",
+        "count": 74
+      },
+      {
+        "value": "On Hold",
+        "count": 74
+      },
+      {
+        "value": "In Progress",
+        "count": 39
+      },
+      {
+        "value": "Partially Completed",
+        "count": 37
+      },
+      {
+        "value": "Rejected",
+        "count": 1
+      }
+    ],
+    "bom_consumption.transaction_status": [
+      {
+        "value": "Planned",
+        "count": 710
+      },
+      {
+        "value": "Issued",
+        "count": 631
+      },
+      {
+        "value": "Consumed",
+        "count": 501
+      },
+      {
+        "value": "Returned",
+        "count": 378
+      },
+      {
+        "value": "Partially Consumed",
+        "count": 313
+      },
+      {
+        "value": "Closed",
+        "count": 83
+      }
+    ],
+    "finished_goods_receipt.inspection_status": [
+      {
+        "value": "Accepted",
+        "count": 86
+      },
+      {
+        "value": "Pending Inspection",
+        "count": 85
+      },
+      {
+        "value": "Partially Accepted",
+        "count": 85
+      },
+      {
+        "value": "Rejected",
+        "count": 84
+      }
+    ],
+    "customer_order.status": [
+      {
+        "value": "Confirmed",
+        "count": 2710
+      },
+      {
+        "value": "Closed",
+        "count": 180
+      },
+      {
+        "value": "Dispatched",
+        "count": 75
+      },
+      {
+        "value": "Partially Dispatched",
+        "count": 30
+      },
+      {
+        "value": "Cancelled",
+        "count": 6
+      }
+    ],
+    "dispatch.status": [
+      {
+        "value": "Delivered",
+        "count": 1750
+      },
+      {
+        "value": "In Transit",
+        "count": 500
+      },
+      {
+        "value": "Partially Delivered",
+        "count": 242
+      },
+      {
+        "value": "Cancelled",
+        "count": 5
+      },
+      {
+        "value": "Returned",
+        "count": 3
+      },
+      {
+        "value": "Dispatched",
+        "count": 2
+      }
+    ],
+    "vendor_invoice.invoice_status": [
+      {
+        "value": "Partially Paid",
+        "count": 3201
+      },
+      {
+        "value": "Paid",
+        "count": 800
+      },
+      {
+        "value": "Draft",
+        "count": 334
+      },
+      {
+        "value": "Approved",
+        "count": 333
+      },
+      {
+        "value": "Cancelled",
+        "count": 333
+      }
+    ],
+    "vendor_payment.payment_status": [
+      {
+        "value": "Posted",
+        "count": 4001
+      }
+    ],
+    "customer_invoice.invoice_status": [
+      {
+        "value": "Partially Received",
+        "count": 3041
+      },
+      {
+        "value": "Received",
+        "count": 760
+      },
+      {
+        "value": "Cancelled",
+        "count": 234
+      },
+      {
+        "value": "Approved",
+        "count": 233
+      },
+      {
+        "value": "Draft",
+        "count": 233
+      }
+    ],
+    "customer_receipt.receipt_status": [
+      {
+        "value": "Posted",
+        "count": 3801
+      }
+    ],
+    "journal_entry.journal_status": [
+      {
+        "value": "Posted",
+        "count": 17309
+      }
+    ],
+    "user_account.role": [
+      {
+        "value": "DEPARTMENT_USER",
+        "count": 6
+      },
+      {
+        "value": "SECTION_HEAD",
+        "count": 6
+      }
+    ],
+    "employee_master.role": [
+      {
+        "value": "Department Area Head",
+        "count": 6
+      },
+      {
+        "value": "Department Section Head",
+        "count": 5
+      },
+      {
+        "value": "Deaprtment Section Head",
+        "count": 1
+      },
+      {
+        "value": "Section Head / Full Access",
+        "count": 1
+      }
+    ],
+    "employee_master.status": [
+      {
+        "value": null,
+        "count": 11
+      },
+      {
+        "value": "Active",
+        "count": 2
+      }
+    ],
+    "department_master.status": [
+      {
+        "value": "Active",
+        "count": 6
+      }
+    ],
+    "item_master.status": [
+      {
+        "value": "Active",
+        "count": 108
+      }
+    ],
+    "bom_master.status": [
+      {
+        "value": "Active",
+        "count": 165
+      }
+    ],
+    "chart_of_accounts.status": [
+      {
+        "value": "Active",
+        "count": 27
+      }
+    ],
+    "tax_master.status": [
+      {
+        "value": "Active",
+        "count": 8
+      }
+    ],
+    "bank_master.status": [
+      {
+        "value": "Active",
+        "count": 4
+      }
+    ],
+    "financial_period.period_status": [
+      {
+        "value": "Open",
+        "count": 24
+      }
+    ]
+  },
+  "_foreign_keys": [
+    {
+      "TABLE_NAME": "bank_master",
+      "COLUMN_NAME": "created_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "bank_master",
+      "COLUMN_NAME": "linked_account_id",
+      "REFERENCED_TABLE_NAME": "chart_of_accounts",
+      "REFERENCED_COLUMN_NAME": "account_id"
+    },
+    {
+      "TABLE_NAME": "bank_master",
+      "COLUMN_NAME": "updated_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "bom_consumption",
+      "COLUMN_NAME": "consumed_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "bom_consumption",
+      "COLUMN_NAME": "consumed_item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "bom_consumption",
+      "COLUMN_NAME": "finished_item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "bom_consumption",
+      "COLUMN_NAME": "production_order_item_id",
+      "REFERENCED_TABLE_NAME": "production_order_items",
+      "REFERENCED_COLUMN_NAME": "production_order_item_id"
+    },
+    {
+      "TABLE_NAME": "bom_master",
+      "COLUMN_NAME": "component_item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "bom_master",
+      "COLUMN_NAME": "parent_item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "chart_of_accounts",
+      "COLUMN_NAME": "created_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "chart_of_accounts",
+      "COLUMN_NAME": "parent_account_id",
+      "REFERENCED_TABLE_NAME": "chart_of_accounts",
+      "REFERENCED_COLUMN_NAME": "account_id"
+    },
+    {
+      "TABLE_NAME": "chart_of_accounts",
+      "COLUMN_NAME": "updated_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "customer_invoice",
+      "COLUMN_NAME": "created_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "customer_invoice",
+      "COLUMN_NAME": "customer_id",
+      "REFERENCED_TABLE_NAME": "customer_master",
+      "REFERENCED_COLUMN_NAME": "customer_id"
+    },
+    {
+      "TABLE_NAME": "customer_invoice",
+      "COLUMN_NAME": "customer_order_id",
+      "REFERENCED_TABLE_NAME": "customer_order",
+      "REFERENCED_COLUMN_NAME": "co_id"
+    },
+    {
+      "TABLE_NAME": "customer_invoice",
+      "COLUMN_NAME": "dispatch_id",
+      "REFERENCED_TABLE_NAME": "dispatch",
+      "REFERENCED_COLUMN_NAME": "dispatch_id"
+    },
+    {
+      "TABLE_NAME": "customer_invoice",
+      "COLUMN_NAME": "updated_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "customer_invoice_items",
+      "COLUMN_NAME": "customer_invoice_id",
+      "REFERENCED_TABLE_NAME": "customer_invoice",
+      "REFERENCED_COLUMN_NAME": "customer_invoice_id"
+    },
+    {
+      "TABLE_NAME": "customer_invoice_items",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "customer_invoice_items",
+      "COLUMN_NAME": "tax_id",
+      "REFERENCED_TABLE_NAME": "tax_master",
+      "REFERENCED_COLUMN_NAME": "tax_id"
+    },
+    {
+      "TABLE_NAME": "customer_order",
+      "COLUMN_NAME": "customer_id",
+      "REFERENCED_TABLE_NAME": "customer_master",
+      "REFERENCED_COLUMN_NAME": "customer_id"
+    },
+    {
+      "TABLE_NAME": "customer_order_items",
+      "COLUMN_NAME": "co_id",
+      "REFERENCED_TABLE_NAME": "customer_order",
+      "REFERENCED_COLUMN_NAME": "co_id"
+    },
+    {
+      "TABLE_NAME": "customer_order_items",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "customer_receipt",
+      "COLUMN_NAME": "bank_id",
+      "REFERENCED_TABLE_NAME": "bank_master",
+      "REFERENCED_COLUMN_NAME": "bank_id"
+    },
+    {
+      "TABLE_NAME": "customer_receipt",
+      "COLUMN_NAME": "created_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "customer_receipt",
+      "COLUMN_NAME": "customer_id",
+      "REFERENCED_TABLE_NAME": "customer_master",
+      "REFERENCED_COLUMN_NAME": "customer_id"
+    },
+    {
+      "TABLE_NAME": "customer_receipt",
+      "COLUMN_NAME": "customer_invoice_id",
+      "REFERENCED_TABLE_NAME": "customer_invoice",
+      "REFERENCED_COLUMN_NAME": "customer_invoice_id"
+    },
+    {
+      "TABLE_NAME": "customer_receipt",
+      "COLUMN_NAME": "updated_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "dispatch",
+      "COLUMN_NAME": "co_id",
+      "REFERENCED_TABLE_NAME": "customer_order",
+      "REFERENCED_COLUMN_NAME": "co_id"
+    },
+    {
+      "TABLE_NAME": "dispatch",
+      "COLUMN_NAME": "customer_id",
+      "REFERENCED_TABLE_NAME": "customer_master",
+      "REFERENCED_COLUMN_NAME": "customer_id"
+    },
+    {
+      "TABLE_NAME": "dispatch",
+      "COLUMN_NAME": "dispatched_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "dispatch_items",
+      "COLUMN_NAME": "co_item_id",
+      "REFERENCED_TABLE_NAME": "customer_order_items",
+      "REFERENCED_COLUMN_NAME": "co_item_id"
+    },
+    {
+      "TABLE_NAME": "dispatch_items",
+      "COLUMN_NAME": "dispatch_id",
+      "REFERENCED_TABLE_NAME": "dispatch",
+      "REFERENCED_COLUMN_NAME": "dispatch_id"
+    },
+    {
+      "TABLE_NAME": "dispatch_items",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "employee_master",
+      "COLUMN_NAME": "department_id",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "financial_period",
+      "COLUMN_NAME": "created_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "financial_period",
+      "COLUMN_NAME": "updated_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt",
+      "COLUMN_NAME": "finished_item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt",
+      "COLUMN_NAME": "production_order_id",
+      "REFERENCED_TABLE_NAME": "production_order",
+      "REFERENCED_COLUMN_NAME": "production_order_id"
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt",
+      "COLUMN_NAME": "production_order_item_id",
+      "REFERENCED_TABLE_NAME": "production_order_items",
+      "REFERENCED_COLUMN_NAME": "production_order_item_id"
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt",
+      "COLUMN_NAME": "received_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "goods_receipt",
+      "COLUMN_NAME": "po_id",
+      "REFERENCED_TABLE_NAME": "purchase_order",
+      "REFERENCED_COLUMN_NAME": "po_id"
+    },
+    {
+      "TABLE_NAME": "goods_receipt",
+      "COLUMN_NAME": "received_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "goods_receipt",
+      "COLUMN_NAME": "vendor_id",
+      "REFERENCED_TABLE_NAME": "vendor_master",
+      "REFERENCED_COLUMN_NAME": "vendor_id"
+    },
+    {
+      "TABLE_NAME": "goods_receipt_items",
+      "COLUMN_NAME": "grn_id",
+      "REFERENCED_TABLE_NAME": "goods_receipt",
+      "REFERENCED_COLUMN_NAME": "grn_id"
+    },
+    {
+      "TABLE_NAME": "goods_receipt_items",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "goods_receipt_items",
+      "COLUMN_NAME": "po_item_id",
+      "REFERENCED_TABLE_NAME": "purchase_order_items",
+      "REFERENCED_COLUMN_NAME": "po_item_id"
+    },
+    {
+      "TABLE_NAME": "inventory_balance",
+      "COLUMN_NAME": "department_id",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "inventory_balance",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "inventory_transactions",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "inventory_transactions",
+      "COLUMN_NAME": "performed_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "item_master",
+      "COLUMN_NAME": "default_vendor_id",
+      "REFERENCED_TABLE_NAME": "vendor_master",
+      "REFERENCED_COLUMN_NAME": "vendor_id"
+    },
+    {
+      "TABLE_NAME": "journal_entry",
+      "COLUMN_NAME": "created_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "journal_entry",
+      "COLUMN_NAME": "period_id",
+      "REFERENCED_TABLE_NAME": "financial_period",
+      "REFERENCED_COLUMN_NAME": "period_id"
+    },
+    {
+      "TABLE_NAME": "journal_entry",
+      "COLUMN_NAME": "updated_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "journal_entry_lines",
+      "COLUMN_NAME": "account_id",
+      "REFERENCED_TABLE_NAME": "chart_of_accounts",
+      "REFERENCED_COLUMN_NAME": "account_id"
+    },
+    {
+      "TABLE_NAME": "journal_entry_lines",
+      "COLUMN_NAME": "journal_entry_id",
+      "REFERENCED_TABLE_NAME": "journal_entry",
+      "REFERENCED_COLUMN_NAME": "journal_entry_id"
+    },
+    {
+      "TABLE_NAME": "move_order",
+      "COLUMN_NAME": "approved_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "move_order",
+      "COLUMN_NAME": "from_department_id",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "move_order",
+      "COLUMN_NAME": "issued_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "move_order",
+      "COLUMN_NAME": "received_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "move_order",
+      "COLUMN_NAME": "requested_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "move_order",
+      "COLUMN_NAME": "requested_by_department",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "move_order",
+      "COLUMN_NAME": "to_department_id",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "move_order_items",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "move_order_items",
+      "COLUMN_NAME": "mo_id",
+      "REFERENCED_TABLE_NAME": "move_order",
+      "REFERENCED_COLUMN_NAME": "mo_id"
+    },
+    {
+      "TABLE_NAME": "move_orders",
+      "COLUMN_NAME": "approved_by_employee_id",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "move_orders",
+      "COLUMN_NAME": "from_department_id",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "move_orders",
+      "COLUMN_NAME": "issued_by_employee_id",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "move_orders",
+      "COLUMN_NAME": "received_by_employee_id",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "move_orders",
+      "COLUMN_NAME": "requested_by_employee_id",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "move_orders",
+      "COLUMN_NAME": "to_department_id",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "production_consumption",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "production_consumption",
+      "COLUMN_NAME": "mo_id",
+      "REFERENCED_TABLE_NAME": "move_order",
+      "REFERENCED_COLUMN_NAME": "mo_id"
+    },
+    {
+      "TABLE_NAME": "production_consumption",
+      "COLUMN_NAME": "production_id",
+      "REFERENCED_TABLE_NAME": "production_entry",
+      "REFERENCED_COLUMN_NAME": "production_id"
+    },
+    {
+      "TABLE_NAME": "production_entry",
+      "COLUMN_NAME": "department_id",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "production_entry",
+      "COLUMN_NAME": "mo_id",
+      "REFERENCED_TABLE_NAME": "move_order",
+      "REFERENCED_COLUMN_NAME": "mo_id"
+    },
+    {
+      "TABLE_NAME": "production_entry",
+      "COLUMN_NAME": "produced_item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "production_entry",
+      "COLUMN_NAME": "supervisor_id",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "production_order",
+      "COLUMN_NAME": "approved_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "production_order",
+      "COLUMN_NAME": "created_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "production_order",
+      "COLUMN_NAME": "customer_order_id",
+      "REFERENCED_TABLE_NAME": "customer_order",
+      "REFERENCED_COLUMN_NAME": "co_id"
+    },
+    {
+      "TABLE_NAME": "production_order",
+      "COLUMN_NAME": "department_id",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "production_order",
+      "COLUMN_NAME": "finished_item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "production_order_items",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "production_order_items",
+      "COLUMN_NAME": "production_order_id",
+      "REFERENCED_TABLE_NAME": "production_order",
+      "REFERENCED_COLUMN_NAME": "production_order_id"
+    },
+    {
+      "TABLE_NAME": "purchase_order",
+      "COLUMN_NAME": "approved_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "purchase_order",
+      "COLUMN_NAME": "department_id",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "purchase_order",
+      "COLUMN_NAME": "pr_id",
+      "REFERENCED_TABLE_NAME": "purchase_requisition",
+      "REFERENCED_COLUMN_NAME": "pr_id"
+    },
+    {
+      "TABLE_NAME": "purchase_order",
+      "COLUMN_NAME": "vendor_id",
+      "REFERENCED_TABLE_NAME": "vendor_master",
+      "REFERENCED_COLUMN_NAME": "vendor_id"
+    },
+    {
+      "TABLE_NAME": "purchase_order_items",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "purchase_order_items",
+      "COLUMN_NAME": "po_id",
+      "REFERENCED_TABLE_NAME": "purchase_order",
+      "REFERENCED_COLUMN_NAME": "po_id"
+    },
+    {
+      "TABLE_NAME": "purchase_order_items",
+      "COLUMN_NAME": "pr_item_id",
+      "REFERENCED_TABLE_NAME": "purchase_requisition_items",
+      "REFERENCED_COLUMN_NAME": "pr_item_id"
+    },
+    {
+      "TABLE_NAME": "purchase_requisition",
+      "COLUMN_NAME": "approved_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "purchase_requisition",
+      "COLUMN_NAME": "department_id",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "purchase_requisition",
+      "COLUMN_NAME": "requested_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "purchase_requisition_items",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "purchase_requisition_items",
+      "COLUMN_NAME": "pr_id",
+      "REFERENCED_TABLE_NAME": "purchase_requisition",
+      "REFERENCED_COLUMN_NAME": "pr_id"
+    },
+    {
+      "TABLE_NAME": "stock_transaction_log",
+      "COLUMN_NAME": "created_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "stock_transaction_log",
+      "COLUMN_NAME": "department_id",
+      "REFERENCED_TABLE_NAME": "department_master",
+      "REFERENCED_COLUMN_NAME": "department_id"
+    },
+    {
+      "TABLE_NAME": "stock_transaction_log",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "tax_master",
+      "COLUMN_NAME": "created_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "tax_master",
+      "COLUMN_NAME": "updated_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "user_account",
+      "COLUMN_NAME": "employee_id",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "vendor_invoice",
+      "COLUMN_NAME": "created_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "vendor_invoice",
+      "COLUMN_NAME": "grn_id",
+      "REFERENCED_TABLE_NAME": "goods_receipt",
+      "REFERENCED_COLUMN_NAME": "grn_id"
+    },
+    {
+      "TABLE_NAME": "vendor_invoice",
+      "COLUMN_NAME": "po_id",
+      "REFERENCED_TABLE_NAME": "purchase_order",
+      "REFERENCED_COLUMN_NAME": "po_id"
+    },
+    {
+      "TABLE_NAME": "vendor_invoice",
+      "COLUMN_NAME": "updated_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "vendor_invoice",
+      "COLUMN_NAME": "vendor_id",
+      "REFERENCED_TABLE_NAME": "vendor_master",
+      "REFERENCED_COLUMN_NAME": "vendor_id"
+    },
+    {
+      "TABLE_NAME": "vendor_invoice_items",
+      "COLUMN_NAME": "item_id",
+      "REFERENCED_TABLE_NAME": "item_master",
+      "REFERENCED_COLUMN_NAME": "item_id"
+    },
+    {
+      "TABLE_NAME": "vendor_invoice_items",
+      "COLUMN_NAME": "tax_id",
+      "REFERENCED_TABLE_NAME": "tax_master",
+      "REFERENCED_COLUMN_NAME": "tax_id"
+    },
+    {
+      "TABLE_NAME": "vendor_invoice_items",
+      "COLUMN_NAME": "vendor_invoice_id",
+      "REFERENCED_TABLE_NAME": "vendor_invoice",
+      "REFERENCED_COLUMN_NAME": "vendor_invoice_id"
+    },
+    {
+      "TABLE_NAME": "vendor_payment",
+      "COLUMN_NAME": "bank_id",
+      "REFERENCED_TABLE_NAME": "bank_master",
+      "REFERENCED_COLUMN_NAME": "bank_id"
+    },
+    {
+      "TABLE_NAME": "vendor_payment",
+      "COLUMN_NAME": "created_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "vendor_payment",
+      "COLUMN_NAME": "updated_by",
+      "REFERENCED_TABLE_NAME": "employee_master",
+      "REFERENCED_COLUMN_NAME": "employee_id"
+    },
+    {
+      "TABLE_NAME": "vendor_payment",
+      "COLUMN_NAME": "vendor_id",
+      "REFERENCED_TABLE_NAME": "vendor_master",
+      "REFERENCED_COLUMN_NAME": "vendor_id"
+    },
+    {
+      "TABLE_NAME": "vendor_payment",
+      "COLUMN_NAME": "vendor_invoice_id",
+      "REFERENCED_TABLE_NAME": "vendor_invoice",
+      "REFERENCED_COLUMN_NAME": "vendor_invoice_id"
+    }
+  ],
+  "_generated_columns": [
+    {
+      "TABLE_NAME": "bank_master",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bank_master",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_consumption",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_consumption",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_consumption_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_consumption_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_consumption_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_consumption_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_consumption_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_consumption_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master",
+      "COLUMN_NAME": "effective_from",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084444",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084444",
+      "COLUMN_NAME": "effective_from",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084444",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "effective_from",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "effective_from",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "effective_from",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "bom_master_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "chart_of_accounts",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "chart_of_accounts",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "customer_invoice",
+      "COLUMN_NAME": "balance_amount",
+      "GENERATION_EXPRESSION": "round((`total_amount` - `received_amount`),2)"
+    },
+    {
+      "TABLE_NAME": "customer_invoice",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "customer_invoice",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "customer_invoice_items",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "customer_invoice_items",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "customer_receipt",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "customer_receipt",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "financial_period",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "financial_period",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "finished_goods_receipt_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "goods_receipt",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "goods_receipt",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "goods_receipt_items",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "goods_receipt_items",
+      "COLUMN_NAME": "line_value",
+      "GENERATION_EXPRESSION": "round((`accepted_quantity` * `unit_price`),2)"
+    },
+    {
+      "TABLE_NAME": "goods_receipt_items",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "import_errors",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "import_history",
+      "COLUMN_NAME": "import_date",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "inventory_transactions",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "inventory_transactions",
+      "COLUMN_NAME": "transaction_value",
+      "GENERATION_EXPRESSION": "round(((case when (`quantity_in` > 0) then `quantity_in` else `quantity_out` end) * `unit_cost`),2)"
+    },
+    {
+      "TABLE_NAME": "inventory_transactions",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "journal_entry",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "journal_entry",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "journal_entry_lines",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "journal_entry_lines",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "move_order_items",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "move_order_items",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "move_order_items_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "move_order_items_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "move_order_items_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "move_order_items_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "move_order_items_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "move_order_items_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "move_orders",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "move_orders",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_business_repair_backup_20260708084444",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_business_repair_backup_20260708084444",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_items",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_items",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_items_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_items_business_repair_backup_20260708084459",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_items_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_items_business_repair_backup_20260708084544",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_items_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "production_order_items_business_repair_backup_20260708084652",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "purchase_order",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "purchase_order",
+      "COLUMN_NAME": "total_po_amount",
+      "GENERATION_EXPRESSION": "round((((`subtotal_amount` + `tax_amount`) + `freight_charges`) - `discount_amount`),2)"
+    },
+    {
+      "TABLE_NAME": "purchase_order",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "purchase_order_items",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "purchase_order_items",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "purchase_requisition_items",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "purchase_requisition_items",
+      "COLUMN_NAME": "estimated_total_cost",
+      "GENERATION_EXPRESSION": "round((`requested_quantity` * `estimated_unit_cost`),2)"
+    },
+    {
+      "TABLE_NAME": "purchase_requisition_items",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "tax_master",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "tax_master",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "user_account",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "user_account",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "vendor_invoice",
+      "COLUMN_NAME": "balance_amount",
+      "GENERATION_EXPRESSION": "round((`total_amount` - `paid_amount`),2)"
+    },
+    {
+      "TABLE_NAME": "vendor_invoice",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "vendor_invoice",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "vendor_invoice_items",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "vendor_invoice_items",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "vendor_payment",
+      "COLUMN_NAME": "created_at",
+      "GENERATION_EXPRESSION": ""
+    },
+    {
+      "TABLE_NAME": "vendor_payment",
+      "COLUMN_NAME": "updated_at",
+      "GENERATION_EXPRESSION": ""
+    }
+  ]
+}

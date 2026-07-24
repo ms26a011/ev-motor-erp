@@ -1,0 +1,306 @@
+mo_item_id,mo_id,item_id,requested_quantity,issued_quantity,uom,unit_cost,line_amount,source_location,destination_location,required_date,movement_date,remarks
+2,2,24,26.000,26.000,No,220.00,5720.00,Maintenance Spares Cage,Assembly Maintenance Bay,2026-06-04,2026-06-02,Maintenance spare issue for Bearing 6205-2RS against MO202606020001.
+3,3,3,135.000,135.000,No,6200.00,837000.00,Stator Winding Line 1,Assembly Quality Gate,2026-06-05,2026-06-03,Quality inspection sample for Stator Core 7.5 kW against MO202606030001.
+4,4,100,8.000,8.000,No,18500.00,148000.00,Final Assembly Line 1,Finished Goods Warehouse - EV Motor Zone,2026-06-08,2026-06-04,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202606040001.
+5,5,101,10.000,10.000,No,36500.00,365000.00,Finished Goods Warehouse - EV Motor Zone,Dispatch Staging Dock 1,2026-06-06,2026-06-05,Dispatch staging movement for PMSM Motor 3 kW against MO202606050001.
+6,6,65,163.000,163.000,No,12.00,1956.00,Stator Buffer Area,Rotor Assembly Feed Bay,2026-06-08,2026-06-06,Assembly transfer for Hex Bolt M835 against MO202606060001.
+7,7,5,271.000,271.000,No,2200.00,596200.00,Assembly Line Surplus Bin,Raw Material Warehouse - Copper Rack A,2026-06-10,2026-06-07,Return or scrap segregation for Rotor Core 3 kW against MO202606070001.
+8,8,5,305.000,305.000,No,2200.00,671000.00,Raw Material Warehouse - Lamination Bay,Core Stacking Line,2026-06-11,2026-06-08,Production issue for Rotor Core 3 kW against MO202606080001.
+9,9,68,241.000,241.000,No,6.00,1446.00,Tool Crib - Calibration Shelf,Preventive Maintenance Bay,2026-06-10,2026-06-09,Maintenance spare issue for Hex Nut M8 against MO202606090001.
+10,10,39,176.000,176.000,No,45.00,7920.00,Core Stacking Line,Incoming Quality Bay,2026-06-12,2026-06-10,Quality inspection sample for Hall Sensor against MO202606100001.
+11,11,101,22.000,22.000,No,36500.00,803000.00,Final Assembly Line 2,Finished Goods Warehouse - Premium Motor Aisle,2026-06-13,2026-06-11,Finished goods receipt movement for PMSM Motor 3 kW against MO202606110001.
+12,12,102,24.000,24.000,No,82000.00,1968000.00,Finished Goods Warehouse - Premium Motor Aisle,Dispatch Staging Dock 2,2026-06-16,2026-06-12,Dispatch staging movement for PMSM Motor 7.5 kW against MO202606120001.
+13,13,72,345.000,345.000,No,0.80,276.00,Winding Line Transfer Rack,Rotor Balancing Cell,2026-06-14,2026-06-13,Assembly transfer for Spring Washer M5 against MO202606130001.
+14,14,65,371.000,371.000,No,12.00,4452.00,Winding Line Excess Material Trolley,Raw Material Warehouse - Fastener Rack,2026-06-16,2026-06-14,Return or scrap segregation for Hex Bolt M835 against MO202606140001.
+15,15,57,70.000,70.000,No,12.00,840.00,Raw Material Warehouse - Magnet Cage,Rotor Assembly Line 1,2026-06-18,2026-06-15,Production issue for Slot Liner 0.35 mm against MO202606150001.
+16,16,49,88.000,88.000,No,25.00,2200.00,Lubricants Store,Motor Test Maintenance Bay,2026-06-19,2026-06-16,Maintenance spare issue for Cable Gland PG9 against MO202606160001.
+17,17,95,106.000,106.000,No,3.00,318.00,Impregnation Oven Exit Area,Quality Inspection Bay 1,2026-06-18,2026-06-17,Quality inspection sample for QR Code Label against MO202606170001.
+18,18,102,36.000,36.000,No,82000.00,2952000.00,End of Line Test Area,Finished Goods Warehouse - Export Hold,2026-06-20,2026-06-18,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202606180001.
+19,19,100,38.000,38.000,No,18500.00,703000.00,Finished Goods Warehouse - Export Hold,Dispatch Staging Dock 3,2026-06-21,2026-06-19,Dispatch staging movement for BLDC Motor 1.5 kW against MO202606190001.
+20,20,36,160.000,160.000,No,180.00,28800.00,Core Stacking Output Rack,Assembly Supermarket,2026-06-24,2026-06-20,Assembly transfer for Terminal Block Heavy Duty against MO202606200001.
+21,21,31,79.000,79.000,kg,920.00,72680.00,Core Stacking Excess Rack,Raw Material Warehouse - Lamination Bay,2026-06-22,2026-06-21,Return or scrap segregation for Copper Wire 1.60 mm against MO202606210001.
+22,22,30,101.000,101.000,kg,880.00,88880.00,Electrical Store - Sleeve Bin,Harness Preparation Cell,2026-06-24,2026-06-22,Production issue for Copper Wire 1.20 mm against MO202606220001.
+23,23,24,32.000,32.000,No,220.00,7040.00,Safety Stock Room,Shutdown Maintenance Cage,2026-06-26,2026-06-23,Maintenance spare issue for Bearing 6205-2RS against MO202606230001.
+24,24,6,398.000,398.000,No,5000.00,1990000.00,Rotor Assembly Line 2,Quality Hold Area,2026-06-27,2026-06-24,Quality inspection sample for Rotor Core 7.5 kW against MO202606240001.
+25,25,100,50.000,50.000,No,18500.00,925000.00,Packing Line - Motor Cell,Finished Goods Warehouse - Dispatch Ready Bay,2026-06-26,2026-06-25,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202606250001.
+26,26,3,466.000,466.000,No,6200.00,2889200.00,Raw Material Warehouse - Copper Rack A,Stator Winding Line 1,2026-06-27,2026-06-26,Production issue for Stator Core 7.5 kW against MO202600000026.
+27,27,65,228.000,228.000,No,12.00,2736.00,Maintenance Spares Cage,Assembly Maintenance Bay,2026-06-29,2026-06-27,Maintenance spare issue for Hex Bolt M835 against MO202600000027.
+28,28,39,108.000,108.000,No,45.00,4860.00,Stator Winding Line 1,Assembly Quality Gate,2026-06-30,2026-06-28,Quality inspection sample for Hall Sensor against MO202600000028.
+29,29,101,8.000,8.000,No,36500.00,292000.00,Final Assembly Line 1,Finished Goods Warehouse - EV Motor Zone,2026-07-03,2026-06-29,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000029.
+30,30,102,10.000,10.000,No,82000.00,820000.00,Finished Goods Warehouse - EV Motor Zone,Dispatch Staging Dock 1,2026-07-01,2026-06-30,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000030.
+31,31,26,162.000,162.000,No,15.00,2430.00,Stator Buffer Area,Rotor Assembly Feed Bay,2026-07-03,2026-07-01,Assembly transfer for O-Ring Standard against MO202600000031.
+32,32,65,358.000,358.000,No,12.00,4296.00,Assembly Line Surplus Bin,Raw Material Warehouse - Copper Rack A,2026-07-05,2026-07-02,Return or scrap segregation for Hex Bolt M835 against MO202600000032.
+33,33,55,198.000,198.000,No,8.00,1584.00,Raw Material Warehouse - Lamination Bay,Core Stacking Line,2026-07-06,2026-07-03,Production issue for Slot Liner 0.25 mm against MO202600000033.
+34,34,85,27063.000,27063.000,g,1.80,48713.40,Tool Crib - Calibration Shelf,Preventive Maintenance Bay,2026-07-05,2026-07-04,Maintenance spare issue for Solder Wire against MO202600000034.
+35,35,95,38.000,38.000,No,3.00,114.00,Core Stacking Line,Incoming Quality Bay,2026-07-07,2026-07-05,Quality inspection sample for QR Code Label against MO202600000035.
+36,36,102,22.000,22.000,No,82000.00,1804000.00,Final Assembly Line 2,Finished Goods Warehouse - Premium Motor Aisle,2026-07-08,2026-07-06,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000036.
+37,37,100,24.000,24.000,No,18500.00,444000.00,Finished Goods Warehouse - Premium Motor Aisle,Dispatch Staging Dock 2,2026-07-11,2026-07-07,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000037.
+38,38,64,33.000,33.000,No,5.00,165.00,Winding Line Transfer Rack,Rotor Balancing Cell,2026-07-09,2026-07-08,Assembly transfer for Hex Bolt M625 against MO202600000038.
+39,39,31,93.000,93.000,kg,920.00,85560.00,Winding Line Excess Material Trolley,Raw Material Warehouse - Fastener Rack,2026-07-11,2026-07-09,Return or scrap segregation for Copper Wire 1.60 mm against MO202600000039.
+40,40,62,394.000,394.000,m,45.00,17730.00,Raw Material Warehouse - Magnet Cage,Rotor Assembly Line 1,2026-07-13,2026-07-10,Production issue for Heat Shrink Sleeve 12 mm against MO202600000040.
+41,41,53,146.000,146.000,No,3.00,438.00,Lubricants Store,Motor Test Maintenance Bay,2026-07-14,2026-07-11,Maintenance spare issue for Cable Tie 200 mm against MO202600000041.
+42,42,6,108.000,108.000,No,5000.00,540000.00,Impregnation Oven Exit Area,Quality Inspection Bay 1,2026-07-13,2026-07-12,Quality inspection sample for Rotor Core 7.5 kW against MO202600000042.
+43,43,100,36.000,36.000,No,18500.00,666000.00,End of Line Test Area,Finished Goods Warehouse - Export Hold,2026-07-15,2026-07-13,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000043.
+44,44,101,38.000,38.000,No,36500.00,1387000.00,Finished Goods Warehouse - Export Hold,Dispatch Staging Dock 3,2026-07-16,2026-07-14,Dispatch staging movement for PMSM Motor 3 kW against MO202600000044.
+45,45,71,215.000,215.000,No,2.50,537.50,Core Stacking Output Rack,Assembly Supermarket,2026-07-19,2026-07-15,Assembly transfer for Flat Washer M8 against MO202600000045.
+46,46,23,66.000,66.000,No,120.00,7920.00,Core Stacking Excess Rack,Raw Material Warehouse - Lamination Bay,2026-07-17,2026-07-16,Return or scrap segregation for Bearing 6202-2RS against MO202600000046.
+47,47,4,278.000,278.000,No,1200.00,333600.00,Electrical Store - Sleeve Bin,Harness Preparation Cell,2026-07-19,2026-07-17,Production issue for Rotor Core 1.5 kW against MO202600000047.
+48,48,65,293.000,293.000,No,12.00,3516.00,Safety Stock Room,Shutdown Maintenance Cage,2026-07-21,2026-07-18,Maintenance spare issue for Hex Bolt M835 against MO202600000048.
+49,49,42,94.000,94.000,No,3200.00,300800.00,Rotor Assembly Line 2,Quality Hold Area,2026-07-22,2026-07-19,Quality inspection sample for Resolver High Precision against MO202600000049.
+50,50,101,50.000,50.000,No,36500.00,1825000.00,Packing Line - Motor Cell,Finished Goods Warehouse - Dispatch Ready Bay,2026-07-21,2026-07-20,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000050.
+51,51,102,2.000,2.000,No,82000.00,164000.00,Finished Goods Warehouse - Dispatch Ready Bay,Export Packing Bay,2026-07-23,2026-07-21,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000051.
+52,52,35,148.000,148.000,No,90.00,13320.00,Rework Cell - Stator Bay,Rework Cell - Rotor Balancing,2026-07-24,2026-07-22,Assembly transfer for Terminal Block Standard against MO202600000052.
+53,53,83,12844.000,12844.000,g,0.60,7706.40,Final Assembly Changeover Trolley,Electrical Store - Connector Bin,2026-07-27,2026-07-23,Return or scrap segregation for Bearing Grease against MO202600000053.
+54,54,56,184.000,184.000,No,10.00,1840.00,Raw Material Warehouse - Fastener Rack,Assembly Line Feed Bay,2026-07-25,2026-07-24,Production issue for Slot Liner 0.30 mm against MO202600000054.
+55,55,85,14400.000,14400.000,g,1.80,25920.00,Electrical Store - Breaker Bin,Utility Repair Bench,2026-07-27,2026-07-25,Maintenance spare issue for Solder Wire against MO202600000055.
+56,56,2,133.000,133.000,No,2800.00,372400.00,Final Test Area,NVH Audit Bench,2026-07-29,2026-07-26,Quality inspection sample for Stator Core 3 kW against MO202600000056.
+57,57,102,14.000,14.000,No,82000.00,1148000.00,Quality Release Area,Finished Goods Warehouse - Audit Hold Rack,2026-07-30,2026-07-27,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000057.
+58,58,100,16.000,16.000,No,18500.00,296000.00,Finished Goods Warehouse - Customer Hold Rack,Customer Pickup Bay,2026-07-29,2026-07-28,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000058.
+59,59,16,78.000,78.000,No,1300.00,101400.00,Production Utility Panel Area,Line Support Store,2026-07-31,2026-07-29,Assembly transfer for Housing 1.5 kW against MO202600000059.
+60,60,4,269.000,269.000,No,1200.00,322800.00,Maintenance Return Counter,Maintenance Spares Cage,2026-08-01,2026-07-30,Return or scrap segregation for Rotor Core 1.5 kW against MO202600000060.
+61,61,29,195.000,195.000,kg,850.00,165750.00,Raw Material Warehouse - Copper Rack A,Stator Winding Line 1,2026-08-04,2026-07-31,Production issue for Copper Wire 1.00 mm against MO202600000061.
+62,62,53,132.000,132.000,No,3.00,396.00,Maintenance Spares Cage,Assembly Maintenance Bay,2026-08-02,2026-08-01,Maintenance spare issue for Cable Tie 200 mm against MO202600000062.
+63,63,12,150.000,150.000,No,1800.00,270000.00,Stator Winding Line 1,Assembly Quality Gate,2026-08-04,2026-08-02,Quality inspection sample for Motor Shaft EN24 against MO202600000063.
+64,64,100,28.000,28.000,No,18500.00,518000.00,Final Assembly Line 1,Finished Goods Warehouse - EV Motor Zone,2026-08-06,2026-08-03,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000064.
+65,65,101,30.000,30.000,No,36500.00,1095000.00,Finished Goods Warehouse - EV Motor Zone,Dispatch Staging Dock 1,2026-08-07,2026-08-04,Dispatch staging movement for PMSM Motor 3 kW against MO202600000065.
+66,66,28,8.000,8.000,No,110.00,880.00,Stator Buffer Area,Rotor Assembly Feed Bay,2026-08-06,2026-08-05,Assembly transfer for Oil Seal Heavy Duty against MO202600000066.
+67,67,64,306.000,306.000,No,5.00,1530.00,Assembly Line Surplus Bin,Raw Material Warehouse - Copper Rack A,2026-08-08,2026-08-06,Return or scrap segregation for Hex Bolt M625 against MO202600000067.
+68,68,5,90.000,90.000,No,2200.00,198000.00,Raw Material Warehouse - Lamination Bay,Core Stacking Line,2026-08-09,2026-08-07,Production issue for Rotor Core 3 kW against MO202600000068.
+69,69,65,358.000,358.000,No,12.00,4296.00,Tool Crib - Calibration Shelf,Preventive Maintenance Bay,2026-08-12,2026-08-08,Maintenance spare issue for Hex Bolt M835 against MO202600000069.
+70,70,94,80.000,80.000,No,35.00,2800.00,Core Stacking Line,Incoming Quality Bay,2026-08-10,2026-08-09,Quality inspection sample for Aluminium Nameplate against MO202600000070.
+71,71,101,42.000,42.000,No,36500.00,1533000.00,Final Assembly Line 2,Finished Goods Warehouse - Premium Motor Aisle,2026-08-12,2026-08-10,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000071.
+72,72,102,44.000,44.000,No,82000.00,3608000.00,Finished Goods Warehouse - Premium Motor Aisle,Dispatch Staging Dock 2,2026-08-14,2026-08-11,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000072.
+73,73,66,462.000,462.000,No,1.50,693.00,Winding Line Transfer Rack,Rotor Balancing Cell,2026-08-15,2026-08-12,Assembly transfer for Hex Nut M5 against MO202600000073.
+74,74,30,99.000,99.000,kg,880.00,87120.00,Winding Line Excess Material Trolley,Raw Material Warehouse - Fastener Rack,2026-08-14,2026-08-13,Return or scrap segregation for Copper Wire 1.20 mm against MO202600000074.
+75,75,57,170.000,170.000,No,12.00,2040.00,Raw Material Warehouse - Magnet Cage,Rotor Assembly Line 1,2026-08-16,2026-08-14,Production issue for Slot Liner 0.35 mm against MO202600000075.
+76,76,85,1737.000,1737.000,g,1.80,3126.60,Lubricants Store,Motor Test Maintenance Bay,2026-08-17,2026-08-15,Maintenance spare issue for Solder Wire against MO202600000076.
+77,77,5,396.000,396.000,No,2200.00,871200.00,Impregnation Oven Exit Area,Quality Inspection Bay 1,2026-08-20,2026-08-16,Quality inspection sample for Rotor Core 3 kW against MO202600000077.
+78,78,102,6.000,6.000,No,82000.00,492000.00,End of Line Test Area,Finished Goods Warehouse - Export Hold,2026-08-18,2026-08-17,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000078.
+79,79,100,8.000,8.000,No,18500.00,148000.00,Finished Goods Warehouse - Export Hold,Dispatch Staging Dock 3,2026-08-20,2026-08-18,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000079.
+80,80,73,163.000,163.000,No,1.20,195.60,Core Stacking Output Rack,Assembly Supermarket,2026-08-22,2026-08-19,Assembly transfer for Spring Washer M6 against MO202600000080.
+81,81,8,333.000,333.000,No,240.00,79920.00,Core Stacking Excess Rack,Raw Material Warehouse - Lamination Bay,2026-08-23,2026-08-20,Return or scrap segregation for NdFeB Magnet N45 against MO202600000081.
+82,82,30,84.000,84.000,kg,880.00,73920.00,Electrical Store - Sleeve Bin,Harness Preparation Cell,2026-08-22,2026-08-21,Production issue for Copper Wire 1.20 mm against MO202600000082.
+83,83,53,118.000,118.000,No,3.00,354.00,Safety Stock Room,Shutdown Maintenance Cage,2026-08-24,2026-08-22,Maintenance spare issue for Cable Tie 200 mm against MO202600000083.
+84,84,41,136.000,136.000,No,1400.00,190400.00,Rotor Assembly Line 2,Quality Hold Area,2026-08-25,2026-08-23,Quality inspection sample for Resolver / Encoder against MO202600000084.
+85,85,100,20.000,20.000,No,18500.00,370000.00,Packing Line - Motor Cell,Finished Goods Warehouse - Dispatch Ready Bay,2026-08-28,2026-08-24,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000085.
+86,86,101,22.000,22.000,No,36500.00,803000.00,Finished Goods Warehouse - Dispatch Ready Bay,Export Packing Bay,2026-08-26,2026-08-25,Dispatch staging movement for PMSM Motor 3 kW against MO202600000086.
+87,87,37,190.000,190.000,No,420.00,79800.00,Rework Cell - Stator Bay,Rework Cell - Rotor Balancing,2026-08-28,2026-08-26,Assembly transfer for Terminal Block Industrial against MO202600000087.
+88,88,81,11073.000,11073.000,g,1.20,13287.60,Final Assembly Changeover Trolley,Electrical Store - Connector Bin,2026-08-30,2026-08-27,Return or scrap segregation for Epoxy Adhesive against MO202600000088.
+89,89,6,353.000,353.000,No,5000.00,1765000.00,Raw Material Warehouse - Fastener Rack,Assembly Line Feed Bay,2026-08-31,2026-08-28,Production issue for Rotor Core 7.5 kW against MO202600000089.
+90,90,65,423.000,423.000,No,12.00,5076.00,Electrical Store - Breaker Bin,Utility Repair Bench,2026-08-30,2026-08-29,Maintenance spare issue for Hex Bolt M835 against MO202600000090.
+91,91,1,421.000,421.000,No,1800.00,757800.00,Final Test Area,NVH Audit Bench,2026-09-01,2026-08-30,Quality inspection sample for Stator Core 1.5 kW against MO202600000091.
+92,92,101,34.000,34.000,No,36500.00,1241000.00,Quality Release Area,Finished Goods Warehouse - Audit Hold Rack,2026-09-02,2026-08-31,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000092.
+93,93,102,36.000,36.000,No,82000.00,2952000.00,Finished Goods Warehouse - Customer Hold Rack,Customer Pickup Bay,2026-09-05,2026-09-01,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000093.
+94,94,18,120.000,120.000,No,5200.00,624000.00,Production Utility Panel Area,Line Support Store,2026-09-03,2026-09-02,Assembly transfer for Housing 7.5 kW against MO202600000094.
+95,95,2,106.000,106.000,No,2800.00,296800.00,Maintenance Return Counter,Maintenance Spares Cage,2026-09-05,2026-09-03,Return or scrap segregation for Stator Core 3 kW against MO202600000095.
+96,96,58,156.000,156.000,No,6.00,936.00,Raw Material Warehouse - Copper Rack A,Stator Winding Line 1,2026-09-07,2026-09-04,Production issue for Phase Insulation Paper against MO202600000096.
+97,97,85,18075.000,18075.000,g,1.80,32535.00,Maintenance Spares Cage,Assembly Maintenance Bay,2026-09-08,2026-09-05,Maintenance spare issue for Solder Wire against MO202600000097.
+98,98,11,192.000,192.000,No,750.00,144000.00,Stator Winding Line 1,Assembly Quality Gate,2026-09-07,2026-09-06,Quality inspection sample for Motor Shaft EN19 against MO202600000098.
+99,99,102,48.000,48.000,No,82000.00,3936000.00,Final Assembly Line 1,Finished Goods Warehouse - EV Motor Zone,2026-09-09,2026-09-07,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000099.
+100,100,100,50.000,50.000,No,18500.00,925000.00,Finished Goods Warehouse - EV Motor Zone,Dispatch Staging Dock 1,2026-09-10,2026-09-08,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000100.
+101,101,24,68.000,68.000,No,220.00,14960.00,Stator Buffer Area,Rotor Assembly Feed Bay,2026-09-13,2026-09-09,Assembly transfer for Bearing 6205-2RS against MO202600000101.
+102,102,63,254.000,254.000,No,3.00,762.00,Assembly Line Surplus Bin,Raw Material Warehouse - Copper Rack A,2026-09-11,2026-09-10,Return or scrap segregation for Hex Bolt M520 against MO202600000102.
+103,103,31,164.000,164.000,kg,920.00,150880.00,Raw Material Warehouse - Lamination Bay,Core Stacking Line,2026-09-13,2026-09-11,Production issue for Copper Wire 1.60 mm against MO202600000103.
+104,104,53,104.000,104.000,No,3.00,312.00,Tool Crib - Calibration Shelf,Preventive Maintenance Bay,2026-09-15,2026-09-12,Maintenance spare issue for Cable Tie 200 mm against MO202600000104.
+105,105,44,122.000,122.000,No,220.00,26840.00,Core Stacking Line,Incoming Quality Bay,2026-09-16,2026-09-13,Quality inspection sample for PT100 Sensor against MO202600000105.
+106,106,100,12.000,12.000,No,18500.00,222000.00,Final Assembly Line 2,Finished Goods Warehouse - Premium Motor Aisle,2026-09-15,2026-09-14,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000106.
+107,107,101,14.000,14.000,No,36500.00,511000.00,Finished Goods Warehouse - Premium Motor Aisle,Dispatch Staging Dock 2,2026-09-17,2026-09-15,Dispatch staging movement for PMSM Motor 3 kW against MO202600000107.
+108,108,68,410.000,410.000,No,6.00,2460.00,Winding Line Transfer Rack,Rotor Balancing Cell,2026-09-18,2026-09-16,Assembly transfer for Hex Nut M8 against MO202600000108.
+109,109,29,105.000,105.000,kg,850.00,89250.00,Winding Line Excess Material Trolley,Raw Material Warehouse - Fastener Rack,2026-09-21,2026-09-17,Return or scrap segregation for Copper Wire 1.00 mm against MO202600000109.
+110,110,7,52.000,52.000,No,180.00,9360.00,Raw Material Warehouse - Magnet Cage,Rotor Assembly Line 1,2026-09-19,2026-09-18,Production issue for NdFeB Magnet N42 against MO202600000110.
+111,111,65,488.000,488.000,No,12.00,5856.00,Lubricants Store,Motor Test Maintenance Bay,2026-09-21,2026-09-19,Maintenance spare issue for Hex Bolt M835 against MO202600000111.
+112,112,4,233.000,233.000,No,1200.00,279600.00,Impregnation Oven Exit Area,Quality Inspection Bay 1,2026-09-23,2026-09-20,Quality inspection sample for Rotor Core 1.5 kW against MO202600000112.
+113,113,101,26.000,26.000,No,36500.00,949000.00,End of Line Test Area,Finished Goods Warehouse - Export Hold,2026-09-24,2026-09-21,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000113.
+114,114,102,28.000,28.000,No,82000.00,2296000.00,Finished Goods Warehouse - Export Hold,Dispatch Staging Dock 3,2026-09-23,2026-09-22,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000114.
+115,115,32,477.000,477.000,m,35.00,16695.00,Core Stacking Output Rack,Assembly Supermarket,2026-09-25,2026-09-23,Assembly transfer for Phase Lead Wire 2.5 mm against MO202600000115.
+116,116,7,280.000,280.000,No,180.00,50400.00,Core Stacking Excess Rack,Raw Material Warehouse - Lamination Bay,2026-09-26,2026-09-24,Return or scrap segregation for NdFeB Magnet N42 against MO202600000116.
+117,117,59,142.000,142.000,No,5.00,710.00,Electrical Store - Sleeve Bin,Harness Preparation Cell,2026-09-29,2026-09-25,Production issue for Slot Wedge against MO202600000117.
+118,118,85,5412.000,5412.000,g,1.80,9741.60,Safety Stock Room,Shutdown Maintenance Cage,2026-09-27,2026-09-26,Maintenance spare issue for Solder Wire against MO202600000118.
+119,119,40,178.000,178.000,No,120.00,21360.00,Rotor Assembly Line 2,Quality Hold Area,2026-09-29,2026-09-27,Quality inspection sample for Hall Sensor PCB against MO202600000119.
+120,120,102,40.000,40.000,No,82000.00,3280000.00,Packing Line - Motor Cell,Finished Goods Warehouse - Dispatch Ready Bay,2026-10-01,2026-09-28,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000120.
+121,121,100,42.000,42.000,No,18500.00,777000.00,Finished Goods Warehouse - Dispatch Ready Bay,Export Packing Bay,2026-10-02,2026-09-29,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000121.
+122,122,46,36.000,36.000,No,750.00,27000.00,Rework Cell - Stator Bay,Rework Cell - Rotor Balancing,2026-10-01,2026-09-30,Assembly transfer for Motor Connector IP68 against MO202600000122.
+123,123,80,59263.000,59263.000,ml,0.80,47410.40,Final Assembly Changeover Trolley,Electrical Store - Connector Bin,2026-10-03,2026-10-01,Return or scrap segregation for Insulating Varnish against MO202600000123.
+124,124,1,190.000,190.000,No,1800.00,342000.00,Raw Material Warehouse - Fastener Rack,Assembly Line Feed Bay,2026-10-04,2026-10-02,Production issue for Stator Core 1.5 kW against MO202600000124.
+125,125,53,90.000,90.000,No,3.00,270.00,Electrical Store - Breaker Bin,Utility Repair Bench,2026-10-07,2026-10-03,Maintenance spare issue for Cable Tie 200 mm against MO202600000125.
+126,126,97,108.000,108.000,No,2.00,216.00,Final Test Area,NVH Audit Bench,2026-10-05,2026-10-04,Quality inspection sample for Inspection Sticker against MO202600000126.
+127,127,100,4.000,4.000,No,18500.00,74000.00,Quality Release Area,Finished Goods Warehouse - Audit Hold Rack,2026-10-07,2026-10-05,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000127.
+128,128,101,6.000,6.000,No,36500.00,219000.00,Finished Goods Warehouse - Customer Hold Rack,Customer Pickup Bay,2026-10-09,2026-10-06,Dispatch staging movement for PMSM Motor 3 kW against MO202600000128.
+129,129,20,162.000,162.000,No,450.00,72900.00,Production Utility Panel Area,Line Support Store,2026-10-10,2026-10-07,Assembly transfer for Rear End Cover against MO202600000129.
+130,130,1,394.000,394.000,No,1800.00,709200.00,Maintenance Return Counter,Maintenance Spares Cage,2026-10-09,2026-10-08,Return or scrap segregation for Stator Core 1.5 kW against MO202600000130.
+131,131,8,389.000,389.000,No,240.00,93360.00,Raw Material Warehouse - Copper Rack A,Stator Winding Line 1,2026-10-11,2026-10-09,Production issue for NdFeB Magnet N45 against MO202600000131.
+132,132,65,72.000,72.000,No,12.00,864.00,Maintenance Spares Cage,Assembly Maintenance Bay,2026-10-12,2026-10-10,Maintenance spare issue for Hex Bolt M835 against MO202600000132.
+133,133,10,38.000,38.000,No,450.00,17100.00,Stator Winding Line 1,Assembly Quality Gate,2026-10-15,2026-10-11,Quality inspection sample for Motor Shaft EN8 against MO202600000133.
+134,134,101,18.000,18.000,No,36500.00,657000.00,Final Assembly Line 1,Finished Goods Warehouse - EV Motor Zone,2026-10-13,2026-10-12,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000134.
+135,135,102,20.000,20.000,No,82000.00,1640000.00,Finished Goods Warehouse - EV Motor Zone,Dispatch Staging Dock 1,2026-10-15,2026-10-13,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000135.
+136,136,63,176.000,176.000,No,3.00,528.00,Stator Buffer Area,Rotor Assembly Feed Bay,2026-10-17,2026-10-14,Assembly transfer for Hex Bolt M520 against MO202600000136.
+137,137,24,92.000,92.000,No,220.00,20240.00,Assembly Line Surplus Bin,Raw Material Warehouse - Copper Rack A,2026-10-18,2026-10-15,Return or scrap segregation for Bearing 6205-2RS against MO202600000137.
+138,138,60,92.000,92.000,m,18.00,1656.00,Raw Material Warehouse - Lamination Bay,Core Stacking Line,2026-10-17,2026-10-16,Production issue for Heat Shrink Sleeve 6 mm against MO202600000138.
+139,139,85,21750.000,21750.000,g,1.80,39150.00,Tool Crib - Calibration Shelf,Preventive Maintenance Bay,2026-10-19,2026-10-17,Maintenance spare issue for Solder Wire against MO202600000139.
+140,140,43,164.000,164.000,No,85.00,13940.00,Core Stacking Line,Incoming Quality Bay,2026-10-20,2026-10-18,Quality inspection sample for Temperature Sensor NTC against MO202600000140.
+141,141,102,32.000,32.000,No,82000.00,2624000.00,Final Assembly Line 2,Finished Goods Warehouse - Premium Motor Aisle,2026-10-23,2026-10-19,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000141.
+142,142,100,34.000,34.000,No,18500.00,629000.00,Finished Goods Warehouse - Premium Motor Aisle,Dispatch Staging Dock 2,2026-10-21,2026-10-20,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000142.
+143,143,70,358.000,358.000,No,1.20,429.60,Winding Line Transfer Rack,Rotor Balancing Cell,2026-10-23,2026-10-21,Assembly transfer for Flat Washer M6 against MO202600000143.
+144,144,84,6136.000,6136.000,ml,0.25,1534.00,Winding Line Excess Material Trolley,Raw Material Warehouse - Fastener Rack,2026-10-25,2026-10-22,Return or scrap segregation for Cleaning Solvent against MO202600000144.
+145,145,2,453.000,453.000,No,2800.00,1268400.00,Raw Material Warehouse - Magnet Cage,Rotor Assembly Line 1,2026-10-26,2026-10-23,Production issue for Stator Core 3 kW against MO202600000145.
+146,146,53,76.000,76.000,No,3.00,228.00,Lubricants Store,Motor Test Maintenance Bay,2026-10-25,2026-10-24,Maintenance spare issue for Cable Tie 200 mm against MO202600000146.
+147,147,3,70.000,70.000,No,6200.00,434000.00,Impregnation Oven Exit Area,Quality Inspection Bay 1,2026-10-27,2026-10-25,Quality inspection sample for Stator Core 7.5 kW against MO202600000147.
+148,148,100,46.000,46.000,No,18500.00,851000.00,End of Line Test Area,Finished Goods Warehouse - Export Hold,2026-10-28,2026-10-26,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000148.
+149,149,101,48.000,48.000,No,36500.00,1752000.00,Finished Goods Warehouse - Export Hold,Dispatch Staging Dock 3,2026-10-31,2026-10-27,Dispatch staging movement for PMSM Motor 3 kW against MO202600000149.
+150,150,34,163.000,163.000,m,150.00,24450.00,Core Stacking Output Rack,Assembly Supermarket,2026-10-29,2026-10-28,Assembly transfer for Phase Lead Wire 10 mm against MO202600000150.
+151,151,5,206.000,206.000,No,2200.00,453200.00,Core Stacking Excess Rack,Raw Material Warehouse - Lamination Bay,2026-10-31,2026-10-29,Return or scrap segregation for Rotor Core 3 kW against MO202600000151.
+152,152,9,265.000,265.000,No,360.00,95400.00,Electrical Store - Sleeve Bin,Harness Preparation Cell,2026-11-02,2026-10-30,Production issue for NdFeB Magnet N48 against MO202600000152.
+153,153,65,137.000,137.000,No,12.00,1644.00,Safety Stock Room,Shutdown Maintenance Cage,2026-11-03,2026-10-31,Maintenance spare issue for Hex Bolt M835 against MO202600000153.
+154,154,39,24.000,24.000,No,45.00,1080.00,Rotor Assembly Line 2,Quality Hold Area,2026-11-02,2026-11-01,Quality inspection sample for Hall Sensor against MO202600000154.
+155,155,101,10.000,10.000,No,36500.00,365000.00,Packing Line - Motor Cell,Finished Goods Warehouse - Dispatch Ready Bay,2026-11-04,2026-11-02,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000155.
+156,156,102,12.000,12.000,No,82000.00,984000.00,Finished Goods Warehouse - Dispatch Ready Bay,Export Packing Bay,2026-11-05,2026-11-03,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000156.
+157,157,48,46.000,46.000,Set,950.00,43700.00,Rework Cell - Stator Bay,Rework Cell - Rotor Balancing,2026-11-08,2026-11-04,Assembly transfer for Wiring Harness Industrial against MO202600000157.
+158,158,65,267.000,267.000,No,12.00,3204.00,Final Assembly Changeover Trolley,Electrical Store - Connector Bin,2026-11-06,2026-11-05,Return or scrap segregation for Hex Bolt M835 against MO202600000158.
+159,159,61,96.000,96.000,m,25.00,2400.00,Raw Material Warehouse - Fastener Rack,Assembly Line Feed Bay,2026-11-08,2026-11-06,Production issue for Heat Shrink Sleeve 8 mm against MO202600000159.
+160,160,85,9087.000,9087.000,g,1.80,16356.60,Electrical Store - Breaker Bin,Utility Repair Bench,2026-11-10,2026-11-07,Maintenance spare issue for Solder Wire against MO202600000160.
+161,161,95,150.000,150.000,No,3.00,450.00,Final Test Area,NVH Audit Bench,2026-11-11,2026-11-08,Quality inspection sample for QR Code Label against MO202600000161.
+162,162,102,24.000,24.000,No,82000.00,1968000.00,Quality Release Area,Finished Goods Warehouse - Audit Hold Rack,2026-11-10,2026-11-09,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000162.
+163,163,100,26.000,26.000,No,18500.00,481000.00,Finished Goods Warehouse - Customer Hold Rack,Customer Pickup Bay,2026-11-12,2026-11-10,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000163.
+164,164,27,8.000,8.000,No,45.00,360.00,Production Utility Panel Area,Line Support Store,2026-11-13,2026-11-11,Assembly transfer for Oil Seal Standard against MO202600000164.
+165,165,31,191.000,191.000,kg,920.00,175720.00,Maintenance Return Counter,Maintenance Spares Cage,2026-11-16,2026-11-12,Return or scrap segregation for Copper Wire 1.60 mm against MO202600000165.
+166,166,3,265.000,265.000,No,6200.00,1643000.00,Raw Material Warehouse - Copper Rack A,Stator Winding Line 1,2026-11-14,2026-11-13,Production issue for Stator Core 7.5 kW against MO202600000166.
+167,167,53,62.000,62.000,No,3.00,186.00,Maintenance Spares Cage,Assembly Maintenance Bay,2026-11-16,2026-11-14,Maintenance spare issue for Cable Tie 200 mm against MO202600000167.
+168,168,6,333.000,333.000,No,5000.00,1665000.00,Stator Winding Line 1,Assembly Quality Gate,2026-11-18,2026-11-15,Quality inspection sample for Rotor Core 7.5 kW against MO202600000168.
+169,169,100,38.000,38.000,No,18500.00,703000.00,Final Assembly Line 1,Finished Goods Warehouse - EV Motor Zone,2026-11-19,2026-11-16,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000169.
+170,170,101,40.000,40.000,No,36500.00,1460000.00,Finished Goods Warehouse - EV Motor Zone,Dispatch Staging Dock 1,2026-11-18,2026-11-17,Dispatch staging movement for PMSM Motor 3 kW against MO202600000170.
+171,171,65,124.000,124.000,No,12.00,1488.00,Stator Buffer Area,Rotor Assembly Feed Bay,2026-11-20,2026-11-18,Assembly transfer for Hex Bolt M835 against MO202600000171.
+172,172,23,6.000,6.000,No,120.00,720.00,Assembly Line Surplus Bin,Raw Material Warehouse - Copper Rack A,2026-11-21,2026-11-19,Return or scrap segregation for Bearing 6202-2RS against MO202600000172.
+173,173,55,170.000,170.000,No,8.00,1360.00,Raw Material Warehouse - Lamination Bay,Core Stacking Line,2026-11-24,2026-11-20,Production issue for Slot Liner 0.25 mm against MO202600000173.
+174,174,65,202.000,202.000,No,12.00,2424.00,Tool Crib - Calibration Shelf,Preventive Maintenance Bay,2026-11-22,2026-11-21,Maintenance spare issue for Hex Bolt M835 against MO202600000174.
+175,175,42,10.000,10.000,No,3200.00,32000.00,Core Stacking Line,Incoming Quality Bay,2026-11-24,2026-11-22,Quality inspection sample for Resolver High Precision against MO202600000175.
+176,176,101,2.000,2.000,No,36500.00,73000.00,Final Assembly Line 2,Finished Goods Warehouse - Premium Motor Aisle,2026-11-26,2026-11-23,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000176.
+177,177,102,4.000,4.000,No,82000.00,328000.00,Finished Goods Warehouse - Premium Motor Aisle,Dispatch Staging Dock 2,2026-11-27,2026-11-24,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000177.
+178,178,72,306.000,306.000,No,0.80,244.80,Winding Line Transfer Rack,Rotor Balancing Cell,2026-11-26,2026-11-25,Assembly transfer for Spring Washer M5 against MO202600000178.
+179,179,83,23869.000,23869.000,g,0.60,14321.40,Winding Line Excess Material Trolley,Raw Material Warehouse - Fastener Rack,2026-11-28,2026-11-26,Return or scrap segregation for Bearing Grease against MO202600000179.
+180,180,62,100.000,100.000,m,45.00,4500.00,Raw Material Warehouse - Magnet Cage,Rotor Assembly Line 1,2026-11-29,2026-11-27,Production issue for Heat Shrink Sleeve 12 mm against MO202600000180.
+181,181,85,25425.000,25425.000,g,1.80,45765.00,Lubricants Store,Motor Test Maintenance Bay,2026-12-02,2026-11-28,Maintenance spare issue for Solder Wire against MO202600000181.
+182,182,2,358.000,358.000,No,2800.00,1002400.00,Impregnation Oven Exit Area,Quality Inspection Bay 1,2026-11-30,2026-11-29,Quality inspection sample for Stator Core 3 kW against MO202600000182.
+183,183,102,16.000,16.000,No,82000.00,1312000.00,End of Line Test Area,Finished Goods Warehouse - Export Hold,2026-12-02,2026-11-30,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000183.
+184,184,100,18.000,18.000,No,18500.00,333000.00,Finished Goods Warehouse - Export Hold,Dispatch Staging Dock 3,2026-12-04,2026-12-01,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000184.
+185,185,36,190.000,190.000,No,180.00,34200.00,Core Stacking Output Rack,Assembly Supermarket,2026-12-05,2026-12-02,Assembly transfer for Terminal Block Heavy Duty against MO202600000185.
+186,186,4,494.000,494.000,No,1200.00,592800.00,Core Stacking Excess Rack,Raw Material Warehouse - Lamination Bay,2026-12-04,2026-12-03,Return or scrap segregation for Rotor Core 1.5 kW against MO202600000186.
+187,187,4,77.000,77.000,No,1200.00,92400.00,Electrical Store - Sleeve Bin,Harness Preparation Cell,2026-12-06,2026-12-04,Production issue for Rotor Core 1.5 kW against MO202600000187.
+188,188,53,48.000,48.000,No,3.00,144.00,Safety Stock Room,Shutdown Maintenance Cage,2026-12-07,2026-12-05,Maintenance spare issue for Cable Tie 200 mm against MO202600000188.
+189,189,12,66.000,66.000,No,1800.00,118800.00,Rotor Assembly Line 2,Quality Hold Area,2026-12-10,2026-12-06,Quality inspection sample for Motor Shaft EN24 against MO202600000189.
+190,190,100,30.000,30.000,No,18500.00,555000.00,Packing Line - Motor Cell,Finished Goods Warehouse - Dispatch Ready Bay,2026-12-08,2026-12-07,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000190.
+191,191,101,32.000,32.000,No,36500.00,1168000.00,Finished Goods Warehouse - Dispatch Ready Bay,Export Packing Bay,2026-12-10,2026-12-08,Dispatch staging movement for PMSM Motor 3 kW against MO202600000191.
+192,192,17,120.000,120.000,No,2400.00,288000.00,Rework Cell - Stator Bay,Rework Cell - Rotor Balancing,2026-12-12,2026-12-09,Assembly transfer for Housing 3 kW against MO202600000192.
+193,193,64,215.000,215.000,No,5.00,1075.00,Final Assembly Changeover Trolley,Electrical Store - Connector Bin,2026-12-13,2026-12-10,Return or scrap segregation for Hex Bolt M625 against MO202600000193.
+194,194,56,156.000,156.000,No,10.00,1560.00,Raw Material Warehouse - Fastener Rack,Assembly Line Feed Bay,2026-12-12,2026-12-11,Production issue for Slot Liner 0.30 mm against MO202600000194.
+195,195,65,267.000,267.000,No,12.00,3204.00,Electrical Store - Breaker Bin,Utility Repair Bench,2026-12-14,2026-12-12,Maintenance spare issue for Hex Bolt M835 against MO202600000195.
+196,196,94,192.000,192.000,No,35.00,6720.00,Final Test Area,NVH Audit Bench,2026-12-15,2026-12-13,Quality inspection sample for Aluminium Nameplate against MO202600000196.
+197,197,101,44.000,44.000,No,36500.00,1606000.00,Quality Release Area,Finished Goods Warehouse - Audit Hold Rack,2026-12-18,2026-12-14,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000197.
+198,198,102,46.000,46.000,No,82000.00,3772000.00,Finished Goods Warehouse - Customer Hold Rack,Customer Pickup Bay,2026-12-16,2026-12-15,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000198.
+199,199,23,96.000,96.000,No,120.00,11520.00,Production Utility Panel Area,Line Support Store,2026-12-18,2026-12-16,Assembly transfer for Bearing 6202-2RS against MO202600000199.
+200,200,30,197.000,197.000,kg,880.00,173360.00,Maintenance Return Counter,Maintenance Spares Cage,2026-12-20,2026-12-17,Return or scrap segregation for Copper Wire 1.20 mm against MO202600000200.
+201,201,29,28.000,28.000,kg,850.00,23800.00,Raw Material Warehouse - Copper Rack A,Stator Winding Line 1,2026-12-21,2026-12-18,Production issue for Copper Wire 1.00 mm against MO202600000201.
+202,202,85,12762.000,12762.000,g,1.80,22971.60,Maintenance Spares Cage,Assembly Maintenance Bay,2026-12-20,2026-12-19,Maintenance spare issue for Solder Wire against MO202600000202.
+203,203,5,170.000,170.000,No,2200.00,374000.00,Stator Winding Line 1,Assembly Quality Gate,2026-12-22,2026-12-20,Quality inspection sample for Rotor Core 3 kW against MO202600000203.
+204,204,102,8.000,8.000,No,82000.00,656000.00,Final Assembly Line 1,Finished Goods Warehouse - EV Motor Zone,2026-12-23,2026-12-21,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000204.
+205,205,100,10.000,10.000,No,18500.00,185000.00,Finished Goods Warehouse - EV Motor Zone,Dispatch Staging Dock 1,2026-12-26,2026-12-22,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000205.
+206,206,67,72.000,72.000,No,2.50,180.00,Stator Buffer Area,Rotor Assembly Feed Bay,2026-12-24,2026-12-23,Assembly transfer for Hex Nut M6 against MO202600000206.
+207,207,8,50.000,50.000,No,240.00,12000.00,Assembly Line Surplus Bin,Raw Material Warehouse - Copper Rack A,2026-12-26,2026-12-24,Return or scrap segregation for NdFeB Magnet N45 against MO202600000207.
+208,208,5,340.000,340.000,No,2200.00,748000.00,Raw Material Warehouse - Lamination Bay,Core Stacking Line,2026-12-28,2026-12-25,Production issue for Rotor Core 3 kW against MO202600000208.
+209,209,53,34.000,34.000,No,3.00,102.00,Tool Crib - Calibration Shelf,Preventive Maintenance Bay,2026-12-29,2026-12-26,Maintenance spare issue for Cable Tie 200 mm against MO202600000209.
+210,210,41,52.000,52.000,No,1400.00,72800.00,Core Stacking Line,Incoming Quality Bay,2026-12-28,2026-12-27,Quality inspection sample for Resolver / Encoder against MO202600000210.
+211,211,100,22.000,22.000,No,18500.00,407000.00,Final Assembly Line 2,Finished Goods Warehouse - Premium Motor Aisle,2026-12-30,2026-12-28,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000211.
+212,212,101,24.000,24.000,No,36500.00,876000.00,Finished Goods Warehouse - Premium Motor Aisle,Dispatch Staging Dock 2,2026-12-31,2026-12-29,Dispatch staging movement for PMSM Motor 3 kW against MO202600000212.
+213,213,74,254.000,254.000,No,2.50,635.00,Winding Line Transfer Rack,Rotor Balancing Cell,2027-01-03,2026-12-30,Assembly transfer for Spring Washer M8 against MO202600000213.
+214,214,81,22098.000,22098.000,g,1.20,26517.60,Winding Line Excess Material Trolley,Raw Material Warehouse - Fastener Rack,2027-01-01,2026-12-31,Return or scrap segregation for Epoxy Adhesive against MO202600000214.
+215,215,57,142.000,142.000,No,12.00,1704.00,Raw Material Warehouse - Magnet Cage,Rotor Assembly Line 1,2027-01-03,2027-01-01,Production issue for Slot Liner 0.35 mm against MO202600000215.
+216,216,65,332.000,332.000,No,12.00,3984.00,Lubricants Store,Motor Test Maintenance Bay,2027-01-05,2027-01-02,Maintenance spare issue for Hex Bolt M835 against MO202600000216.
+217,217,1,195.000,195.000,No,1800.00,351000.00,Impregnation Oven Exit Area,Quality Inspection Bay 1,2027-01-06,2027-01-03,Quality inspection sample for Stator Core 1.5 kW against MO202600000217.
+218,218,101,36.000,36.000,No,36500.00,1314000.00,End of Line Test Area,Finished Goods Warehouse - Export Hold,2027-01-05,2027-01-04,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000218.
+219,219,102,38.000,38.000,No,82000.00,3116000.00,Finished Goods Warehouse - Export Hold,Dispatch Staging Dock 3,2027-01-07,2027-01-05,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000219.
+220,220,45,36.000,36.000,No,350.00,12600.00,Core Stacking Output Rack,Assembly Supermarket,2027-01-08,2027-01-06,Assembly transfer for Motor Connector IP67 against MO202600000220.
+221,221,2,331.000,331.000,No,2800.00,926800.00,Core Stacking Excess Rack,Raw Material Warehouse - Lamination Bay,2027-01-11,2027-01-07,Return or scrap segregation for Stator Core 3 kW against MO202600000221.
+222,222,30,108.000,108.000,kg,880.00,95040.00,Electrical Store - Sleeve Bin,Harness Preparation Cell,2027-01-09,2027-01-08,Production issue for Copper Wire 1.20 mm against MO202600000222.
+223,223,85,29100.000,29100.000,g,1.80,52380.00,Safety Stock Room,Shutdown Maintenance Cage,2027-01-11,2027-01-09,Maintenance spare issue for Solder Wire against MO202600000223.
+224,224,11,108.000,108.000,No,750.00,81000.00,Rotor Assembly Line 2,Quality Hold Area,2027-01-13,2027-01-10,Quality inspection sample for Motor Shaft EN19 against MO202600000224.
+225,225,102,50.000,50.000,No,82000.00,4100000.00,Packing Line - Motor Cell,Finished Goods Warehouse - Dispatch Ready Bay,2027-01-14,2027-01-11,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000225.
+226,226,100,2.000,2.000,No,18500.00,37000.00,Finished Goods Warehouse - Dispatch Ready Bay,Export Packing Bay,2027-01-13,2027-01-12,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000226.
+227,227,19,162.000,162.000,No,450.00,72900.00,Rework Cell - Stator Bay,Rework Cell - Rotor Balancing,2027-01-15,2027-01-13,Assembly transfer for Front End Cover against MO202600000227.
+228,228,63,163.000,163.000,No,3.00,489.00,Final Assembly Changeover Trolley,Electrical Store - Connector Bin,2027-01-16,2027-01-14,Return or scrap segregation for Hex Bolt M520 against MO202600000228.
+229,229,6,152.000,152.000,No,5000.00,760000.00,Raw Material Warehouse - Fastener Rack,Assembly Line Feed Bay,2027-01-19,2027-01-15,Production issue for Rotor Core 7.5 kW against MO202600000229.
+230,230,53,20.000,20.000,No,3.00,60.00,Electrical Store - Breaker Bin,Utility Repair Bench,2027-01-17,2027-01-16,Maintenance spare issue for Cable Tie 200 mm against MO202600000230.
+231,231,44,38.000,38.000,No,220.00,8360.00,Final Test Area,NVH Audit Bench,2027-01-19,2027-01-17,Quality inspection sample for PT100 Sensor against MO202600000231.
+232,232,100,14.000,14.000,No,18500.00,259000.00,Quality Release Area,Finished Goods Warehouse - Audit Hold Rack,2027-01-21,2027-01-18,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000232.
+233,233,101,16.000,16.000,No,36500.00,584000.00,Finished Goods Warehouse - Customer Hold Rack,Customer Pickup Bay,2027-01-22,2027-01-19,Dispatch staging movement for PMSM Motor 3 kW against MO202600000233.
+234,234,25,10.000,10.000,No,650.00,6500.00,Production Utility Panel Area,Line Support Store,2027-01-21,2027-01-20,Assembly transfer for Bearing 6307-2RS against MO202600000234.
+235,235,29,12.000,12.000,kg,850.00,10200.00,Maintenance Return Counter,Maintenance Spares Cage,2027-01-23,2027-01-21,Return or scrap segregation for Copper Wire 1.00 mm against MO202600000235.
+236,236,58,128.000,128.000,No,6.00,768.00,Raw Material Warehouse - Copper Rack A,Stator Winding Line 1,2027-01-24,2027-01-22,Production issue for Phase Insulation Paper against MO202600000236.
+237,237,65,397.000,397.000,No,12.00,4764.00,Maintenance Spares Cage,Assembly Maintenance Bay,2027-01-27,2027-01-23,Maintenance spare issue for Hex Bolt M835 against MO202600000237.
+238,238,4,458.000,458.000,No,1200.00,549600.00,Stator Winding Line 1,Assembly Quality Gate,2027-01-25,2027-01-24,Quality inspection sample for Rotor Core 1.5 kW against MO202600000238.
+239,239,101,28.000,28.000,No,36500.00,1022000.00,Final Assembly Line 1,Finished Goods Warehouse - EV Motor Zone,2027-01-27,2027-01-25,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000239.
+240,240,102,30.000,30.000,No,82000.00,2460000.00,Finished Goods Warehouse - EV Motor Zone,Dispatch Staging Dock 1,2027-01-29,2027-01-26,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000240.
+241,241,69,20.000,20.000,No,0.80,16.00,Stator Buffer Area,Rotor Assembly Feed Bay,2027-01-30,2027-01-27,Assembly transfer for Flat Washer M5 against MO202600000241.
+242,242,7,458.000,458.000,No,180.00,82440.00,Assembly Line Surplus Bin,Raw Material Warehouse - Copper Rack A,2027-01-29,2027-01-28,Return or scrap segregation for NdFeB Magnet N42 against MO202600000242.
+243,243,31,188.000,188.000,kg,920.00,172960.00,Raw Material Warehouse - Lamination Bay,Core Stacking Line,2027-01-31,2027-01-29,Production issue for Copper Wire 1.60 mm against MO202600000243.
+244,244,85,16437.000,16437.000,g,1.80,29586.60,Tool Crib - Calibration Shelf,Preventive Maintenance Bay,2027-02-01,2027-01-30,Maintenance spare issue for Solder Wire against MO202600000244.
+245,245,40,94.000,94.000,No,120.00,11280.00,Core Stacking Line,Incoming Quality Bay,2027-02-04,2027-01-31,Quality inspection sample for Hall Sensor PCB against MO202600000245.
+246,246,102,42.000,42.000,No,82000.00,3444000.00,Final Assembly Line 2,Finished Goods Warehouse - Premium Motor Aisle,2027-02-02,2027-02-01,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000246.
+247,247,100,44.000,44.000,No,18500.00,814000.00,Finished Goods Warehouse - Premium Motor Aisle,Dispatch Staging Dock 2,2027-02-04,2027-02-02,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000247.
+248,248,33,342.000,342.000,m,60.00,20520.00,Winding Line Transfer Rack,Rotor Balancing Cell,2027-02-06,2027-02-03,Assembly transfer for Phase Lead Wire 4 mm against MO202600000248.
+249,249,80,25504.000,25504.000,ml,0.80,20403.20,Winding Line Excess Material Trolley,Raw Material Warehouse - Fastener Rack,2027-02-07,2027-02-04,Return or scrap segregation for Insulating Varnish against MO202600000249.
+250,250,7,301.000,301.000,No,180.00,54180.00,Raw Material Warehouse - Magnet Cage,Rotor Assembly Line 1,2027-02-06,2027-02-05,Production issue for NdFeB Magnet N42 against MO202600000250.
+251,251,53,6.000,6.000,No,3.00,18.00,Lubricants Store,Motor Test Maintenance Bay,2027-02-08,2027-02-06,Maintenance spare issue for Cable Tie 200 mm against MO202600000251.
+252,252,97,24.000,24.000,No,2.00,48.00,Impregnation Oven Exit Area,Quality Inspection Bay 1,2027-02-09,2027-02-07,Quality inspection sample for Inspection Sticker against MO202600000252.
+253,253,100,6.000,6.000,No,18500.00,111000.00,End of Line Test Area,Finished Goods Warehouse - Export Hold,2027-02-12,2027-02-08,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000253.
+254,254,101,8.000,8.000,No,36500.00,292000.00,Finished Goods Warehouse - Export Hold,Dispatch Staging Dock 3,2027-02-10,2027-02-09,Dispatch staging movement for PMSM Motor 3 kW against MO202600000254.
+255,255,47,66.000,66.000,Set,450.00,29700.00,Core Stacking Output Rack,Assembly Supermarket,2027-02-12,2027-02-10,Assembly transfer for Wiring Harness Automotive against MO202600000255.
+256,256,1,168.000,168.000,No,1800.00,302400.00,Core Stacking Excess Rack,Raw Material Warehouse - Lamination Bay,2027-02-14,2027-02-11,Return or scrap segregation for Stator Core 1.5 kW against MO202600000256.
+257,257,59,114.000,114.000,No,5.00,570.00,Electrical Store - Sleeve Bin,Harness Preparation Cell,2027-02-15,2027-02-12,Production issue for Slot Wedge against MO202600000257.
+258,258,65,462.000,462.000,No,12.00,5544.00,Safety Stock Room,Shutdown Maintenance Cage,2027-02-14,2027-02-13,Maintenance spare issue for Hex Bolt M835 against MO202600000258.
+259,259,10,150.000,150.000,No,450.00,67500.00,Rotor Assembly Line 2,Quality Hold Area,2027-02-16,2027-02-14,Quality inspection sample for Motor Shaft EN8 against MO202600000259.
+260,260,101,20.000,20.000,No,36500.00,730000.00,Packing Line - Motor Cell,Finished Goods Warehouse - Dispatch Ready Bay,2027-02-17,2027-02-15,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000260.
+261,261,102,22.000,22.000,No,82000.00,1804000.00,Finished Goods Warehouse - Dispatch Ready Bay,Export Packing Bay,2027-02-25,2027-02-25,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000261.
+262,262,26,8.000,8.000,No,15.00,120.00,Rework Cell - Stator Bay,Rework Cell - Rotor Balancing,2027-02-18,2027-02-17,Assembly transfer for O-Ring Standard against MO202600000262.
+263,263,24,32.000,32.000,No,220.00,7040.00,Final Assembly Changeover Trolley,Electrical Store - Connector Bin,2027-02-20,2027-02-18,Return or scrap segregation for Bearing 6205-2RS against MO202600000263.
+264,264,1,440.000,440.000,No,1800.00,792000.00,Raw Material Warehouse - Fastener Rack,Assembly Line Feed Bay,2027-02-22,2027-02-19,Production issue for Stator Core 1.5 kW against MO202600000264.
+265,265,85,3774.000,3774.000,g,1.80,6793.20,Electrical Store - Breaker Bin,Utility Repair Bench,2027-02-23,2027-02-20,Maintenance spare issue for Solder Wire against MO202600000265.
+266,266,43,80.000,80.000,No,85.00,6800.00,Final Test Area,NVH Audit Bench,2027-02-22,2027-02-21,Quality inspection sample for Temperature Sensor NTC against MO202600000266.
+267,267,102,34.000,34.000,No,82000.00,2788000.00,Quality Release Area,Finished Goods Warehouse - Audit Hold Rack,2027-02-24,2027-02-22,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000267.
+268,268,100,36.000,36.000,No,18500.00,666000.00,Finished Goods Warehouse - Customer Hold Rack,Customer Pickup Bay,2027-02-25,2027-02-23,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000268.
+269,269,64,267.000,267.000,No,5.00,1335.00,Production Utility Panel Area,Line Support Store,2027-02-28,2027-02-24,Assembly transfer for Hex Bolt M625 against MO202600000269.
+270,270,84,67378.000,67378.000,ml,0.25,16844.50,Maintenance Return Counter,Maintenance Spares Cage,2027-02-26,2027-02-25,Return or scrap segregation for Cleaning Solvent against MO202600000270.
+271,271,8,177.000,177.000,No,240.00,42480.00,Raw Material Warehouse - Copper Rack A,Stator Winding Line 1,2027-02-28,2027-02-26,Production issue for NdFeB Magnet N45 against MO202600000271.
+272,272,53,188.000,188.000,No,3.00,564.00,Maintenance Spares Cage,Assembly Maintenance Bay,2027-03-02,2027-02-27,Maintenance spare issue for Cable Tie 200 mm against MO202600000272.
+273,273,3,295.000,295.000,No,6200.00,1829000.00,Stator Winding Line 1,Assembly Quality Gate,2027-03-03,2027-02-28,Quality inspection sample for Stator Core 7.5 kW against MO202600000273.
+274,274,100,48.000,48.000,No,18500.00,888000.00,Final Assembly Line 1,Finished Goods Warehouse - EV Motor Zone,2027-03-02,2027-03-01,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000274.
+275,275,101,50.000,50.000,No,36500.00,1825000.00,Finished Goods Warehouse - EV Motor Zone,Dispatch Staging Dock 1,2027-03-04,2027-03-02,Dispatch staging movement for PMSM Motor 3 kW against MO202600000275.
+276,276,71,449.000,449.000,No,2.50,1122.50,Stator Buffer Area,Rotor Assembly Feed Bay,2027-04-14,2027-04-14,Assembly transfer for Flat Washer M8 against MO202600000276.
+277,277,5,431.000,431.000,No,2200.00,948200.00,Assembly Line Surplus Bin,Raw Material Warehouse - Copper Rack A,2027-03-08,2027-03-04,Return or scrap segregation for Rotor Core 3 kW against MO202600000277.
+278,278,60,279.000,279.000,m,18.00,5022.00,Raw Material Warehouse - Lamination Bay,Core Stacking Line,2027-03-06,2027-03-05,Production issue for Heat Shrink Sleeve 6 mm against MO202600000278.
+279,279,65,46.000,46.000,No,12.00,552.00,Tool Crib - Calibration Shelf,Preventive Maintenance Bay,2027-03-08,2027-03-06,Maintenance spare issue for Hex Bolt M835 against MO202600000279.
+280,280,39,136.000,136.000,No,45.00,6120.00,Core Stacking Line,Incoming Quality Bay,2027-03-10,2027-03-07,Quality inspection sample for Hall Sensor against MO202600000280.
+281,281,101,12.000,12.000,No,36500.00,438000.00,Final Assembly Line 2,Finished Goods Warehouse - Premium Motor Aisle,2027-03-11,2027-03-08,Finished goods receipt movement for PMSM Motor 3 kW against MO202600000281.
+282,282,102,14.000,14.000,No,82000.00,1148000.00,Finished Goods Warehouse - Premium Motor Aisle,Dispatch Staging Dock 2,2027-03-10,2027-03-09,Dispatch staging movement for PMSM Motor 7.5 kW against MO202600000282.
+283,283,35,190.000,190.000,No,90.00,17100.00,Winding Line Transfer Rack,Rotor Balancing Cell,2027-03-12,2027-03-10,Assembly transfer for Terminal Block Standard against MO202600000283.
+284,284,65,176.000,176.000,No,12.00,2112.00,Winding Line Excess Material Trolley,Raw Material Warehouse - Fastener Rack,2027-03-13,2027-03-11,Return or scrap segregation for Hex Bolt M835 against MO202600000284.
+285,285,2,252.000,252.000,No,2800.00,705600.00,Raw Material Warehouse - Magnet Cage,Rotor Assembly Line 1,2027-03-16,2027-03-12,Production issue for Stator Core 3 kW against MO202600000285.
+286,286,85,20112.000,20112.000,g,1.80,36201.60,Lubricants Store,Motor Test Maintenance Bay,2027-03-14,2027-03-13,Maintenance spare issue for Solder Wire against MO202600000286.
+287,287,95,66.000,66.000,No,3.00,198.00,Impregnation Oven Exit Area,Quality Inspection Bay 1,2027-03-16,2027-03-14,Quality inspection sample for QR Code Label against MO202600000287.
+288,288,102,26.000,26.000,No,82000.00,2132000.00,End of Line Test Area,Finished Goods Warehouse - Export Hold,2027-03-18,2027-03-15,Finished goods receipt movement for PMSM Motor 7.5 kW against MO202600000288.
+289,289,100,28.000,28.000,No,18500.00,518000.00,Finished Goods Warehouse - Export Hold,Dispatch Staging Dock 3,2027-03-19,2027-03-16,Dispatch staging movement for BLDC Motor 1.5 kW against MO202600000289.
+290,290,16,120.000,120.000,No,1300.00,156000.00,Core Stacking Output Rack,Assembly Supermarket,2027-03-18,2027-03-17,Assembly transfer for Housing 1.5 kW against MO202600000290.
+291,291,31,98.000,98.000,kg,920.00,90160.00,Core Stacking Excess Rack,Raw Material Warehouse - Lamination Bay,2027-03-20,2027-03-18,Return or scrap segregation for Copper Wire 1.60 mm against MO202600000291.
+292,292,9,53.000,53.000,No,360.00,19080.00,Electrical Store - Sleeve Bin,Harness Preparation Cell,2027-03-21,2027-03-19,Production issue for NdFeB Magnet N48 against MO202600000292.
+293,293,53,174.000,174.000,No,3.00,522.00,Safety Stock Room,Shutdown Maintenance Cage,2027-03-24,2027-03-20,Maintenance spare issue for Cable Tie 200 mm against MO202600000293.
+294,294,6,107.000,107.000,No,5000.00,535000.00,Rotor Assembly Line 2,Quality Hold Area,2027-03-22,2027-03-21,Quality inspection sample for Rotor Core 7.5 kW against MO202600000294.
+295,295,100,40.000,40.000,No,18500.00,740000.00,Packing Line - Motor Cell,Finished Goods Warehouse - Dispatch Ready Bay,2027-03-24,2027-03-22,Finished goods receipt movement for BLDC Motor 1.5 kW against MO202600000295.
+296,296,101,42.000,42.000,No,36500.00,1533000.00,Finished Goods Warehouse - Dispatch Ready Bay,Export Packing Bay,2027-06-09,2027-06-09,Dispatch staging movement for PMSM Motor 3 kW against MO202600000296.
+297,297,28,50.000,50.000,No,110.00,5500.00,Rework Cell - Stator Bay,Rework Cell - Rotor Balancing,2027-03-27,2027-03-24,Assembly transfer for Oil Seal Heavy Duty against MO202600000297.
+298,298,23,42.000,42.000,No,120.00,5040.00,Final Assembly Changeover Trolley,Electrical Store - Connector Bin,2027-03-26,2027-03-25,Return or scrap segregation for Bearing 6202-2RS against MO202600000298.
+299,299,61,283.000,283.000,m,25.00,7075.00,Raw Material Warehouse - Fastener Rack,Assembly Line Feed Bay,2027-03-28,2027-03-26,Production issue for Heat Shrink Sleeve 8 mm against MO202600000299.
+300,300,65,111.000,111.000,No,12.00,1332.00,Electrical Store - Breaker Bin,Utility Repair Bench,2027-03-29,2027-03-27,Maintenance spare issue for Hex Bolt M835 against MO202600000300.
+301,301,103,240.000,240.000,No,5200.00,1248000.00,STAT_WIP,ASMB_WIP,2025-04-02,2025-04-01,SFG transfer to assembly for Finished Stator 1.5kW.
+302,302,104,360.000,360.000,No,7800.00,2808000.00,STAT_WIP,ASMB_WIP,2025-04-02,2025-04-01,SFG transfer to assembly for Finished Stator 3kW.
+303,303,105,294.000,294.000,No,15500.00,4557000.00,STAT_WIP,ASMB_WIP,2025-04-02,2025-04-01,SFG transfer to assembly for Finished Stator 7.5kW.
+304,304,106,240.000,240.000,No,4300.00,1032000.00,ROTR_WIP,ASMB_WIP,2025-04-02,2025-04-01,SFG transfer to assembly for Finished Rotor 1.5kW.
+305,305,107,360.000,360.000,No,6900.00,2484000.00,ROTR_WIP,ASMB_WIP,2025-04-02,2025-04-01,SFG transfer to assembly for Finished Rotor 3kW.
+306,306,108,294.000,294.000,No,13600.00,3998400.00,ROTR_WIP,ASMB_WIP,2025-04-02,2025-04-01,SFG transfer to assembly for Finished Rotor 7.5kW.

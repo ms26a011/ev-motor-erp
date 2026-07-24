@@ -1,0 +1,301 @@
+co_id,co_number,customer_id,order_date,required_delivery_date,status,remarks
+1,CO202504020001,11,2025-04-02,2025-04-28,Closed,Trial batch order
+2,CO202504040001,8,2025-04-04,2025-04-15,Closed,Regular scheduled order
+3,CO202504040002,19,2025-04-04,2025-04-22,Closed,Repeat customer order
+4,CO202504070001,6,2025-04-07,2025-05-06,Closed,Trial batch order
+5,CO202504080001,2,2025-04-08,2025-04-21,Partially Dispatched,Urgent OEM requirement
+6,CO202504100001,2,2025-04-10,2025-05-05,Closed,Monthly production supply order
+7,CO202504160001,16,2025-04-16,2025-05-08,Closed,Repeat customer order
+8,CO202504210001,4,2025-04-21,2025-05-06,Dispatched,Regular scheduled order
+9,CO202504250001,20,2025-04-25,2025-05-23,Dispatched,Repeat customer order
+10,CO202504270001,7,2025-04-27,2025-05-27,Closed,Repeat customer order
+11,CO202504280001,7,2025-04-28,2025-05-14,Dispatched,Urgent OEM requirement
+12,CO202505030001,7,2025-05-03,2025-05-22,Closed,Regular scheduled order
+13,CO202505030002,21,2025-05-03,2025-05-28,Dispatched,Regular scheduled order
+14,CO202505060001,7,2025-05-06,2025-06-03,Closed,Trial batch order
+15,CO202505070001,2,2025-05-07,2025-05-20,Partially Dispatched,Urgent OEM requirement
+16,CO202505070002,5,2025-05-07,2025-05-26,Partially Dispatched,Monthly production supply order
+17,CO202505080001,14,2025-05-08,2025-05-31,Dispatched,Repeat customer order
+18,CO202505090001,1,2025-05-09,2025-05-19,Closed,Regular scheduled order
+19,CO202505090002,10,2025-05-09,2025-05-27,Closed,Monthly production supply order
+20,CO202505100001,2,2025-05-10,2025-05-29,Closed,Monthly production supply order
+21,CO202505100002,10,2025-05-10,2025-05-29,Dispatched,Urgent OEM requirement
+22,CO202505100003,11,2025-05-10,2025-06-06,Dispatched,Regular scheduled order
+23,CO202505120001,10,2025-05-12,2025-05-28,Confirmed,Regular scheduled order
+24,CO202505160001,4,2025-05-16,2025-06-03,Partially Dispatched,Monthly production supply order
+25,CO202505160002,5,2025-05-16,2025-06-15,Closed,Regular scheduled order
+26,CO202505210001,16,2025-05-21,2025-06-01,Cancelled,Cancelled by customer before production
+27,CO202505240001,6,2025-05-24,2025-06-04,Closed,Trial batch order
+28,CO202505250001,4,2025-05-25,2025-06-24,Closed,Repeat customer order
+29,CO202505250002,10,2025-05-25,2025-06-13,Closed,Trial batch order
+30,CO202505300001,9,2025-05-30,2025-06-20,Dispatched,Urgent OEM requirement
+31,CO202506010001,16,2025-06-01,2025-06-30,Cancelled,Cancelled by customer before production
+32,CO202506040001,7,2025-06-04,2025-07-01,Closed,Regular scheduled order
+33,CO202506060001,8,2025-06-06,2025-06-21,Closed,Repeat customer order
+34,CO202506060002,11,2025-06-06,2025-06-28,Dispatched,Urgent OEM requirement
+35,CO202506060003,20,2025-06-06,2025-07-02,Closed,Trial batch order
+36,CO202506090001,5,2025-06-09,2025-06-19,Closed,Trial batch order
+37,CO202506110001,13,2025-06-11,2025-07-06,Dispatched,Repeat customer order
+38,CO202506150001,6,2025-06-15,2025-07-15,Dispatched,Urgent OEM requirement
+39,CO202506160001,16,2025-06-16,2025-07-12,Closed,Monthly production supply order
+40,CO202506220001,5,2025-06-22,2025-07-20,Closed,Trial batch order
+41,CO202506230001,7,2025-06-23,2025-07-10,Closed,Trial batch order
+42,CO202506260001,4,2025-06-26,2025-07-10,Dispatched,Repeat customer order
+43,CO202506280001,4,2025-06-28,2025-07-23,Closed,Trial batch order
+44,CO202506280002,21,2025-06-28,2025-07-19,Dispatched,Urgent OEM requirement
+45,CO202506300001,11,2025-06-30,2025-07-16,Partially Dispatched,Monthly production supply order
+46,CO202507030001,9,2025-07-03,2025-07-14,Dispatched,Repeat customer order
+47,CO202507060001,9,2025-07-06,2025-08-03,Closed,Repeat customer order
+48,CO202507080001,13,2025-07-08,2025-07-20,Partially Dispatched,Partial dispatch expected
+49,CO202507090001,1,2025-07-09,2025-07-20,Closed,Repeat customer order
+50,CO202507090002,7,2025-07-09,2025-07-25,Dispatched,Repeat customer order
+51,CO202507110001,1,2025-07-11,2025-07-25,Closed,Repeat customer order
+52,CO202507110002,7,2025-07-11,2025-08-04,Closed,Regular scheduled order
+53,CO202507120001,2,2025-07-12,2025-07-27,Closed,Regular scheduled order
+54,CO202507120002,11,2025-07-12,2025-08-11,Closed,Regular scheduled order
+55,CO202507130001,11,2025-07-13,2025-07-30,Closed,Trial batch order
+56,CO202507170001,14,2025-07-17,2025-08-14,Partially Dispatched,Monthly production supply order
+57,CO202507220001,4,2025-07-22,2025-08-17,Closed,Trial batch order
+58,CO202507220002,6,2025-07-22,2025-08-07,Dispatched,Urgent OEM requirement
+59,CO202507240001,23,2025-07-24,2025-08-04,Dispatched,Urgent OEM requirement
+60,CO202507250001,20,2025-07-25,2025-08-20,Closed,Regular scheduled order
+61,CO202507260001,3,2025-07-26,2025-08-13,Closed,Regular scheduled order
+62,CO202507260002,7,2025-07-26,2025-08-05,Dispatched,Regular scheduled order
+63,CO202507270001,16,2025-07-27,2025-08-18,Closed,Regular scheduled order
+64,CO202507270002,17,2025-07-27,2025-08-20,Dispatched,Urgent OEM requirement
+65,CO202507280001,6,2025-07-28,2025-08-13,Closed,Trial batch order
+66,CO202507280002,17,2025-07-28,2025-08-13,Dispatched,Repeat customer order
+67,CO202507300001,15,2025-07-30,2025-08-25,Dispatched,Urgent OEM requirement
+68,CO202507310001,3,2025-07-31,2025-08-24,Closed,Monthly production supply order
+69,CO202507310002,9,2025-07-31,2025-08-10,Cancelled,Cancelled by customer before production
+70,CO202508010001,4,2025-08-01,2025-08-31,Closed,Regular scheduled order
+71,CO202508020001,19,2025-08-02,2025-08-24,Partially Dispatched,Urgent OEM requirement
+72,CO202508030001,1,2025-08-03,2025-08-27,Dispatched,Repeat customer order
+73,CO202508030002,9,2025-08-03,2025-08-30,Closed,Regular scheduled order
+74,CO202508030003,21,2025-08-03,2025-08-13,Partially Dispatched,Urgent OEM requirement
+75,CO202508030004,22,2025-08-03,2025-08-29,Dispatched,Urgent OEM requirement
+76,CO202508040001,13,2025-08-04,2025-08-27,Dispatched,Regular scheduled order
+77,CO202508070001,7,2025-08-07,2025-08-17,Dispatched,Repeat customer order
+78,CO202508080001,3,2025-08-08,2025-09-03,Closed,Monthly production supply order
+79,CO202508090001,7,2025-08-09,2025-09-02,Dispatched,Urgent OEM requirement
+80,CO202508100001,12,2025-08-10,2025-09-03,Closed,Repeat customer order
+81,CO202508120001,4,2025-08-12,2025-09-10,Closed,Regular scheduled order
+82,CO202508140001,7,2025-08-14,2025-08-31,Closed,Regular scheduled order
+83,CO202508140002,11,2025-08-14,2025-08-27,Dispatched,Regular scheduled order
+84,CO202508150001,3,2025-08-15,2025-09-14,Closed,Regular scheduled order
+85,CO202508150002,9,2025-08-15,2025-08-29,Closed,Regular scheduled order
+86,CO202508150003,15,2025-08-15,2025-08-30,Closed,Monthly production supply order
+87,CO202508160001,6,2025-08-16,2025-09-14,Closed,Monthly production supply order
+88,CO202508170001,15,2025-08-17,2025-08-30,Closed,Trial batch order
+89,CO202508180001,12,2025-08-18,2025-09-01,Closed,Regular scheduled order
+90,CO202508190001,3,2025-08-19,2025-09-02,Dispatched,Repeat customer order
+91,CO202508190002,7,2025-08-19,2025-09-03,Dispatched,Regular scheduled order
+92,CO202508230001,4,2025-08-23,2025-09-03,Closed,Monthly production supply order
+93,CO202508230002,22,2025-08-23,2025-09-19,Cancelled,Cancelled by customer before production
+94,CO202508240001,13,2025-08-24,2025-09-19,Partially Dispatched,Partial dispatch expected
+95,CO202508270001,6,2025-08-27,2025-09-23,Dispatched,Repeat customer order
+96,CO202508280001,10,2025-08-28,2025-09-20,Closed,Regular scheduled order
+97,CO202508300001,1,2025-08-30,2025-09-12,Closed,Repeat customer order
+98,CO202508310001,15,2025-08-31,2025-09-25,Closed,Repeat customer order
+99,CO202509020001,1,2025-09-02,2025-09-20,Closed,Trial batch order
+100,CO202509020002,18,2025-09-02,2025-09-23,Closed,Monthly production supply order
+101,CO202509030001,5,2025-09-03,2025-10-03,Closed,Regular scheduled order
+102,CO202509050001,7,2025-09-05,2025-09-15,Closed,Repeat customer order
+103,CO202509050002,15,2025-09-05,2025-09-30,Dispatched,Regular scheduled order
+104,CO202509060001,13,2025-09-06,2025-09-21,Partially Dispatched,Partial dispatch expected
+105,CO202509070001,3,2025-09-07,2025-09-23,Closed,Repeat customer order
+106,CO202509070002,17,2025-09-07,2025-10-07,Dispatched,Urgent OEM requirement
+107,CO202509080001,5,2025-09-08,2025-10-02,Closed,Regular scheduled order
+108,CO202509100001,6,2025-09-10,2025-09-23,Closed,Regular scheduled order
+109,CO202509130001,7,2025-09-13,2025-09-23,Closed,Repeat customer order
+110,CO202509150001,1,2025-09-15,2025-09-25,Closed,Monthly production supply order
+111,CO202509150002,3,2025-09-15,2025-10-09,Dispatched,Repeat customer order
+112,CO202509150003,20,2025-09-15,2025-10-04,Dispatched,Regular scheduled order
+113,CO202509160001,3,2025-09-16,2025-10-09,Closed,Monthly production supply order
+114,CO202509160002,16,2025-09-16,2025-10-13,Dispatched,Repeat customer order
+115,CO202509170001,14,2025-09-17,2025-09-30,Closed,Monthly production supply order
+116,CO202509180001,2,2025-09-18,2025-09-29,Dispatched,Regular scheduled order
+117,CO202509180002,10,2025-09-18,2025-10-06,Dispatched,Regular scheduled order
+118,CO202509180003,17,2025-09-18,2025-10-08,Closed,Regular scheduled order
+119,CO202509200001,7,2025-09-20,2025-10-07,Dispatched,Urgent OEM requirement
+120,CO202509210001,9,2025-09-21,2025-10-17,Closed,Repeat customer order
+121,CO202509210002,22,2025-09-21,2025-10-11,Confirmed,Regular scheduled order
+122,CO202509220001,13,2025-09-22,2025-10-18,Dispatched,Repeat customer order
+123,CO202509220002,14,2025-09-22,2025-10-08,Dispatched,Regular scheduled order
+124,CO202509230001,3,2025-09-23,2025-10-11,Closed,Monthly production supply order
+125,CO202509230002,12,2025-09-23,2025-10-13,Partially Dispatched,Monthly production supply order
+126,CO202509230003,17,2025-09-23,2025-10-09,Closed,Trial batch order
+127,CO202509240001,13,2025-09-24,2025-10-18,Confirmed,Regular scheduled order
+128,CO202509240002,25,2025-09-24,2025-10-05,Partially Dispatched,Partial dispatch expected
+129,CO202509260001,4,2025-09-26,2025-10-09,Closed,Repeat customer order
+130,CO202509280001,5,2025-09-28,2025-10-12,Partially Dispatched,Partial dispatch expected
+131,CO202509280002,6,2025-09-28,2025-10-18,Closed,Regular scheduled order
+132,CO202509290001,8,2025-09-29,2025-10-25,Dispatched,Urgent OEM requirement
+133,CO202510020001,11,2025-10-02,2025-10-16,Closed,Repeat customer order
+134,CO202510030001,6,2025-10-03,2025-10-23,Confirmed,Repeat customer order
+135,CO202510030002,14,2025-10-03,2025-10-17,Closed,Monthly production supply order
+136,CO202510030003,17,2025-10-03,2025-10-28,Closed,Repeat customer order
+137,CO202510040001,1,2025-10-04,2025-11-03,Closed,Monthly production supply order
+138,CO202510040002,20,2025-10-04,2025-10-26,Closed,Monthly production supply order
+139,CO202510050001,14,2025-10-05,2025-10-31,Partially Dispatched,Urgent OEM requirement
+140,CO202510050002,17,2025-10-05,2025-10-30,Dispatched,Urgent OEM requirement
+141,CO202510060001,3,2025-10-06,2025-11-02,Closed,Trial batch order
+142,CO202510060002,12,2025-10-06,2025-11-03,Closed,Regular scheduled order
+143,CO202510080001,14,2025-10-08,2025-11-05,Closed,Regular scheduled order
+144,CO202510090001,8,2025-10-09,2025-10-31,Closed,Trial batch order
+145,CO202510090002,20,2025-10-09,2025-11-06,Closed,Regular scheduled order
+146,CO202510130001,7,2025-10-13,2025-11-01,Partially Dispatched,Monthly production supply order
+147,CO202510170001,6,2025-10-17,2025-10-29,Closed,Regular scheduled order
+148,CO202510190001,3,2025-10-19,2025-11-03,Closed,Repeat customer order
+149,CO202510200001,9,2025-10-20,2025-11-03,Closed,Monthly production supply order
+150,CO202510220001,3,2025-10-22,2025-11-05,Closed,Monthly production supply order
+151,CO202510220002,8,2025-10-22,2025-11-11,Closed,Trial batch order
+152,CO202510240001,1,2025-10-24,2025-11-22,Closed,Monthly production supply order
+153,CO202510240002,2,2025-10-24,2025-11-21,Closed,Monthly production supply order
+154,CO202510270001,13,2025-10-27,2025-11-16,Closed,Trial batch order
+155,CO202510280001,2,2025-10-28,2025-11-25,Dispatched,Repeat customer order
+156,CO202510290001,16,2025-10-29,2025-11-15,Closed,Regular scheduled order
+157,CO202510310001,1,2025-10-31,2025-11-20,Dispatched,Urgent OEM requirement
+158,CO202510310002,4,2025-10-31,2025-11-15,Closed,Repeat customer order
+159,CO202510310003,8,2025-10-31,2025-11-25,Dispatched,Repeat customer order
+160,CO202510310004,10,2025-10-31,2025-11-13,Closed,Trial batch order
+161,CO202511020001,11,2025-11-02,2025-12-01,Confirmed,Regular scheduled order
+162,CO202511030001,15,2025-11-03,2025-11-28,Closed,Trial batch order
+163,CO202511040001,3,2025-11-04,2025-11-27,Closed,Monthly production supply order
+164,CO202511040002,21,2025-11-04,2025-11-17,Closed,Trial batch order
+165,CO202511060001,3,2025-11-06,2025-11-16,Closed,Trial batch order
+166,CO202511090001,5,2025-11-09,2025-12-01,Dispatched,Regular scheduled order
+167,CO202511130001,20,2025-11-13,2025-12-13,Dispatched,Repeat customer order
+168,CO202511140001,9,2025-11-14,2025-11-27,Confirmed,Monthly production supply order
+169,CO202511150001,7,2025-11-15,2025-12-02,Partially Dispatched,Partial dispatch expected
+170,CO202511160001,1,2025-11-16,2025-12-09,Dispatched,Regular scheduled order
+171,CO202511160002,13,2025-11-16,2025-11-26,Partially Dispatched,Partial dispatch expected
+172,CO202511170001,7,2025-11-17,2025-12-12,Closed,Monthly production supply order
+173,CO202511200001,5,2025-11-20,2025-12-08,Dispatched,Urgent OEM requirement
+174,CO202511200002,17,2025-11-20,2025-12-04,Closed,Repeat customer order
+175,CO202511210001,5,2025-11-21,2025-12-09,Closed,Trial batch order
+176,CO202511220001,5,2025-11-22,2025-12-21,Closed,Trial batch order
+177,CO202511240001,5,2025-11-24,2025-12-07,Closed,Monthly production supply order
+178,CO202511250001,17,2025-11-25,2025-12-12,Closed,Regular scheduled order
+179,CO202511280001,2,2025-11-28,2025-12-19,Closed,Regular scheduled order
+180,CO202511290001,2,2025-11-29,2025-12-29,Dispatched,Regular scheduled order
+181,CO202511290002,8,2025-11-29,2025-12-14,Closed,Trial batch order
+182,CO202511300001,9,2025-11-30,2025-12-18,Closed,Repeat customer order
+183,CO202512010001,14,2025-12-01,2025-12-16,Dispatched,Regular scheduled order
+184,CO202512020001,10,2025-12-02,2025-12-12,Closed,Monthly production supply order
+185,CO202512040001,7,2025-12-04,2025-12-22,Dispatched,Repeat customer order
+186,CO202512060001,5,2025-12-06,2025-12-27,Closed,Monthly production supply order
+187,CO202512060002,8,2025-12-06,2025-12-30,Dispatched,Urgent OEM requirement
+188,CO202512070001,17,2025-12-07,2025-12-23,Closed,Regular scheduled order
+189,CO202512090001,20,2025-12-09,2025-12-20,Closed,Repeat customer order
+190,CO202512100001,2,2025-12-10,2026-01-08,Partially Dispatched,Urgent OEM requirement
+191,CO202512110001,8,2025-12-11,2026-01-10,Closed,Repeat customer order
+192,CO202512110002,9,2025-12-11,2025-12-22,Closed,Repeat customer order
+193,CO202512120001,1,2025-12-12,2025-12-26,Closed,Repeat customer order
+194,CO202512130001,20,2025-12-13,2026-01-08,Closed,Trial batch order
+195,CO202512150001,4,2025-12-15,2026-01-10,Closed,Trial batch order
+196,CO202512160001,11,2025-12-16,2026-01-08,Closed,Regular scheduled order
+197,CO202512160002,12,2025-12-16,2025-12-29,Closed,Regular scheduled order
+198,CO202512170001,11,2025-12-17,2026-01-01,Closed,Monthly production supply order
+199,CO202512170002,25,2025-12-17,2026-01-02,Closed,Trial batch order
+200,CO202512180001,7,2025-12-18,2026-01-02,Closed,Regular scheduled order
+201,CO202512180002,25,2025-12-18,2026-01-13,Closed,Trial batch order
+202,CO202512190001,11,2025-12-19,2025-12-31,Dispatched,Regular scheduled order
+203,CO202512190002,20,2025-12-19,2026-01-12,Closed,Trial batch order
+204,CO202512200001,2,2025-12-20,2026-01-06,Dispatched,Urgent OEM requirement
+205,CO202512200002,15,2025-12-20,2026-01-08,Closed,Regular scheduled order
+206,CO202512240001,2,2025-12-24,2026-01-08,Closed,Monthly production supply order
+207,CO202512250001,24,2025-12-25,2026-01-24,Closed,Regular scheduled order
+208,CO202512270001,17,2025-12-27,2026-01-13,Closed,Monthly production supply order
+209,CO202512270002,22,2025-12-27,2026-01-10,Closed,Monthly production supply order
+210,CO202512280001,11,2025-12-28,2026-01-11,Dispatched,Regular scheduled order
+211,CO202512280002,15,2025-12-28,2026-01-13,Closed,Monthly production supply order
+212,CO202512290001,8,2025-12-29,2026-01-15,Closed,Regular scheduled order
+213,CO202512300001,19,2025-12-30,2026-01-24,Closed,Monthly production supply order
+214,CO202601010001,2,2026-01-01,2026-01-27,Partially Dispatched,Monthly production supply order
+215,CO202601010002,7,2026-01-01,2026-01-11,Closed,Monthly production supply order
+216,CO202601020001,17,2026-01-02,2026-01-25,Closed,Trial batch order
+217,CO202601040001,20,2026-01-04,2026-01-29,Closed,Monthly production supply order
+218,CO202601050001,16,2026-01-05,2026-01-16,Dispatched,Repeat customer order
+219,CO202601060001,8,2026-01-06,2026-01-19,Closed,Monthly production supply order
+220,CO202601070001,15,2026-01-07,2026-01-25,Dispatched,Urgent OEM requirement
+221,CO202601070002,17,2026-01-07,2026-01-26,Closed,Trial batch order
+222,CO202601070003,21,2026-01-07,2026-01-20,Closed,Regular scheduled order
+223,CO202601100001,1,2026-01-10,2026-02-05,Closed,Regular scheduled order
+224,CO202601110001,3,2026-01-11,2026-01-28,Closed,Repeat customer order
+225,CO202601140001,21,2026-01-14,2026-02-02,Closed,Trial batch order
+226,CO202601150001,4,2026-01-15,2026-01-27,Cancelled,Cancelled by customer before production
+227,CO202601180001,5,2026-01-18,2026-02-02,Partially Dispatched,Monthly production supply order
+228,CO202601190001,4,2026-01-19,2026-01-31,Dispatched,Repeat customer order
+229,CO202601200001,18,2026-01-20,2026-02-05,Closed,Monthly production supply order
+230,CO202601210001,6,2026-01-21,2026-02-01,Confirmed,Regular scheduled order
+231,CO202601210002,15,2026-01-21,2026-02-07,Partially Dispatched,Urgent OEM requirement
+232,CO202601220001,13,2026-01-22,2026-02-21,Closed,Trial batch order
+233,CO202601230001,3,2026-01-23,2026-02-07,Closed,Monthly production supply order
+234,CO202601230002,8,2026-01-23,2026-02-20,Dispatched,Regular scheduled order
+235,CO202601250001,6,2026-01-25,2026-02-15,Closed,Regular scheduled order
+236,CO202601250002,9,2026-01-25,2026-02-16,Partially Dispatched,Urgent OEM requirement
+237,CO202601260001,6,2026-01-26,2026-02-19,Closed,Regular scheduled order
+238,CO202601260002,8,2026-01-26,2026-02-12,Closed,Trial batch order
+239,CO202601260003,22,2026-01-26,2026-02-21,Closed,Regular scheduled order
+240,CO202601270001,13,2026-01-27,2026-02-19,Closed,Repeat customer order
+241,CO202601280001,23,2026-01-28,2026-02-19,Closed,Regular scheduled order
+242,CO202601290001,25,2026-01-29,2026-02-22,Closed,Regular scheduled order
+243,CO202601300001,1,2026-01-30,2026-02-22,Closed,Trial batch order
+244,CO202601300002,2,2026-01-30,2026-02-16,Confirmed,Repeat customer order
+245,CO202601300003,10,2026-01-30,2026-02-17,Dispatched,Repeat customer order
+246,CO202601300004,17,2026-01-30,2026-02-23,Closed,Repeat customer order
+247,CO202602010001,6,2026-02-01,2026-03-03,Dispatched,Regular scheduled order
+248,CO202602020001,1,2026-02-02,2026-02-16,Closed,Regular scheduled order
+249,CO202602020002,7,2026-02-02,2026-02-20,Closed,Regular scheduled order
+250,CO202602030001,13,2026-02-03,2026-02-16,Dispatched,Urgent OEM requirement
+251,CO202602040001,6,2026-02-04,2026-02-20,Dispatched,Repeat customer order
+252,CO202602040002,14,2026-02-04,2026-02-25,Dispatched,Regular scheduled order
+253,CO202602050001,9,2026-02-05,2026-03-04,Closed,Trial batch order
+254,CO202602060001,2,2026-02-06,2026-02-25,Dispatched,Repeat customer order
+255,CO202602070001,20,2026-02-07,2026-02-21,Partially Dispatched,Partial dispatch expected
+256,CO202602090001,7,2026-02-09,2026-03-08,Dispatched,Regular scheduled order
+257,CO202602090002,12,2026-02-09,2026-03-02,Closed,Monthly production supply order
+258,CO202602110001,2,2026-02-11,2026-02-23,Closed,Trial batch order
+259,CO202602110002,7,2026-02-11,2026-03-02,Closed,Monthly production supply order
+260,CO202602110003,12,2026-02-11,2026-03-05,Cancelled,Cancelled by customer before production
+261,CO202602120001,12,2026-02-12,2026-03-03,Closed,Regular scheduled order
+262,CO202602130001,1,2026-02-13,2026-03-02,Closed,Trial batch order
+263,CO202602140001,4,2026-02-14,2026-03-08,Closed,Regular scheduled order
+264,CO202602140002,6,2026-02-14,2026-02-25,Closed,Trial batch order
+265,CO202602150001,1,2026-02-15,2026-03-04,Closed,Trial batch order
+266,CO202602160001,3,2026-02-16,2026-03-15,Closed,Monthly production supply order
+267,CO202602200001,8,2026-02-20,2026-03-21,Partially Dispatched,Partial dispatch expected
+268,CO202602200002,16,2026-02-20,2026-03-12,Closed,Regular scheduled order
+269,CO202602200003,24,2026-02-20,2026-03-06,Dispatched,Regular scheduled order
+270,CO202602220001,5,2026-02-22,2026-03-12,Closed,Monthly production supply order
+271,CO202602250001,5,2026-02-25,2026-03-21,Closed,Regular scheduled order
+272,CO202602250002,8,2026-02-25,2026-03-11,Confirmed,Repeat customer order
+273,CO202602260001,16,2026-02-26,2026-03-28,Closed,Regular scheduled order
+274,CO202602280001,4,2026-02-28,2026-03-11,Closed,Trial batch order
+275,CO202602280002,14,2026-02-28,2026-03-25,Dispatched,Urgent OEM requirement
+276,CO202603020001,1,2026-03-02,2026-03-18,Partially Dispatched,Monthly production supply order
+277,CO202603050001,1,2026-03-05,2026-03-24,Closed,Trial batch order
+278,CO202603050002,16,2026-03-05,2026-03-18,Dispatched,Repeat customer order
+279,CO202603070001,6,2026-03-07,2026-03-17,Dispatched,Repeat customer order
+280,CO202603090001,5,2026-03-09,2026-03-27,Closed,Trial batch order
+281,CO202603090002,7,2026-03-09,2026-03-22,Partially Dispatched,Urgent OEM requirement
+282,CO202603100001,16,2026-03-10,2026-04-09,Dispatched,Urgent OEM requirement
+283,CO202603110001,8,2026-03-11,2026-04-07,Dispatched,Repeat customer order
+284,CO202603120001,8,2026-03-12,2026-04-10,Partially Dispatched,Urgent OEM requirement
+285,CO202603120002,17,2026-03-12,2026-04-10,Closed,Monthly production supply order
+286,CO202603150001,4,2026-03-15,2026-04-01,Closed,Trial batch order
+287,CO202603150002,24,2026-03-15,2026-04-02,Closed,Regular scheduled order
+288,CO202603150003,25,2026-03-15,2026-03-27,Closed,Regular scheduled order
+289,CO202603180001,2,2026-03-18,2026-04-17,Closed,Trial batch order
+290,CO202603180002,3,2026-03-18,2026-04-06,Partially Dispatched,Monthly production supply order
+291,CO202603180003,16,2026-03-18,2026-03-31,Closed,Monthly production supply order
+292,CO202603200001,16,2026-03-20,2026-04-17,Closed,Monthly production supply order
+293,CO202603210001,3,2026-03-21,2026-03-31,Closed,Repeat customer order
+294,CO202603210002,5,2026-03-21,2026-04-09,Closed,Regular scheduled order
+295,CO202603220001,4,2026-03-22,2026-04-11,Partially Dispatched,Partial dispatch expected
+296,CO202603230001,4,2026-03-23,2026-04-21,Dispatched,Urgent OEM requirement
+297,CO202603250001,21,2026-03-25,2026-04-24,Closed,Monthly production supply order
+298,CO202603280001,10,2026-03-28,2026-04-14,Closed,Repeat customer order
+299,CO202603310001,5,2026-03-31,2026-04-15,Dispatched,Regular scheduled order
+300,CO202603310002,13,2026-03-31,2026-04-20,Closed,Monthly production supply order

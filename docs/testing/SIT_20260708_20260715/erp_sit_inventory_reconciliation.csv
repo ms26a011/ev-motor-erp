@@ -1,0 +1,4 @@
+item_code,item_name,department,opening_stock,closing_stock,movement,negative_stock_count
+MEC007,Housing 1.5 kW,RMWH,354.816,1901.816,1547.000,0
+MEC008,Housing 3 kW,RMWH,0.000,1611.000,1611.000,0
+MEC009,Housing 7.5 kW,RMWH,0.000,1602.000,1602.000,0

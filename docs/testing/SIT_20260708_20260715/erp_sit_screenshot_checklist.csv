@@ -1,0 +1,18 @@
+evidence_file,status,notes
+ERP_SIT_001_Login_Full_Access.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_002_Department_Restricted_Access.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_003_PR_Created.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_004_PO_Created.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_005_GRN_Completed.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_006_Inventory_Increased.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_007_BOM_Consumption.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_008_FG_Receipt.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_009_Customer_Order.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_010_Dispatch.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_011_Vendor_Invoice.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_012_Vendor_Payment.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_013_Customer_Invoice.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_014_Customer_Receipt.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_015_Journal_Balanced.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_016_Access_Denied.png,Manual capture required,Automatic browser screenshots were not captured by this runner.
+ERP_SIT_017_Dashboard_Validation.png,Manual capture required,Automatic browser screenshots were not captured by this runner.

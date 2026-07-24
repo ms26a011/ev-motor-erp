@@ -1,0 +1,26 @@
+customer_code,customer_name,customer_type,contact_person,phone,email,city,state,status
+C2W001,Ather Energy,2-Wheeler OEM,Procurement Manager,+91-9840010001,procurement@atherenergy.com,Hosur,Tamil Nadu,Active
+C2W002,Ola Electric,2-Wheeler OEM,Purchase Head,+91-9840010002,purchase@olaelectric.com,Krishnagiri,Tamil Nadu,Active
+C2W003,TVS Motor Company,2-Wheeler OEM,Supply Chain Manager,+91-9840010003,scm@tvsmotor.com,Hosur,Tamil Nadu,Active
+C2W004,Bajaj Auto,2-Wheeler OEM,Procurement Manager,+91-9840010004,procurement@bajajauto.com,Pune,Maharashtra,Active
+C2W005,Hero MotoCorp,2-Wheeler OEM,Purchase Head,+91-9840010005,purchase@heromotocorp.com,Neemrana,Rajasthan,Active
+C2W006,Greaves Electric Mobility,2-Wheeler OEM,Supply Chain Manager,+91-9840010006,scm@greaveselectricmobility.com,Ranipet,Tamil Nadu,Active
+C2W007,River,2-Wheeler OEM,Procurement Manager,+91-9840010007,procurement@riverindie.com,Bengaluru,Karnataka,Active
+C2W008,Ultraviolette Automotive,2-Wheeler OEM,Purchase Head,+91-9840010008,purchase@ultraviolette.com,Bengaluru,Karnataka,Active
+C2W009,Simple Energy,2-Wheeler OEM,Supply Chain Manager,+91-9840010009,scm@simpleenergy.in,Bengaluru,Karnataka,Active
+C2W010,Ampere Electric,2-Wheeler OEM,Procurement Manager,+91-9840010010,procurement@amperevehicles.com,Coimbatore,Tamil Nadu,Active
+C3W001,Mahindra Last Mile Mobility,3-Wheeler OEM,Purchase Head,+91-9840010011,purchase@mahindra.com,Haridwar,Uttarakhand,Active
+C3W002,Piaggio Vehicles,3-Wheeler OEM,Supply Chain Manager,+91-9840010012,scm@piaggio.co.in,Pune,Maharashtra,Active
+C3W003,Omega Seiki,3-Wheeler OEM,Procurement Manager,+91-9840010013,procurement@omegaseiki.com,Delhi,Delhi,Active
+C3W004,Euler Motors,3-Wheeler OEM,Purchase Head,+91-9840010014,purchase@eulermotors.com,New Delhi,Delhi,Active
+C3W005,YC Electric,3-Wheeler OEM,Supply Chain Manager,+91-9840010015,scm@ycevehicles.com,Delhi,Delhi,Active
+C3W006,Kinetic Green,3-Wheeler OEM,Procurement Manager,+91-9840010016,procurement@kineticgreen.com,Pune,Maharashtra,Active
+C3W007,Altigreen,3-Wheeler OEM,Purchase Head,+91-9840010017,purchase@altigreen.com,Bengaluru,Karnataka,Active
+CRG001,Ashok Leyland,Cargo EV OEM,Supply Chain Manager,+91-9840010018,scm@ashokleyland.com,Chennai,Tamil Nadu,Active
+CRG002,Tata Motors,Cargo EV OEM,Procurement Manager,+91-9840010019,procurement@tatamotors.com,Pune,Maharashtra,Active
+CRG003,Montra Electric,Cargo EV OEM,Purchase Head,+91-9840010020,purchase@montraelectric.com,Chennai,Tamil Nadu,Active
+CRG004,EKA Mobility,Cargo EV OEM,Supply Chain Manager,+91-9840010021,scm@ekamobility.com,Pune,Maharashtra,Active
+CRG005,Switch Mobility,Cargo EV OEM,Procurement Manager,+91-9840010022,procurement@switchmobility.tech,Chennai,Tamil Nadu,Active
+IND001,Larsen & Toubro,Industrial Customer,Purchase Head,+91-9840010023,purchase@larsentoubro.com,Chennai,Tamil Nadu,Active
+IND002,ABB India,Industrial Customer,Supply Chain Manager,+91-9840010024,scm@abb.com,Bengaluru,Karnataka,Active
+IND003,Siemens India,Industrial Customer,Procurement Manager,+91-9840010025,procurement@siemens.com,Chennai,Tamil Nadu,Active

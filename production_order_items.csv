@@ -1,0 +1,301 @@
+production_order_item_id,production_order_id,item_id,planned_quantity,produced_quantity,accepted_quantity,rejected_quantity,uom,production_stage,line_status,remarks,created_at,updated_at
+1,1,100,40.000,40.000,40.000,0.000,No,Testing,Completed,Make-to-stock production for BLDC Motor 1.5 kW,2025-01-02 09:00:00,2025-01-03 17:00:00
+2,2,101,18.000,18.000,18.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300015,2025-05-08 09:07:00,2025-05-09 17:11:00
+3,3,102,24.000,15.000,15.000,0.000,No,Final Motor Assembly,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2025-05-09 09:14:00,2025-05-10 17:22:00
+4,4,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2025-05-15 09:21:00,2025-05-16 17:33:00
+5,5,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2025-05-20 09:28:00,2025-05-21 17:44:00
+6,6,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2025-01-17 09:35:00,2025-01-18 17:55:00
+7,7,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-07-14 09:42:00,2025-07-15 17:06:00
+8,8,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-07-17 09:49:00,2025-07-18 17:17:00
+9,9,108,150.000,150.000,147.000,3.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-08-03 09:56:00,2025-08-04 17:28:00
+10,10,106,190.000,190.000,185.000,5.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-08-05 09:03:00,2025-08-06 17:39:00
+11,11,107,230.000,149.000,149.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2025-02-01 09:10:00,2025-02-02 17:50:00
+12,12,108,280.000,86.000,86.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-09-10 09:17:00,2025-09-11 17:01:00
+13,13,100,12.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300121,2025-09-26 09:24:00,2025-09-27 17:12:00
+14,14,101,18.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300125,2025-09-29 09:31:00,2025-09-30 17:23:00
+15,15,102,24.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2025-09-24 09:38:00,2025-09-25 17:34:00
+16,16,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2025-02-16 09:45:00,2025-02-17 17:45:00
+17,17,104,240.000,240.000,238.000,2.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2025-09-30 09:52:00,2025-10-01 17:56:00
+18,18,105,300.000,300.000,296.000,4.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2025-10-06 09:59:00,2025-10-07 17:07:00
+19,19,106,70.000,45.000,45.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-10-09 09:06:00,2025-10-10 17:18:00
+20,20,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2025-10-18 09:13:00,2025-10-19 17:29:00
+21,21,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-03-03 09:20:00,2025-03-04 17:40:00
+22,22,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-11-14 09:27:00,2025-11-15 17:51:00
+23,23,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-11-16 09:34:00,2025-11-17 17:02:00
+24,24,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-11-18 09:41:00,2025-11-19 17:13:00
+25,25,100,12.000,12.000,12.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300190,2025-12-13 09:48:00,2025-12-14 17:24:00
+26,26,101,60.000,60.000,60.000,0.000,No,Final Motor Assembly,Completed,Make-to-stock production for PMSM Motor 3 kW,2025-03-18 09:55:00,2025-03-19 17:35:00
+27,27,102,24.000,15.000,15.000,0.000,No,Final Motor Assembly,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2026-01-23 09:02:00,2026-01-24 17:46:00
+28,28,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2026-01-27 09:09:00,2026-01-28 17:57:00
+29,29,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2026-01-21 09:16:00,2026-01-22 17:08:00
+30,30,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2026-01-26 09:23:00,2026-01-27 17:19:00
+31,31,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-04-02 09:30:00,2025-04-03 17:30:00
+32,32,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2026-02-10 09:37:00,2026-02-11 17:41:00
+33,33,108,150.000,150.000,148.000,2.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-02-24 09:44:00,2026-02-25 17:52:00
+34,34,106,190.000,190.000,187.000,3.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-03-02 09:51:00,2026-03-03 17:03:00
+35,35,107,230.000,153.000,149.000,4.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2026-03-08 09:58:00,2026-03-09 17:14:00
+36,36,108,280.000,86.000,86.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-04-17 09:05:00,2025-04-18 17:25:00
+37,37,100,12.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300284,2026-03-13 09:12:00,2026-03-14 17:36:00
+38,38,101,18.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300290,2026-03-20 09:19:00,2026-03-21 17:47:00
+39,39,102,24.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2026-03-25 09:26:00,2026-03-26 17:58:00
+40,40,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2025-04-12 09:33:00,2025-04-13 17:09:00
+41,41,104,240.000,240.000,239.000,1.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2025-05-02 09:40:00,2025-05-03 17:20:00
+42,42,105,300.000,300.000,297.000,3.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2025-05-13 09:47:00,2025-05-14 17:31:00
+43,43,106,70.000,45.000,45.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-05-12 09:54:00,2025-05-13 17:42:00
+44,44,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2025-05-17 09:01:00,2025-05-18 17:53:00
+45,45,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-07-02 09:08:00,2025-07-03 17:04:00
+46,46,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-05-17 09:15:00,2025-05-18 17:15:00
+47,47,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-07-21 09:22:00,2025-07-22 17:26:00
+48,48,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-08-07 09:29:00,2025-08-08 17:37:00
+49,49,100,12.000,12.000,12.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300074,2025-08-09 09:36:00,2025-08-10 17:48:00
+50,50,101,18.000,18.000,18.000,0.000,No,Testing,Completed,Make-to-order production linked to SO202606300094,2025-08-24 09:43:00,2025-08-25 17:59:00
+51,51,102,75.000,48.000,48.000,0.000,No,Rework,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2025-06-01 09:50:00,2025-06-02 17:10:00
+52,52,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2025-09-23 09:57:00,2025-09-24 17:21:00
+53,53,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2025-09-26 09:04:00,2025-09-27 17:32:00
+54,54,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2025-09-28 09:11:00,2025-09-29 17:43:00
+55,55,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-09-29 09:18:00,2025-09-30 17:54:00
+56,56,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-06-16 09:25:00,2025-06-17 17:05:00
+57,57,108,150.000,150.000,149.000,1.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-10-03 09:32:00,2025-10-04 17:16:00
+58,58,106,190.000,190.000,188.000,2.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-10-06 09:39:00,2025-10-07 17:27:00
+59,59,107,230.000,151.000,149.000,2.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2025-10-15 09:46:00,2025-10-16 17:38:00
+60,60,108,280.000,88.000,86.000,2.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-11-05 09:53:00,2025-11-06 17:49:00
+61,61,100,40.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-stock production for BLDC Motor 1.5 kW,2025-07-01 09:00:00,2025-07-02 17:00:00
+62,62,101,18.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300169,2025-11-20 09:07:00,2025-11-21 17:11:00
+63,63,102,24.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2025-11-22 09:14:00,2025-11-23 17:22:00
+64,64,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2025-12-10 09:21:00,2025-12-11 17:33:00
+65,65,104,240.000,240.000,233.000,7.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2026-01-02 09:28:00,2026-01-03 17:44:00
+66,66,105,300.000,300.000,299.000,1.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2025-07-16 09:35:00,2025-07-17 17:55:00
+67,67,106,70.000,45.000,45.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-01-24 09:42:00,2026-01-25 17:06:00
+68,68,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2026-01-25 09:49:00,2026-01-26 17:17:00
+69,69,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-01-30 09:56:00,2026-01-31 17:28:00
+70,70,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-02-05 09:03:00,2026-02-06 17:39:00
+71,71,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-07-31 09:10:00,2025-08-01 17:50:00
+72,72,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-02-21 09:17:00,2026-02-22 17:01:00
+73,73,100,12.000,12.000,12.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300272,2026-02-27 09:24:00,2026-02-28 17:12:00
+74,74,101,18.000,18.000,18.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300276,2026-03-05 09:31:00,2026-03-06 17:23:00
+75,75,102,24.000,15.000,15.000,0.000,No,Final Motor Assembly,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2026-03-13 09:38:00,2026-03-14 17:34:00
+76,76,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2025-08-15 09:45:00,2025-08-16 17:45:00
+77,77,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2026-03-24 09:52:00,2026-03-25 17:56:00
+78,78,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2026-03-22 09:59:00,2026-03-23 17:07:00
+79,79,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-04-09 09:06:00,2025-04-10 17:18:00
+80,80,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-05-09 09:13:00,2025-05-10 17:29:00
+81,81,108,150.000,150.000,150.000,0.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-08-30 09:20:00,2025-08-31 17:40:00
+82,82,106,190.000,190.000,189.000,1.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-05-16 09:27:00,2025-05-17 17:51:00
+83,83,107,230.000,151.000,149.000,2.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2025-05-21 09:34:00,2025-05-22 17:02:00
+84,84,108,280.000,87.000,86.000,1.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-07-06 09:41:00,2025-07-07 17:13:00
+85,85,100,12.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300048,2025-07-08 09:48:00,2025-07-09 17:24:00
+86,86,101,60.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-stock production for PMSM Motor 3 kW,2025-09-14 09:55:00,2025-09-15 17:35:00
+87,87,102,24.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2025-08-04 09:02:00,2025-08-05 17:46:00
+88,88,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2025-08-06 09:09:00,2025-08-07 17:57:00
+89,89,104,240.000,240.000,236.000,4.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2025-08-28 09:16:00,2025-08-29 17:08:00
+90,90,105,300.000,300.000,291.000,9.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2025-09-11 09:23:00,2025-09-12 17:19:00
+91,91,106,70.000,45.000,45.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-09-29 09:30:00,2025-09-30 17:30:00
+92,92,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2025-09-23 09:37:00,2025-09-24 17:41:00
+93,93,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-09-25 09:44:00,2025-09-26 17:52:00
+94,94,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-09-26 09:51:00,2025-09-27 17:03:00
+95,95,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-10-01 09:58:00,2025-10-02 17:14:00
+96,96,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-10-14 09:05:00,2025-10-15 17:25:00
+97,97,100,12.000,12.000,12.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300139,2025-10-10 09:12:00,2025-10-11 17:36:00
+98,98,101,18.000,18.000,18.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300146,2025-10-19 09:19:00,2025-10-20 17:47:00
+99,99,102,24.000,15.000,15.000,0.000,No,Final Motor Assembly,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2025-11-02 09:26:00,2025-11-03 17:58:00
+100,100,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2025-11-15 09:33:00,2025-11-16 17:09:00
+101,101,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2025-10-29 09:40:00,2025-10-30 17:20:00
+102,102,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2025-11-19 09:47:00,2025-11-20 17:31:00
+103,103,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-12-14 09:54:00,2025-12-15 17:42:00
+104,104,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2026-01-06 09:01:00,2026-01-07 17:53:00
+105,105,108,150.000,150.000,146.000,4.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-01-24 09:08:00,2026-01-25 17:04:00
+106,106,106,190.000,190.000,190.000,0.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-11-13 09:15:00,2025-11-14 17:15:00
+107,107,107,230.000,150.000,149.000,1.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2026-01-22 09:22:00,2026-01-23 17:26:00
+108,108,108,280.000,87.000,86.000,1.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-01-27 09:29:00,2026-01-28 17:37:00
+109,109,100,12.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300244,2026-02-02 09:36:00,2026-02-03 17:48:00
+110,110,101,18.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300255,2026-02-11 09:43:00,2026-02-12 17:59:00
+111,111,102,75.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2025-11-28 09:50:00,2025-11-29 17:10:00
+112,112,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2026-03-03 09:57:00,2026-03-04 17:21:00
+113,113,104,240.000,240.000,237.000,3.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2026-03-02 09:04:00,2026-03-03 17:32:00
+114,114,105,300.000,300.000,294.000,6.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2026-03-10 09:11:00,2026-03-11 17:43:00
+115,115,106,70.000,46.000,45.000,1.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-03-14 09:18:00,2026-03-15 17:54:00
+116,116,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2025-12-13 09:25:00,2025-12-14 17:05:00
+117,117,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-03-26 09:32:00,2026-03-27 17:16:00
+118,118,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-04-13 09:39:00,2025-04-14 17:27:00
+119,119,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-05-13 09:46:00,2025-05-14 17:38:00
+120,120,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-05-07 09:53:00,2025-05-08 17:49:00
+121,121,100,40.000,40.000,40.000,0.000,No,Final Motor Assembly,Completed,Make-to-stock production for BLDC Motor 1.5 kW,2025-12-28 09:00:00,2025-12-29 17:00:00
+122,122,101,18.000,18.000,18.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300024,2025-05-18 09:07:00,2025-05-19 17:11:00
+123,123,102,24.000,15.000,15.000,0.000,No,Final Motor Assembly,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2025-07-03 09:14:00,2025-07-04 17:22:00
+124,124,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2025-07-12 09:21:00,2025-07-13 17:33:00
+125,125,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2025-07-22 09:28:00,2025-07-23 17:44:00
+126,126,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2026-01-12 09:35:00,2026-01-13 17:55:00
+127,127,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-08-03 09:42:00,2025-08-04 17:06:00
+128,128,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-08-25 09:49:00,2025-08-26 17:17:00
+129,129,108,150.000,150.000,147.000,3.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-09-08 09:56:00,2025-09-09 17:28:00
+130,130,106,190.000,190.000,185.000,5.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-09-24 09:03:00,2025-09-25 17:39:00
+131,131,107,230.000,149.000,149.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2026-01-27 09:10:00,2026-01-28 17:50:00
+132,132,108,280.000,86.000,86.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-09-29 09:17:00,2025-09-30 17:01:00
+133,133,100,12.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300128,2025-09-30 09:24:00,2025-10-01 17:12:00
+134,134,101,18.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300130,2025-09-28 09:31:00,2025-09-29 17:23:00
+135,135,102,24.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2025-10-04 09:38:00,2025-10-05 17:34:00
+136,136,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2026-02-11 09:45:00,2026-02-12 17:45:00
+137,137,104,240.000,240.000,238.000,2.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2025-10-16 09:52:00,2025-10-17 17:56:00
+138,138,105,300.000,300.000,296.000,4.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2025-11-06 09:59:00,2025-11-07 17:07:00
+139,139,106,70.000,45.000,45.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-11-19 09:06:00,2025-11-20 17:18:00
+140,140,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2025-11-21 09:13:00,2025-11-22 17:29:00
+141,141,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-02-26 09:20:00,2026-02-27 17:40:00
+142,142,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-12-11 09:27:00,2025-12-12 17:51:00
+143,143,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2026-01-03 09:34:00,2026-01-04 17:02:00
+144,144,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-01-21 09:41:00,2026-01-22 17:13:00
+145,145,100,12.000,12.000,12.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300230,2026-01-25 09:48:00,2026-01-26 17:24:00
+146,146,101,60.000,60.000,60.000,0.000,No,Final Motor Assembly,Completed,Make-to-stock production for PMSM Motor 3 kW,2026-03-13 09:55:00,2026-03-14 17:35:00
+147,147,102,24.000,15.000,15.000,0.000,No,Final Motor Assembly,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2026-01-31 09:02:00,2026-02-01 17:46:00
+148,148,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2026-01-30 09:09:00,2026-01-31 17:57:00
+149,149,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2026-02-08 09:16:00,2026-02-09 17:08:00
+150,150,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2026-02-22 09:23:00,2026-02-23 17:19:00
+151,151,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-03-28 09:30:00,2026-03-29 17:30:00
+152,152,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2026-03-06 09:37:00,2026-03-07 17:41:00
+153,153,108,150.000,150.000,148.000,2.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-03-14 09:44:00,2026-03-15 17:52:00
+154,154,106,190.000,190.000,187.000,3.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-03-18 09:51:00,2026-03-19 17:03:00
+155,155,107,230.000,153.000,149.000,4.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2026-03-18 09:58:00,2026-03-19 17:14:00
+156,156,108,280.000,86.000,86.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-04-12 09:05:00,2026-04-13 17:25:00
+157,157,100,12.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300005,2025-04-10 09:12:00,2025-04-11 17:36:00
+158,158,101,18.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300015,2025-05-10 09:19:00,2025-05-11 17:47:00
+159,159,102,24.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2025-05-11 09:26:00,2025-05-12 17:58:00
+160,160,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2025-05-17 09:33:00,2025-05-18 17:09:00
+161,161,104,240.000,240.000,239.000,1.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2026-04-27 09:40:00,2026-04-28 17:20:00
+162,162,105,300.000,300.000,297.000,3.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2025-06-30 09:47:00,2025-07-01 17:31:00
+163,163,106,70.000,45.000,45.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-07-09 09:54:00,2025-07-10 17:42:00
+164,164,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2025-07-19 09:01:00,2025-07-20 17:53:00
+165,165,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-08-05 09:08:00,2025-08-06 17:04:00
+166,166,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-05-12 09:15:00,2026-05-13 17:15:00
+167,167,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-08-29 09:22:00,2025-08-30 17:26:00
+168,168,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-09-12 09:29:00,2025-09-13 17:37:00
+169,169,100,12.000,12.000,12.000,0.000,No,Testing,Completed,Make-to-order production linked to SO202606300121,2025-09-21 09:36:00,2025-09-22 17:48:00
+170,170,101,18.000,18.000,18.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300125,2025-09-24 09:43:00,2025-09-25 17:59:00
+171,171,102,75.000,48.000,48.000,0.000,No,Rework,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2026-05-27 09:50:00,2026-05-28 17:10:00
+172,172,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2025-09-27 09:57:00,2025-09-28 17:21:00
+173,173,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2025-10-02 09:04:00,2025-10-03 17:32:00
+174,174,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2025-10-08 09:11:00,2025-10-09 17:43:00
+175,175,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-10-11 09:18:00,2025-10-12 17:54:00
+176,176,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2026-06-11 09:25:00,2026-06-12 17:05:00
+177,177,108,150.000,150.000,149.000,1.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-11-03 09:32:00,2025-11-04 17:16:00
+178,178,106,190.000,190.000,188.000,2.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-11-16 09:39:00,2025-11-17 17:27:00
+179,179,107,230.000,151.000,149.000,2.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2025-11-18 09:46:00,2025-11-19 17:38:00
+180,180,108,280.000,88.000,86.000,2.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-11-20 09:53:00,2025-11-21 17:49:00
+181,181,100,40.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-stock production for BLDC Motor 1.5 kW,2026-06-26 09:00:00,2026-06-27 17:00:00
+182,182,101,18.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300214,2026-01-07 09:07:00,2026-01-08 17:11:00
+183,183,102,24.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2026-01-18 09:14:00,2026-01-19 17:22:00
+184,184,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2026-01-22 09:21:00,2026-01-23 17:33:00
+185,185,104,240.000,240.000,233.000,7.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2026-01-23 09:28:00,2026-01-24 17:44:00
+186,186,105,300.000,300.000,299.000,1.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2026-07-11 09:35:00,2026-07-12 17:55:00
+187,187,106,70.000,45.000,45.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-02-03 09:42:00,2026-02-04 17:06:00
+188,188,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2026-02-12 09:49:00,2026-02-13 17:17:00
+189,189,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-02-26 09:56:00,2026-02-27 17:28:00
+190,190,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-02-25 09:03:00,2026-02-26 17:39:00
+191,191,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2026-07-26 09:10:00,2026-07-27 17:50:00
+192,192,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-03-11 09:17:00,2026-03-12 17:01:00
+193,193,100,12.000,12.000,12.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300284,2026-03-15 09:24:00,2026-03-16 17:12:00
+194,194,101,18.000,18.000,18.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300290,2026-03-22 09:31:00,2026-03-23 17:23:00
+195,195,102,24.000,15.000,15.000,0.000,No,Final Motor Assembly,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2026-03-27 09:38:00,2026-03-28 17:34:00
+196,196,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2026-08-10 09:45:00,2026-08-11 17:45:00
+197,197,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2025-05-07 09:52:00,2025-05-08 17:56:00
+198,198,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2025-05-08 09:59:00,2025-05-09 17:07:00
+199,199,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-05-14 09:06:00,2025-05-15 17:18:00
+200,200,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-05-19 09:13:00,2025-05-20 17:29:00
+201,201,108,150.000,150.000,150.000,0.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-08-25 09:20:00,2026-08-26 17:40:00
+202,202,106,190.000,190.000,189.000,1.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-07-13 09:27:00,2025-07-14 17:51:00
+203,203,107,230.000,151.000,149.000,2.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2025-07-23 09:34:00,2025-07-24 17:02:00
+204,204,108,280.000,87.000,86.000,1.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-08-02 09:41:00,2025-08-03 17:13:00
+205,205,100,12.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300074,2025-08-04 09:48:00,2025-08-05 17:24:00
+206,206,101,60.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-stock production for PMSM Motor 3 kW,2026-09-09 09:55:00,2026-09-10 17:35:00
+207,207,102,24.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2025-09-09 09:02:00,2025-09-10 17:46:00
+208,208,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2025-09-25 09:09:00,2025-09-26 17:57:00
+209,209,104,240.000,240.000,236.000,4.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2025-09-28 09:16:00,2025-09-29 17:08:00
+210,210,105,300.000,300.000,291.000,9.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2025-09-30 09:23:00,2025-10-01 17:19:00
+211,211,106,70.000,45.000,45.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-09-24 09:30:00,2026-09-25 17:30:00
+212,212,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2025-09-29 09:37:00,2025-09-30 17:41:00
+213,213,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-10-05 09:44:00,2025-10-06 17:52:00
+214,214,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-10-08 09:51:00,2025-10-09 17:03:00
+215,215,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-10-17 09:58:00,2025-10-18 17:14:00
+216,216,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-10-09 09:05:00,2026-10-10 17:25:00
+217,217,100,12.000,12.000,12.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300168,2025-11-20 09:12:00,2025-11-21 17:36:00
+218,218,101,18.000,18.000,18.000,0.000,No,Testing,Completed,Make-to-order production linked to SO202606300169,2025-11-15 09:19:00,2025-11-16 17:47:00
+219,219,102,24.000,15.000,15.000,0.000,No,Final Motor Assembly,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2025-11-17 09:26:00,2025-11-18 17:58:00
+220,220,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2025-12-12 09:33:00,2025-12-13 17:09:00
+221,221,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2026-10-24 09:40:00,2026-10-25 17:20:00
+222,222,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2026-01-22 09:47:00,2026-01-23 17:31:00
+223,223,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-01-26 09:54:00,2026-01-27 17:42:00
+224,224,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2026-01-27 09:01:00,2026-01-28 17:53:00
+225,225,108,150.000,150.000,146.000,4.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-01-25 09:08:00,2026-01-26 17:04:00
+226,226,106,190.000,190.000,190.000,0.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-11-08 09:15:00,2026-11-09 17:15:00
+227,227,107,230.000,150.000,149.000,1.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2026-02-09 09:22:00,2026-02-10 17:26:00
+228,228,108,280.000,87.000,86.000,1.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-02-23 09:29:00,2026-02-24 17:37:00
+229,229,100,12.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300272,2026-03-01 09:36:00,2026-03-02 17:48:00
+230,230,101,18.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300276,2026-03-07 09:43:00,2026-03-08 17:59:00
+231,231,102,75.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2026-11-23 09:50:00,2026-11-24 17:10:00
+232,232,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2026-03-12 09:57:00,2026-03-13 17:21:00
+233,233,104,240.000,240.000,237.000,3.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2026-03-19 09:04:00,2026-03-20 17:32:00
+234,234,105,300.000,300.000,294.000,6.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2026-03-24 09:11:00,2026-03-25 17:43:00
+235,235,106,70.000,46.000,45.000,1.000,No,Rotor Assembly,Rejected,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-04-11 09:18:00,2025-04-12 17:54:00
+236,236,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2026-12-08 09:25:00,2026-12-09 17:05:00
+237,237,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-05-12 09:32:00,2025-05-13 17:16:00
+238,238,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-05-18 09:39:00,2025-05-19 17:27:00
+239,239,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-05-16 09:46:00,2025-05-17 17:38:00
+240,240,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-07-01 09:53:00,2025-07-02 17:49:00
+241,241,100,40.000,40.000,40.000,0.000,No,Final Motor Assembly,Completed,Make-to-stock production for BLDC Motor 1.5 kW,2026-12-23 09:00:00,2026-12-24 17:00:00
+242,242,101,18.000,18.000,18.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300056,2025-07-20 09:07:00,2025-07-21 17:11:00
+243,243,102,24.000,15.000,15.000,0.000,No,Final Motor Assembly,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2025-08-06 09:14:00,2025-08-07 17:22:00
+244,244,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2025-08-08 09:21:00,2025-08-09 17:33:00
+245,245,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2025-08-30 09:28:00,2025-08-31 17:44:00
+246,246,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2027-01-07 09:35:00,2027-01-08 17:55:00
+247,247,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-09-22 09:42:00,2025-09-23 17:06:00
+248,248,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-09-25 09:49:00,2025-09-26 17:17:00
+249,249,108,150.000,150.000,147.000,3.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-09-27 09:56:00,2025-09-28 17:28:00
+250,250,106,190.000,190.000,185.000,5.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-09-28 09:03:00,2025-09-29 17:39:00
+251,251,107,230.000,149.000,149.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2027-01-22 09:10:00,2027-01-23 17:50:00
+252,252,108,280.000,86.000,86.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-10-09 09:17:00,2025-10-10 17:01:00
+253,253,100,12.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300139,2025-10-05 09:24:00,2025-10-06 17:12:00
+254,254,101,18.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300146,2025-10-14 09:31:00,2025-10-15 17:23:00
+255,255,102,24.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2025-11-04 09:38:00,2025-11-05 17:34:00
+256,256,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2027-02-06 09:45:00,2027-02-07 17:45:00
+257,257,104,240.000,240.000,238.000,2.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2025-11-19 09:52:00,2025-11-20 17:56:00
+258,258,105,300.000,300.000,296.000,4.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2025-11-21 09:59:00,2025-11-22 17:07:00
+259,259,106,70.000,45.000,45.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-12-16 09:06:00,2025-12-17 17:18:00
+260,260,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2026-01-01 09:13:00,2026-01-02 17:29:00
+261,261,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2027-02-21 09:20:00,2027-02-22 17:40:00
+262,262,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2026-01-23 09:27:00,2026-01-24 17:51:00
+263,263,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2026-01-24 09:34:00,2026-01-25 17:02:00
+264,264,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-01-29 09:41:00,2026-01-30 17:13:00
+265,265,100,12.000,12.000,12.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300244,2026-02-04 09:48:00,2026-02-05 17:24:00
+266,266,101,60.000,60.000,60.000,0.000,No,Final Motor Assembly,Completed,Make-to-stock production for PMSM Motor 3 kW,2027-03-08 09:55:00,2027-03-09 17:35:00
+267,267,102,24.000,15.000,15.000,0.000,No,Final Motor Assembly,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2026-02-20 09:02:00,2026-02-21 17:46:00
+268,268,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2026-02-26 09:09:00,2026-02-27 17:57:00
+269,269,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2026-03-04 09:16:00,2026-03-05 17:08:00
+270,270,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2026-03-12 09:23:00,2026-03-13 17:19:00
+271,271,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2027-03-23 09:30:00,2027-03-24 17:30:00
+272,272,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2026-03-23 09:37:00,2026-03-24 17:41:00
+273,273,108,150.000,150.000,148.000,2.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-03-28 09:44:00,2026-03-29 17:52:00
+274,274,106,190.000,190.000,187.000,3.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-04-08 09:51:00,2025-04-09 17:03:00
+275,275,107,230.000,153.000,149.000,4.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2025-05-08 09:58:00,2025-05-09 17:14:00
+276,276,108,280.000,86.000,86.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2027-04-07 09:05:00,2027-04-08 17:25:00
+277,277,100,12.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300023,2025-05-15 09:12:00,2025-05-16 17:36:00
+278,278,101,18.000,0.000,0.000,0.000,No,Final Motor Assembly,Planned,Make-to-order production linked to SO202606300024,2025-05-20 09:19:00,2025-05-21 17:47:00
+279,279,102,24.000,0.000,0.000,0.000,No,Final Motor Assembly,On Hold,Output line on hold for PMSM Motor 7.5 kW: Production hold for PMSM Motor 7.5 kW: awaiting material clearance from stores,2025-07-05 09:26:00,2025-07-06 17:58:00
+280,280,103,200.000,0.000,0.000,0.000,No,Stator Assembly,On Hold,Semi-finished output recorded for Finished Stator 1.5kW.,2025-07-14 09:33:00,2025-07-15 17:09:00
+281,281,104,240.000,240.000,239.000,1.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 3kW.,2027-04-22 09:40:00,2027-04-23 17:20:00
+282,282,105,300.000,300.000,297.000,3.000,No,Stator Assembly,Completed,Semi-finished output recorded for Finished Stator 7.5kW.,2025-08-03 09:47:00,2025-08-04 17:31:00
+283,283,106,70.000,45.000,45.000,0.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-08-05 09:54:00,2025-08-06 17:42:00
+284,284,107,110.000,25.000,25.000,0.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 3kW.,2025-08-27 09:01:00,2025-08-28 17:53:00
+285,285,108,150.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-09-10 09:08:00,2025-09-11 17:04:00
+286,286,106,190.000,0.000,0.000,0.000,No,Rotor Assembly,Planned,Semi-finished output recorded for Finished Rotor 1.5kW.,2027-05-07 09:15:00,2027-05-08 17:15:00
+287,287,107,230.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2025-09-29 09:22:00,2025-09-30 17:26:00
+288,288,108,280.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-09-24 09:29:00,2025-09-25 17:37:00
+289,289,100,12.000,12.000,12.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300128,2025-09-25 09:36:00,2025-09-26 17:48:00
+290,290,101,18.000,18.000,18.000,0.000,No,Final Motor Assembly,Completed,Make-to-order production linked to SO202606300130,2025-09-30 09:43:00,2025-10-01 17:59:00
+291,291,102,75.000,48.000,48.000,0.000,No,Rework,Partially Completed,Partial output recorded for PMSM Motor 7.5 kW; remaining quantity is still in production,2027-05-22 09:50:00,2027-05-23 17:10:00
+292,292,103,200.000,30.000,30.000,0.000,No,Stator Assembly,In Progress,Semi-finished output recorded for Finished Stator 1.5kW.,2025-10-09 09:57:00,2025-10-10 17:21:00
+293,293,104,240.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 3kW.,2025-10-18 09:04:00,2025-10-19 17:32:00
+294,294,105,300.000,0.000,0.000,0.000,No,Stator Assembly,Planned,Semi-finished output recorded for Finished Stator 7.5kW.,2025-11-08 09:11:00,2025-11-09 17:43:00
+295,295,106,70.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-11-14 09:18:00,2025-11-15 17:54:00
+296,296,107,110.000,0.000,0.000,0.000,No,Rotor Assembly,On Hold,Semi-finished output recorded for Finished Rotor 3kW.,2027-06-06 09:25:00,2027-06-07 17:05:00
+297,297,108,150.000,150.000,149.000,1.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 7.5kW.,2025-11-18 09:32:00,2025-11-19 17:16:00
+298,298,106,190.000,190.000,188.000,2.000,No,Rotor Assembly,Completed,Semi-finished output recorded for Finished Rotor 1.5kW.,2025-12-13 09:39:00,2025-12-14 17:27:00
+299,299,107,230.000,151.000,149.000,2.000,No,Rotor Assembly,Partially Completed,Semi-finished output recorded for Finished Rotor 3kW.,2026-01-05 09:46:00,2026-01-06 17:38:00
+300,300,108,280.000,88.000,86.000,2.000,No,Rotor Assembly,In Progress,Semi-finished output recorded for Finished Rotor 7.5kW.,2026-01-23 09:53:00,2026-01-24 17:49:00

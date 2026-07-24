@@ -1,0 +1,303 @@
+co_item_id,co_id,item_id,ordered_quantity,dispatched_quantity,pending_quantity,remarks
+1,1,101,26,26,0,Regular monthly supply
+2,2,100,54,54,0,Emergency replenishment
+3,3,102,15,15,0,Emergency replenishment
+4,4,100,40,40,0,OEM production schedule
+5,5,100,61,41,20,Partial dispatch due to production
+6,6,100,80,80,0,OEM production schedule
+7,7,101,19,19,0,OEM production schedule
+8,8,100,75,75,0,Regular monthly supply
+9,9,102,9,9,0,OEM production schedule
+10,10,100,66,66,0,Emergency replenishment
+11,11,100,69,69,0,OEM production schedule
+12,12,100,80,80,0,OEM production schedule
+13,13,102,16,16,0,Regular monthly supply
+14,14,100,59,59,0,OEM production schedule
+15,15,100,42,27,15,Partial dispatch due to production
+16,16,100,71,61,10,Partial dispatch due to production
+17,17,101,24,24,0,Emergency replenishment
+18,18,100,29,29,0,Emergency replenishment
+19,19,100,67,67,0,Regular monthly supply
+20,20,100,21,21,0,Regular monthly supply
+21,21,100,60,60,0,Emergency replenishment
+22,22,101,22,22,0,Emergency replenishment
+23,23,100,53,0,53,Awaiting production completion
+24,24,100,77,63,14,Partial dispatch due to production
+25,25,100,56,56,0,Emergency replenishment
+26,26,101,29,0,0,Customer cancelled order
+27,27,100,47,47,0,OEM production schedule
+28,28,100,53,53,0,Emergency replenishment
+29,29,100,44,44,0,OEM production schedule
+30,30,100,54,54,0,OEM production schedule
+31,31,101,39,0,0,Customer cancelled order
+32,32,100,55,55,0,OEM production schedule
+33,33,100,21,21,0,Emergency replenishment
+34,34,101,36,36,0,Regular monthly supply
+35,35,102,17,17,0,Emergency replenishment
+36,36,100,49,49,0,OEM production schedule
+37,37,101,11,11,0,Emergency replenishment
+38,38,100,34,34,0,Regular monthly supply
+39,39,101,36,36,0,OEM production schedule
+40,40,100,41,41,0,Regular monthly supply
+41,41,100,74,74,0,OEM production schedule
+42,42,100,21,21,0,Emergency replenishment
+43,43,100,80,80,0,Regular monthly supply
+44,44,102,13,13,0,OEM production schedule
+45,45,101,13,10,3,Partial dispatch due to production
+46,46,100,47,47,0,OEM production schedule
+47,47,100,80,80,0,OEM production schedule
+48,48,101,37,27,10,Partial dispatch due to production
+49,49,100,25,25,0,OEM production schedule
+50,50,100,32,32,0,Regular monthly supply
+51,51,100,22,22,0,Regular monthly supply
+52,52,100,25,25,0,Emergency replenishment
+53,53,100,64,64,0,Emergency replenishment
+54,54,101,18,18,0,OEM production schedule
+55,55,101,17,17,0,OEM production schedule
+56,56,101,20,14,6,Partial dispatch due to production
+57,57,100,67,67,0,Emergency replenishment
+58,58,100,33,33,0,Regular monthly supply
+59,59,101,6,6,0,OEM production schedule
+60,60,102,6,6,0,OEM production schedule
+61,61,100,46,46,0,Regular monthly supply
+62,62,100,58,58,0,Emergency replenishment
+63,63,101,12,12,0,Emergency replenishment
+64,64,101,39,39,0,Regular monthly supply
+65,65,100,70,70,0,Regular monthly supply
+66,66,101,16,16,0,OEM production schedule
+67,67,101,26,26,0,Regular monthly supply
+68,68,100,51,51,0,OEM production schedule
+69,69,100,56,0,0,Customer cancelled order
+70,70,100,77,77,0,OEM production schedule
+71,71,102,9,6,3,Partial dispatch due to production
+72,72,100,28,28,0,Emergency replenishment
+73,73,100,56,56,0,Regular monthly supply
+74,74,102,19,17,2,Partial dispatch due to production
+75,75,102,17,17,0,Emergency replenishment
+76,76,101,28,28,0,OEM production schedule
+77,77,100,27,27,0,Emergency replenishment
+78,78,100,44,44,0,Emergency replenishment
+79,79,100,62,62,0,OEM production schedule
+80,80,101,37,37,0,Emergency replenishment
+81,81,100,37,37,0,Regular monthly supply
+82,82,100,42,42,0,Emergency replenishment
+83,83,101,22,22,0,Regular monthly supply
+84,84,100,52,52,0,Emergency replenishment
+85,85,100,23,23,0,OEM production schedule
+86,86,101,22,22,0,OEM production schedule
+87,87,100,46,46,0,OEM production schedule
+88,88,101,14,14,0,OEM production schedule
+89,89,101,20,20,0,Regular monthly supply
+90,90,100,54,54,0,Emergency replenishment
+91,91,100,42,42,0,OEM production schedule
+92,92,100,45,45,0,Emergency replenishment
+93,93,102,18,0,0,Customer cancelled order
+94,94,101,28,23,5,Partial dispatch due to production
+95,95,100,76,76,0,OEM production schedule
+96,96,100,79,79,0,OEM production schedule
+97,97,100,74,74,0,Regular monthly supply
+98,98,101,29,29,0,OEM production schedule
+99,99,100,37,37,0,OEM production schedule
+100,100,102,6,6,0,Regular monthly supply
+101,101,100,36,36,0,Emergency replenishment
+102,102,100,66,66,0,Emergency replenishment
+103,103,101,40,40,0,Regular monthly supply
+104,104,101,17,14,3,Partial dispatch due to production
+105,105,100,24,24,0,Emergency replenishment
+106,106,101,36,36,0,Emergency replenishment
+107,107,100,22,22,0,Emergency replenishment
+108,108,100,75,75,0,Regular monthly supply
+109,109,100,23,23,0,OEM production schedule
+110,110,100,63,63,0,Regular monthly supply
+111,111,100,80,80,0,Regular monthly supply
+112,112,102,17,17,0,Emergency replenishment
+113,113,100,47,47,0,Regular monthly supply
+114,114,101,24,24,0,Regular monthly supply
+115,115,101,35,35,0,Emergency replenishment
+116,116,100,54,54,0,Regular monthly supply
+117,117,100,29,29,0,OEM production schedule
+118,118,101,29,29,0,Regular monthly supply
+119,119,100,43,43,0,Regular monthly supply
+120,120,100,66,66,0,Emergency replenishment
+121,121,102,6,0,6,Awaiting production completion
+122,122,101,37,37,0,Regular monthly supply
+123,123,101,37,37,0,Regular monthly supply
+124,124,100,71,71,0,Emergency replenishment
+125,125,101,23,17,6,Partial dispatch due to production
+126,126,101,26,26,0,Emergency replenishment
+127,127,101,39,0,39,Awaiting production completion
+128,128,100,10,8,2,Partial dispatch due to production
+129,129,100,76,76,0,Regular monthly supply
+130,130,100,39,24,15,Partial dispatch due to production
+131,131,100,28,28,0,Emergency replenishment
+132,132,100,72,72,0,OEM production schedule
+133,133,101,21,21,0,Regular monthly supply
+134,134,100,56,0,56,Awaiting production completion
+135,135,101,22,22,0,Emergency replenishment
+136,136,101,13,13,0,Regular monthly supply
+137,137,100,27,27,0,Emergency replenishment
+138,138,102,12,12,0,OEM production schedule
+139,139,101,14,12,2,Partial dispatch due to production
+140,140,101,21,21,0,OEM production schedule
+141,141,100,42,42,0,OEM production schedule
+142,142,101,11,11,0,OEM production schedule
+143,143,101,21,21,0,OEM production schedule
+144,144,100,52,52,0,OEM production schedule
+145,145,102,5,5,0,Emergency replenishment
+146,146,100,45,37,8,Partial dispatch due to production
+147,147,100,69,69,0,Regular monthly supply
+148,148,100,38,38,0,Emergency replenishment
+149,149,100,25,25,0,Regular monthly supply
+150,150,100,32,32,0,Regular monthly supply
+151,151,100,73,73,0,OEM production schedule
+152,152,100,36,36,0,OEM production schedule
+153,153,100,53,53,0,Regular monthly supply
+154,154,101,33,33,0,Emergency replenishment
+155,155,100,55,55,0,OEM production schedule
+156,156,101,36,36,0,Regular monthly supply
+157,157,100,39,39,0,OEM production schedule
+158,158,100,78,78,0,Regular monthly supply
+159,159,100,52,52,0,Emergency replenishment
+160,160,100,69,69,0,OEM production schedule
+161,161,101,25,0,25,Awaiting production completion
+162,162,101,14,14,0,OEM production schedule
+163,163,100,24,24,0,Emergency replenishment
+164,164,102,16,16,0,Emergency replenishment
+165,165,100,75,75,0,OEM production schedule
+166,166,100,61,61,0,Emergency replenishment
+167,167,102,16,16,0,OEM production schedule
+168,168,100,47,0,47,Awaiting production completion
+169,169,100,56,32,24,Partial dispatch due to production
+170,170,100,73,73,0,Regular monthly supply
+171,171,101,34,25,9,Partial dispatch due to production
+172,172,100,65,65,0,OEM production schedule
+173,173,100,80,80,0,OEM production schedule
+174,174,101,31,31,0,Emergency replenishment
+175,175,100,73,73,0,OEM production schedule
+176,176,100,67,67,0,Regular monthly supply
+177,177,100,73,73,0,Regular monthly supply
+178,178,101,22,22,0,OEM production schedule
+179,179,100,25,25,0,Emergency replenishment
+180,180,100,29,29,0,Emergency replenishment
+181,181,100,79,79,0,Regular monthly supply
+182,182,100,56,56,0,OEM production schedule
+183,183,101,26,26,0,Regular monthly supply
+184,184,100,58,58,0,Regular monthly supply
+185,185,100,79,79,0,OEM production schedule
+186,186,100,41,41,0,OEM production schedule
+187,187,100,67,67,0,OEM production schedule
+188,188,101,16,16,0,Regular monthly supply
+189,189,102,20,20,0,OEM production schedule
+190,190,100,59,43,16,Partial dispatch due to production
+191,191,100,49,49,0,OEM production schedule
+192,192,100,57,57,0,Regular monthly supply
+193,193,100,76,76,0,Emergency replenishment
+194,194,102,20,20,0,Emergency replenishment
+195,195,100,42,42,0,Emergency replenishment
+196,196,101,14,14,0,Regular monthly supply
+197,197,101,26,26,0,Regular monthly supply
+198,198,101,21,21,0,Regular monthly supply
+199,199,100,4,4,0,Regular monthly supply
+200,200,100,78,78,0,Regular monthly supply
+201,201,100,12,12,0,OEM production schedule
+202,202,101,29,29,0,Regular monthly supply
+203,203,102,7,7,0,OEM production schedule
+204,204,100,78,78,0,Emergency replenishment
+205,205,101,28,28,0,Emergency replenishment
+206,206,100,25,25,0,Emergency replenishment
+207,207,100,2,2,0,OEM production schedule
+208,208,101,24,24,0,Regular monthly supply
+209,209,102,13,13,0,OEM production schedule
+210,210,101,10,10,0,OEM production schedule
+211,211,101,26,26,0,OEM production schedule
+212,212,100,22,22,0,Emergency replenishment
+213,213,102,7,7,0,Regular monthly supply
+214,214,100,47,29,18,Partial dispatch due to production
+215,215,100,33,33,0,Emergency replenishment
+216,216,101,11,11,0,OEM production schedule
+217,217,102,15,15,0,OEM production schedule
+218,218,101,27,27,0,Emergency replenishment
+219,219,100,48,48,0,Emergency replenishment
+220,220,101,16,16,0,OEM production schedule
+221,221,101,14,14,0,OEM production schedule
+222,222,102,19,19,0,Regular monthly supply
+223,223,100,20,20,0,Emergency replenishment
+224,224,100,25,25,0,OEM production schedule
+225,225,102,6,6,0,Regular monthly supply
+226,226,100,32,0,0,Customer cancelled order
+227,227,100,44,36,8,Partial dispatch due to production
+228,228,100,35,35,0,OEM production schedule
+229,229,102,10,10,0,Emergency replenishment
+230,230,100,58,0,58,Awaiting production completion
+231,231,101,14,7,7,Partial dispatch due to production
+232,232,101,33,33,0,OEM production schedule
+233,233,100,50,50,0,OEM production schedule
+234,234,100,67,67,0,Regular monthly supply
+235,235,100,46,46,0,Regular monthly supply
+236,236,100,76,51,25,Partial dispatch due to production
+237,237,100,72,72,0,Regular monthly supply
+238,238,100,65,65,0,OEM production schedule
+239,239,102,19,19,0,Emergency replenishment
+240,240,101,17,17,0,Regular monthly supply
+241,241,101,15,15,0,OEM production schedule
+242,241,100,14,14,0,Regular monthly supply
+243,242,102,6,6,0,OEM production schedule
+244,243,100,58,58,0,Regular monthly supply
+245,244,100,30,0,30,Awaiting production completion
+246,245,100,55,55,0,Regular monthly supply
+247,246,101,31,31,0,OEM production schedule
+248,247,100,44,44,0,Emergency replenishment
+249,248,100,63,63,0,OEM production schedule
+250,249,100,73,73,0,OEM production schedule
+251,250,101,13,13,0,OEM production schedule
+252,251,100,52,52,0,Regular monthly supply
+253,252,101,14,14,0,Emergency replenishment
+254,253,100,50,50,0,Emergency replenishment
+255,254,100,37,37,0,Emergency replenishment
+256,255,102,11,8,3,Partial dispatch due to production
+257,256,100,66,66,0,Emergency replenishment
+258,257,101,12,12,0,Emergency replenishment
+259,258,100,56,56,0,OEM production schedule
+260,259,100,37,37,0,OEM production schedule
+261,260,101,17,0,0,Customer cancelled order
+262,261,101,22,22,0,OEM production schedule
+263,262,100,28,28,0,Emergency replenishment
+264,263,100,32,32,0,OEM production schedule
+265,264,100,41,41,0,Regular monthly supply
+266,265,100,26,26,0,Regular monthly supply
+267,266,100,44,44,0,Emergency replenishment
+268,267,100,49,43,6,Partial dispatch due to production
+269,268,101,13,13,0,Regular monthly supply
+270,269,101,8,8,0,OEM production schedule
+271,270,100,68,68,0,OEM production schedule
+272,271,100,74,74,0,OEM production schedule
+273,272,100,54,0,54,Awaiting production completion
+274,273,101,24,24,0,Regular monthly supply
+275,274,100,28,28,0,Emergency replenishment
+276,275,101,31,31,0,Regular monthly supply
+277,276,100,37,19,18,Partial dispatch due to production
+278,277,100,53,53,0,Emergency replenishment
+279,278,101,35,35,0,Emergency replenishment
+280,279,100,36,36,0,Regular monthly supply
+281,280,100,24,24,0,OEM production schedule
+282,281,100,44,25,19,Partial dispatch due to production
+283,282,101,10,10,0,Regular monthly supply
+284,283,100,56,56,0,OEM production schedule
+285,284,100,38,30,8,Partial dispatch due to production
+286,285,101,16,16,0,Emergency replenishment
+287,286,100,74,74,0,Emergency replenishment
+288,287,100,9,9,0,Regular monthly supply
+289,287,101,6,6,0,Emergency replenishment
+290,288,101,5,5,0,Emergency replenishment
+291,289,100,42,42,0,OEM production schedule
+292,290,100,75,56,19,Partial dispatch due to production
+293,291,101,18,18,0,Regular monthly supply
+294,292,101,15,15,0,Emergency replenishment
+295,293,100,63,63,0,OEM production schedule
+296,294,100,38,38,0,OEM production schedule
+297,295,100,23,16,7,Partial dispatch due to production
+298,296,100,41,41,0,Regular monthly supply
+299,297,102,17,17,0,OEM production schedule
+300,298,100,66,66,0,Emergency replenishment
+301,299,100,69,69,0,Emergency replenishment
+302,300,101,20,20,0,OEM production schedule

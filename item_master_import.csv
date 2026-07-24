@@ -1,0 +1,109 @@
+item_code,item_name,item_description,category,uom,unit_cost,reorder_level,safety_stock,maximum_stock,criticality,status
+COR001,Stator Core 1.5 kW,"CRNGO Steel M250-35A, 0.35 mm",Core Components,No,1800,800,400,1600,Critical,Active
+COR002,Stator Core 3 kW,"CRNGO Steel M250-35A, 0.35 mm",Core Components,No,2800,480,240,960,Critical,Active
+COR003,Stator Core 7.5 kW,"CRNGO Steel M250-35A, 0.35 mm",Core Components,No,6200,240,120,480,Critical,Active
+COR004,Rotor Core 1.5 kW,Electrical Steel Lamination Stack,Core Components,No,1200,800,400,1600,Critical,Active
+COR005,Rotor Core 3 kW,Electrical Steel Lamination Stack,Core Components,No,2200,480,240,960,Critical,Active
+COR006,Rotor Core 7.5 kW,Electrical Steel Lamination Stack,Core Components,No,5000,240,120,480,Critical,Active
+MAG001,NdFeB Magnet N42,Arc Segment Magnet,Magnetic Components,No,180,6400,3200,12800,Critical,Active
+MAG002,NdFeB Magnet N45,Arc Segment Magnet,Magnetic Components,No,240,4800,2400,9600,Critical,Active
+MAG003,NdFeB Magnet N48,Arc Segment Magnet,Magnetic Components,No,360,2880,1440,5760,Critical,Active
+MEC001,Motor Shaft EN8,Ø20 × 180 mm,Mechanical Components,No,450,800,400,1600,Critical,Active
+MEC002,Motor Shaft EN19,Ø25 × 220 mm,Mechanical Components,No,750,480,240,960,Critical,Active
+MEC003,Motor Shaft EN24,Ø35 × 300 mm,Mechanical Components,No,1800,240,120,480,Critical,Active
+MEC004,Rotor Sleeve SS 0.5 mm,Stainless Steel Sleeve,Mechanical Components,No,160,800,400,1600,Semi Critical,Active
+MEC005,Rotor Sleeve SS 0.6 mm,Stainless Steel Sleeve,Mechanical Components,No,220,480,240,960,Semi Critical,Active
+MEC006,Rotor Sleeve SS 0.8 mm,Stainless Steel Sleeve,Mechanical Components,No,420,240,120,480,Semi Critical,Active
+MEC007,Housing 1.5 kW,ADC12 Die Cast Housing,Mechanical Components,No,1300,800,400,1600,Critical,Active
+MEC008,Housing 3 kW,ADC12 Die Cast Housing,Mechanical Components,No,2400,480,240,960,Critical,Active
+MEC009,Housing 7.5 kW,ADC12 Heavy Duty Die Cast,Mechanical Components,No,5200,240,120,480,Critical,Active
+MEC010,Front End Cover,ADC12 Aluminium,Mechanical Components,No,450,1520,760,3040,Semi Critical,Active
+MEC011,Rear End Cover,ADC12 Aluminium,Mechanical Components,No,450,1520,760,3040,Semi Critical,Active
+MEC012,Bearing Spacer MS,Mild Steel,Mechanical Components,No,60,1280,640,2560,Semi Critical,Active
+MEC013,Bearing Spacer Alloy,Alloy Steel,Mechanical Components,No,120,240,120,480,Semi Critical,Active
+BRG001,Bearing 6202-2RS,Deep Groove Bearing,Bearings,No,120,1600,800,3200,Critical,Active
+BRG002,Bearing 6205-2RS,Deep Groove Bearing,Bearings,No,220,960,480,1920,Critical,Active
+BRG003,Bearing 6307-2RS,Deep Groove Bearing,Bearings,No,650,480,240,960,Critical,Active
+SEA001,O-Ring Standard,Nitrile Rubber,Sealing Components,No,15,1520,760,3040,Semi Critical,Active
+SEA002,Oil Seal Standard,NBR,Sealing Components,No,45,1280,640,2560,Semi Critical,Active
+SEA003,Oil Seal Heavy Duty,Heavy Duty NBR,Sealing Components,No,110,480,240,960,Semi Critical,Active
+ELE001,Copper Wire 1.00 mm,Class H Enameled Copper,Electrical Components,kg,850,1440,720,2880,Critical,Active
+ELE002,Copper Wire 1.20 mm,Class H Enameled Copper,Electrical Components,kg,880,1536,768,3072,Critical,Active
+ELE003,Copper Wire 1.60 mm,Class H Enameled Copper,Electrical Components,kg,920,1560,780,3120,Critical,Active
+ELE004,Phase Lead Wire 2.5 mm²,Silicone Cable,Electrical Components,m,35,2400,1200,4800,Critical,Active
+ELE005,Phase Lead Wire 4 mm²,Silicone Cable,Electrical Components,m,60,1920,960,3840,Critical,Active
+ELE006,Phase Lead Wire 10 mm²,Silicone Cable,Electrical Components,m,150,1200,600,2400,Critical,Active
+ELE007,Terminal Block Standard,3 Phase,Electrical Components,No,90,800,400,1600,Semi Critical,Active
+ELE008,Terminal Block Heavy Duty,3 Phase Heavy Duty,Electrical Components,No,180,480,240,960,Semi Critical,Active
+ELE009,Terminal Block Industrial,Industrial 3 Phase,Electrical Components,No,420,240,120,480,Semi Critical,Active
+ELE010,Terminal Lug,Copper Tinned,Electrical Components,No,12,4560,2280,9120,Semi Critical,Active
+ELC001,Hall Sensor,A3144 or Equivalent,Electronic Components,No,45,2400,1200,4800,Critical,Active
+ELC002,Hall Sensor PCB,FR4 PCB,Electronic Components,No,120,800,400,1600,Critical,Active
+ELC003,Resolver / Encoder,Incremental Resolver,Electronic Components,No,1400,480,240,960,Critical,Active
+ELC004,Resolver High Precision,High Precision Resolver,Electronic Components,No,3200,240,120,480,Critical,Active
+ELC005,Temperature Sensor NTC,Thermistor,Electronic Components,No,85,480,240,960,Semi Critical,Active
+ELC006,PT100 Sensor,Industrial RTD,Electronic Components,No,220,480,240,960,Semi Critical,Active
+ELC007,Motor Connector IP67,Standard / Heavy Duty,Electronic Components,No,350,1280,640,2560,Critical,Active
+ELC008,Motor Connector IP68,Heavy Duty,Electronic Components,No,750,240,120,480,Critical,Active
+ELC009,Wiring Harness Automotive,Complete Assembly,Electronic Components,Set,450,1280,640,2560,Critical,Active
+ELC010,Wiring Harness Industrial,Complete Assembly,Electronic Components,Set,950,240,120,480,Critical,Active
+ELC011,Cable Gland PG9,Nylon,Electronic Components,No,25,800,400,1600,Non Critical,Active
+ELC012,Cable Gland PG11,Nylon,Electronic Components,No,40,480,240,960,Non Critical,Active
+ELC013,Cable Gland PG16,Brass,Electronic Components,No,110,240,120,480,Semi Critical,Active
+ELC014,Cable Tie 150 mm,Nylon,Electronic Components,No,2,4000,2000,8000,Non Critical,Active
+ELC015,Cable Tie 200 mm,Nylon,Electronic Components,No,3,2880,1440,5760,Non Critical,Active
+ELC016,Cable Tie 250 mm,Nylon,Electronic Components,No,5,1920,960,3840,Non Critical,Active
+INS001,Slot Liner 0.25 mm,Nomex DMD,Insulation Materials,No,8,19200,9600,38400,Critical,Active
+INS002,Slot Liner 0.30 mm,Nomex DMD,Insulation Materials,No,10,17280,8640,34560,Critical,Active
+INS003,Slot Liner 0.35 mm,Nomex DMD,Insulation Materials,No,12,11520,5760,23040,Critical,Active
+INS004,Phase Insulation Paper,Class H,Insulation Materials,No,6,48000,24000,96000,Critical,Active
+INS005,Slot Wedge,FRP,Insulation Materials,No,5,48000,24000,96000,Critical,Active
+INS006,Heat Shrink Sleeve 6 mm,Polyolefin,Insulation Materials,m,18,400,200,800,Semi Critical,Active
+INS007,Heat Shrink Sleeve 8 mm,Polyolefin,Insulation Materials,m,25,384,192,768,Semi Critical,Active
+INS008,Heat Shrink Sleeve 12 mm,Polyolefin,Insulation Materials,m,45,240,120,480,Semi Critical,Active
+FAS001,Hex Bolt M5×20,Grade 8.8,Fasteners,No,3,6400,3200,12800,Semi Critical,Active
+FAS002,Hex Bolt M6×25,Grade 8.8,Fasteners,No,5,4800,2400,9600,Semi Critical,Active
+FAS003,Hex Bolt M8×35,Grade 10.9,Fasteners,No,12,2880,1440,5760,Semi Critical,Active
+FAS004,Hex Nut M5,Grade 8,Fasteners,No,1.5,6400,3200,12800,Semi Critical,Active
+FAS005,Hex Nut M6,Grade 8,Fasteners,No,2.5,4800,2400,9600,Semi Critical,Active
+FAS006,Hex Nut M8,Grade 10,Fasteners,No,6,2880,1440,5760,Semi Critical,Active
+FAS007,Flat Washer M5,SS304,Fasteners,No,0.8,6400,3200,12800,Non Critical,Active
+FAS008,Flat Washer M6,SS304,Fasteners,No,1.2,4800,2400,9600,Non Critical,Active
+FAS009,Flat Washer M8,SS304,Fasteners,No,2.5,2880,1440,5760,Non Critical,Active
+FAS010,Spring Washer M5,Spring Steel,Fasteners,No,0.8,6400,3200,12800,Non Critical,Active
+FAS011,Spring Washer M6,Spring Steel,Fasteners,No,1.2,4800,2400,9600,Non Critical,Active
+FAS012,Spring Washer M8,Spring Steel,Fasteners,No,2.5,2880,1440,5760,Non Critical,Active
+FAS013,Dowel Pin Ø5×20,Steel,Fasteners,No,4,1600,800,3200,Semi Critical,Active
+FAS014,Dowel Pin Ø6×25,Steel,Fasteners,No,7,960,480,1920,Semi Critical,Active
+FAS015,Dowel Pin Ø8×30,Steel,Fasteners,No,15,480,240,960,Semi Critical,Active
+FAS016,Internal Circlip,DIN472,Fasteners,No,4,3040,1520,6080,Semi Critical,Active
+FAS017,External Circlip,DIN471,Fasteners,No,4,3040,1520,6080,Semi Critical,Active
+CON001,Insulating Varnish,Class H,Consumables,ml,0.8,144000,72000,288000,Critical,Active
+CON002,Epoxy Adhesive,High Strength,Consumables,g,1.2,42000,21000,84000,Critical,Active
+CON003,Thread Locker,Medium/High Strength,Consumables,ml,1.5,8000,4000,16000,Semi Critical,Active
+CON004,Bearing Grease,Lithium EP2,Consumables,g,0.6,24000,12000,48000,Semi Critical,Active
+CON005,Cleaning Solvent,IPA,Consumables,ml,0.25,156000,78000,312000,Non Critical,Active
+CON006,Solder Wire,Sn60/Pb40,Consumables,g,1.8,9000,4500,18000,Semi Critical,Active
+CON007,Flux,No-Clean,Consumables,g,1.2,4000,2000,8000,Semi Critical,Active
+CON008,Silicone Sealant,RTV,Consumables,g,0.8,12000,6000,24000,Semi Critical,Active
+PKG001,Corrugated Carton Box,Standard / 7-Ply / Heavy Duty,Packaging Materials,No,45,1520,760,3040,Non Critical,Active
+PKG002,Foam Insert,EPE Foam,Packaging Materials,No,18,3040,1520,6080,Non Critical,Active
+PKG003,Bubble Wrap,Heavy Duty,Packaging Materials,Sheet,10,1760,880,3520,Non Critical,Active
+PKG004,Poly Bag,LDPE,Packaging Materials,No,6,1520,760,3040,Non Critical,Active
+PKG005,Packing Tape,BOPP,Packaging Materials,m,1.2,1600,800,3200,Non Critical,Active
+PKG006,Silica Gel Pouch,Moisture Absorber,Packaging Materials,No,3,1760,880,3520,Non Critical,Active
+IDD001,Aluminium Nameplate,Laser Engraved,Identification & Documentation,No,35,1520,760,3040,Semi Critical,Active
+IDD002,QR Code Label,Polyester,Identification & Documentation,No,3,1520,760,3040,Semi Critical,Active
+IDD003,Rating Sticker,Polyester,Identification & Documentation,No,4,1520,760,3040,Semi Critical,Active
+IDD004,Inspection Sticker,QC Approved,Identification & Documentation,No,2,1520,760,3040,Non Critical,Active
+IDD005,User Manual,Printed,Identification & Documentation,No,8,1520,760,3040,Non Critical,Active
+IDD006,Warranty Card,Printed,Identification & Documentation,No,4,1520,760,3040,Non Critical,Active
+FG001,BLDC Motor 1.5 kW,Finished motor for 2-wheeler EV application,Finished Goods,No,18500,300,150,900,Critical,Active
+FG002,PMSM Motor 3 kW,Finished motor for 3-wheeler EV application,Finished Goods,No,36500,180,90,540,Critical,Active
+FG003,PMSM Motor 7.5 kW,Finished motor for cargo EV application,Finished Goods,No,82000,90,45,270,Critical,Active
+SFG-ST15,Finished Stator 1.5kW,Semi-finished stator assembly for 1.5kW EV motor,Semi-Finished Goods,No,5200,120,60,360,Critical,Active
+SFG-ST30,Finished Stator 3kW,Semi-finished stator assembly for 3kW EV motor,Semi-Finished Goods,No,7800,90,45,270,Critical,Active
+SFG-ST75,Finished Stator 7.5kW,Semi-finished stator assembly for 7.5kW EV motor,Semi-Finished Goods,No,15500,45,22,135,Critical,Active
+SFG-RT15,Finished Rotor 1.5kW,Semi-finished rotor assembly for 1.5kW EV motor,Semi-Finished Goods,No,4300,120,60,360,Critical,Active
+SFG-RT30,Finished Rotor 3kW,Semi-finished rotor assembly for 3kW EV motor,Semi-Finished Goods,No,6900,90,45,270,Critical,Active
+SFG-RT75,Finished Rotor 7.5kW,Semi-finished rotor assembly for 7.5kW EV motor,Semi-Finished Goods,No,13600,45,22,135,Critical,Active
