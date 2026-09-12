@@ -2,15 +2,18 @@ services:
   - type: web
     name: ev-motor-erp-api
     runtime: node
-    rootDir: backend
     plan: free
-    buildCommand: pnpm install --frozen-lockfile
-    startCommand: pnpm start
+    buildCommand: cd backend && npm install && cd ../frontend && npm install && VITE_API_BASE_URL=/api npm run build
+    startCommand: cd backend && npm start
     envVars:
       - key: NODE_ENV
         value: production
       - key: HOST
         value: 0.0.0.0
+      - key: SERVE_FRONTEND
+        value: "true"
+      - key: FRONTEND_DIST_DIR
+        value: ../frontend/dist
       - key: DB_HOST
         sync: false
       - key: DB_PORT
@@ -22,7 +25,7 @@ services:
       - key: DB_NAME
         sync: false
       - key: CORS_ORIGINS
-        sync: false
+        value: ""
       - key: JWT_SECRET
         generateValue: true
       - key: JWT_EXPIRES_SECONDS

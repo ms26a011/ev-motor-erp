@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import crypto from 'crypto';
+import path from 'path';
 
 dotenv.config();
 
@@ -12,6 +13,8 @@ export const config = {
     .split(',')
     .map((origin) => origin.trim())
     .filter(Boolean),
+  serveFrontend: process.env.SERVE_FRONTEND === 'true',
+  frontendDistDir: process.env.FRONTEND_DIST_DIR || path.resolve(process.cwd(), '../frontend/dist'),
   database: {
     host: process.env.DB_HOST || 'localhost',
     user: process.env.DB_USER || 'root',

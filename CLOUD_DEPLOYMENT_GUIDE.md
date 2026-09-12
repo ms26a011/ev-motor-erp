@@ -1,16 +1,14 @@
 # Cloud Deployment Guide
 
-This ERP has three cloud parts:
+This ERP has two required cloud parts:
 
 1. MySQL database
-2. Backend API
-3. Frontend website
+2. Public ERP website with backend API
 
 Recommended setup for verification:
 
 - Database: Aiven for MySQL
-- Backend API: Render Web Service
-- Frontend: Vercel Vite site
+- Public ERP website: Render Web Service
 
 ## 1. Push The Project To GitHub
 
@@ -48,7 +46,7 @@ mysql -h CLOUD_DB_HOST -P CLOUD_DB_PORT -u CLOUD_DB_USER -p CLOUD_DB_NAME < ev_m
 
 For Aiven, use the host, port, username, password, and database shown in the Quick Connect panel.
 
-## 4. Deploy Backend API On Render
+## 4. Deploy The ERP Website On Render
 
 In Render:
 
@@ -63,28 +61,28 @@ DB_PORT=your-cloud-mysql-port
 DB_USER=your-cloud-mysql-user
 DB_PASSWORD=your-cloud-mysql-password
 DB_NAME=your-cloud-mysql-database
-CORS_ORIGINS=https://your-frontend-domain.vercel.app
 ```
 
-After deploy, Render gives an API URL like:
+After deploy, Render gives a public URL like:
 
 ```text
 https://ev-motor-erp-api.onrender.com
 ```
 
-Test it in the browser:
+Open it in any browser from any system:
 
 ```text
-https://ev-motor-erp-api.onrender.com/
+https://ev-motor-erp-api.onrender.com
 ```
 
-Expected response:
+Expected result:
 
-```json
-{ "message": "EV Motor Manufacturing ERP API is running." }
-```
+- ERP login page opens.
+- API is available under `/api`.
 
-## 5. Deploy Frontend On Vercel
+## 5. Optional: Separate Frontend On Vercel
+
+You only need this if you want separate frontend and backend links. For the simplest verification setup, skip this section and use the Render URL.
 
 In Vercel:
 
@@ -107,7 +105,7 @@ https://ev-motor-erp.vercel.app
 
 ## 6. Update Render CORS
 
-After Vercel gives the final frontend URL, go back to Render and update:
+Only do this if you used Vercel. After Vercel gives the final frontend URL, go back to Render and update:
 
 ```text
 CORS_ORIGINS=https://your-final-vercel-url.vercel.app

@@ -1,5 +1,7 @@
 import cors from 'cors';
 import express from 'express';
+import fs from 'fs';
+import path from 'path';
 
 import { authenticateRequest, authenticateUser, ensureUserAccountTable } from './auth.js';
 import { canAccessModule, canUseDataImport } from './accessControl.js';
@@ -28,7 +30,7 @@ const app = express();
 
 app.use(cors({
   origin(origin, callback) {
-    if (!origin || config.corsOrigins.includes(origin)) {
+    if (!origin || config.corsOrigins.length === 0 || config.corsOrigins.includes(origin)) {
       callback(null, true);
       return;
     }
@@ -38,9 +40,15 @@ app.use(cors({
 }));
 app.use(express.json({ limit: '30mb' }));
 
-app.get('/', (req, res) => {
+app.get('/api/health', (req, res) => {
   res.json({ message: 'EV Motor Manufacturing ERP API is running.' });
 });
+
+if (!config.serveFrontend) {
+  app.get('/', (req, res) => {
+    res.json({ message: 'EV Motor Manufacturing ERP API is running.' });
+  });
+}
 
 app.post('/api/auth/login', async (req, res, next) => {
   try {
@@ -334,6 +342,18 @@ app.delete('/api/:moduleKey/:recordId', async (req, res, next) => {
     next(error);
   }
 });
+
+if (config.serveFrontend) {
+  const indexPath = path.join(config.frontendDistDir, 'index.html');
+  app.use(express.static(config.frontendDistDir));
+  app.use((req, res, next) => {
+    if (req.method === 'GET' && !req.path.startsWith('/api') && fs.existsSync(indexPath)) {
+      res.sendFile(indexPath);
+      return;
+    }
+    next();
+  });
+}
 
 app.use((error, req, res, next) => {
   const status = error.status || error.statusCode || 500;
