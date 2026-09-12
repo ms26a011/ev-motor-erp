@@ -49,6 +49,7 @@ export const api = {
   me: () => request('/auth/me'),
   getModules: () => request('/modules'),
   getDashboard: () => request('/dashboard'),
+  getInventoryAnalytics: () => request('/inventory-analytics'),
   getImportModules: () => request('/import/modules'),
   getImportHistory: (moduleKey = '') => request(`/import/history${moduleKey ? `?moduleKey=${moduleKey}` : ''}`),
   previewImport: (moduleKey, payload) => request(`/import/${moduleKey}/preview`, {

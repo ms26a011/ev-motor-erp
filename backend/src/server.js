@@ -19,6 +19,7 @@ import {
   importRows,
   previewImport,
 } from './importService.js';
+import { getInventoryAnalytics } from './inventoryAnalytics.js';
 import { query } from './db.js';
 import { getColumnMetadata, getPrimaryKeyColumn, refreshMetadata } from './metadata.js';
 import { ensureModule, erpModules } from './modules.js';
@@ -116,6 +117,18 @@ app.get('/api/dashboard', async (req, res, next) => {
       unpaidVendorInvoices: 0,
       pendingCustomerPayments: 0,
     });
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.get('/api/inventory-analytics', async (req, res, next) => {
+  try {
+    if (!canAccessModule(req.user, 'inventoryAnalytics')) {
+      res.status(403).json({ detail: 'Access denied.' });
+      return;
+    }
+    res.json(await getInventoryAnalytics());
   } catch (error) {
     next(error);
   }

@@ -5,7 +5,12 @@ export const ROLES = {
   SECTION_HEAD: 'SECTION_HEAD',
 };
 
-export const fullAccessModules = Object.keys(erpModules);
+export const analyticsModules = ['inventoryAnalytics'];
+
+export const fullAccessModules = [
+  ...Object.keys(erpModules),
+  ...analyticsModules,
+];
 
 export const departmentModuleMap = {
   PROC: [
@@ -13,6 +18,7 @@ export const departmentModuleMap = {
     'employees',
     'vendors',
     'items',
+    'inventoryAnalytics',
     'purchaseRequisitions',
     'purchaseRequisitionItems',
     'purchaseOrders',
@@ -25,6 +31,7 @@ export const departmentModuleMap = {
     'employees',
     'vendors',
     'items',
+    'inventoryAnalytics',
     'purchaseOrders',
     'purchaseOrderItems',
     'grns',
@@ -39,6 +46,7 @@ export const departmentModuleMap = {
     'employees',
     'items',
     'bomMaster',
+    'inventoryAnalytics',
     'stockInwards',
     'stockTransactions',
     'stockIssues',
@@ -53,6 +61,7 @@ export const departmentModuleMap = {
     'employees',
     'items',
     'bomMaster',
+    'inventoryAnalytics',
     'stockInwards',
     'stockTransactions',
     'stockIssues',
@@ -67,6 +76,7 @@ export const departmentModuleMap = {
     'employees',
     'items',
     'bomMaster',
+    'inventoryAnalytics',
     'stockInwards',
     'stockTransactions',
     'stockIssues',
@@ -81,6 +91,7 @@ export const departmentModuleMap = {
     'employees',
     'customers',
     'items',
+    'inventoryAnalytics',
     'stockInwards',
     'stockTransactions',
     'stockIssues',

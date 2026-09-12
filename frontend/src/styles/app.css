@@ -586,6 +586,84 @@ a {
   padding: 18px;
 }
 
+.analytics-card {
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  width: 100%;
+}
+
+.analytics-card.active {
+  background: #f7fbff;
+  border-color: var(--card-accent, var(--blue));
+}
+
+.analytics-grid {
+  grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+}
+
+.criticality-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+}
+
+.criticality-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--criticality-accent, var(--blue));
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  gap: 12px;
+  min-height: 96px;
+  padding: 14px;
+  text-align: left;
+}
+
+.criticality-card:hover {
+  background: #f7fbff;
+}
+
+.criticality-card span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.criticality-card strong {
+  color: #111827;
+  font-size: 26px;
+}
+
+.analytics-signal-button {
+  background: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  width: 100%;
+}
+
+.analytics-table-panel {
+  margin-top: 18px;
+}
+
+.analytics-item-cell {
+  display: grid;
+  gap: 4px;
+  min-width: 220px;
+}
+
+.analytics-item-cell strong {
+  color: #172033;
+  font-size: 14px;
+}
+
+.analytics-item-cell span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .panel-heading {
   align-items: center;
   display: flex;
@@ -833,7 +911,8 @@ tbody tr:hover {
 
 .status-badge.pending,
 .status-badge.draft,
-.status-badge.planned {
+.status-badge.planned,
+.status-badge.low {
   background: #eef2f6;
   color: #475569;
 }
@@ -844,9 +923,15 @@ tbody tr:hover {
 .status-badge.partially-dispatched,
 .status-badge.partially-passed,
 .status-badge.partially-paid,
-.status-badge.in-progress {
+.status-badge.in-progress,
+.status-badge.medium {
   background: var(--blue-soft);
   color: var(--blue-dark);
+}
+
+.status-badge.high {
+  background: var(--danger-bg);
+  color: var(--danger);
 }
 
 .actions-col {
@@ -1353,6 +1438,10 @@ select:focus,
     grid-template-columns: 1fr;
   }
 
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
   .quick-nav-grid {
     grid-template-columns: repeat(3, minmax(150px, 1fr));
   }
@@ -1380,6 +1469,7 @@ select:focus,
   .form-grid,
   .quick-nav-grid,
   .detail-panel,
+  .criticality-grid,
   .import-module-grid {
     grid-template-columns: 1fr;
   }

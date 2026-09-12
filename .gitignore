@@ -25,6 +25,9 @@ __pycache__/
 npm-debug.log*
 pnpm-debug.log*
 
+# Document render previews
+docs/rendered_*/
+
 # Editor and OS files
 .DS_Store
 Thumbs.db

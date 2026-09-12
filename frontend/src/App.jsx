@@ -5,6 +5,7 @@ import AppLayout from './components/AppLayout.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import DataImport from './pages/DataImport.jsx';
+import InventoryAnalytics from './pages/InventoryAnalytics.jsx';
 import MasterDetail from './pages/MasterDetail.jsx';
 import MasterForm from './pages/MasterForm.jsx';
 import MasterList from './pages/MasterList.jsx';
@@ -24,6 +25,7 @@ export const moduleFallbacks = [
   { key: 'grns', title: 'Goods Receipt Note / GRN', group: 'Procurement' },
   { key: 'grnItems', title: 'GRN Items', group: 'Procurement' },
   { key: 'stockInwards', title: 'Inventory Balance', group: 'Inventory' },
+  { key: 'inventoryAnalytics', title: 'Inventory Analytics', group: 'Inventory' },
   { key: 'stockTransactions', title: 'Stock Transaction Log', group: 'Inventory' },
   { key: 'stockIssues', title: 'Move Order', group: 'Inventory' },
   { key: 'stockIssueItems', title: 'Stock Issue Items', group: 'Inventory' },
@@ -79,6 +81,14 @@ function AuthenticatedApp() {
             element={(
               <ProtectedRoute requireSectionHead>
                 <DataImport />
+              </ProtectedRoute>
+            )}
+          />
+          <Route
+            path="/inventoryAnalytics"
+            element={(
+              <ProtectedRoute moduleKey="inventoryAnalytics">
+                <InventoryAnalytics />
               </ProtectedRoute>
             )}
           />
