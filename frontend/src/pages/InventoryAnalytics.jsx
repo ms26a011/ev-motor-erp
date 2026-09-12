@@ -4,11 +4,14 @@ import {
   AlertTriangle,
   Boxes,
   CalendarClock,
+  CalendarDays,
   Gauge,
   PackageCheck,
   PackageX,
+  Radar,
   ShieldAlert,
   ShoppingCart,
+  TrendingUp,
 } from 'lucide-react';
 import { api } from '../api/client.js';
 
@@ -23,6 +26,13 @@ const criticalityCards = [
   { key: 'highlyCritical', label: 'Highly Critical', accent: '#b42318' },
   { key: 'semiCritical', label: 'Semi Critical', accent: '#9a3412' },
   { key: 'lowCritical', label: 'Low Critical', accent: '#067647' },
+];
+
+const forecastCards = [
+  { label: '30 Day Consumption', valueKey: 'forecast30DayConsumption', icon: TrendingUp, suffix: 'units' },
+  { label: 'Forecast Reorder Qty', valueKey: 'forecastReorderQuantity', icon: ShoppingCart, suffix: 'units' },
+  { label: 'High Forecast Risk', valueKey: 'highForecastRiskItems', icon: Radar, suffix: 'items' },
+  { label: 'Forecasted Items', valueKey: 'forecastItems', icon: CalendarDays, suffix: 'items' },
 ];
 
 function InventoryAnalytics() {
@@ -102,6 +112,30 @@ function InventoryAnalytics() {
         </article>
       </div>
 
+      <article className="dashboard-panel forecast-panel">
+        <div className="panel-heading">
+          <h3>ML Forecast Signals</h3>
+          <button className="btn secondary" onClick={() => setActiveView('forecastItems')} type="button">
+            View Forecast Items
+          </button>
+        </div>
+        <div className="forecast-card-grid">
+          {forecastCards.map((card) => (
+            <button
+              className={`forecast-card ${activeView === 'forecastItems' ? 'active' : ''}`}
+              key={card.valueKey}
+              onClick={() => setActiveView('forecastItems')}
+              type="button"
+            >
+              {React.createElement(card.icon, { size: 20 })}
+              <span>{card.label}</span>
+              <strong>{formatNumber(analytics?.summary?.[card.valueKey])}</strong>
+              <small>{card.suffix}</small>
+            </button>
+          ))}
+        </div>
+      </article>
+
       <article className="dashboard-panel analytics-table-panel">
         <div className="panel-heading">
           <h3>{viewTitle(activeView)}</h3>
@@ -145,12 +179,25 @@ function InventoryAnalyticsTable({ rows, view }) {
           <tr>
             <th>Item</th>
             <th>Criticality</th>
-            <th>Available</th>
-            <th>Requirement</th>
-            <th>Open PO</th>
-            <th>Suggested Order</th>
-            <th>{view === 'stockoutRiskItems' ? 'Days Cover' : 'Required By'}</th>
-            <th>Risk</th>
+            {view === 'forecastItems' ? (
+              <>
+                <th>7 Day Forecast</th>
+                <th>30 Day Forecast</th>
+                <th>Stockout Date</th>
+                <th>Reorder Qty</th>
+                <th>Order Trigger</th>
+                <th>Risk Score</th>
+              </>
+            ) : (
+              <>
+                <th>Available</th>
+                <th>Requirement</th>
+                <th>Open PO</th>
+                <th>Suggested Order</th>
+                <th>{view === 'stockoutRiskItems' ? 'Days Cover' : 'Required By'}</th>
+                <th>Risk</th>
+              </>
+            )}
           </tr>
         </thead>
         <tbody>
@@ -163,12 +210,29 @@ function InventoryAnalyticsTable({ rows, view }) {
                 </div>
               </td>
               <td>{row.criticality}</td>
-              <td>{formatQuantity(row.available_quantity, row.uom)}</td>
-              <td>{formatQuantity(row.planning_requirement_quantity, row.uom)}</td>
-              <td>{formatQuantity(row.open_po_quantity, row.uom)}</td>
-              <td>{formatQuantity(row.suggested_order_quantity, row.uom)}</td>
-              <td>{view === 'stockoutRiskItems' ? `${row.days_of_cover} days` : formatDate(row.required_by_date)}</td>
-              <td><span className={`status-badge ${row.risk_level.toLowerCase()}`}>{row.risk_level}</span></td>
+              {view === 'forecastItems' ? (
+                <>
+                  <td>{formatQuantity(row.forecast_7d_consumption, row.uom)}</td>
+                  <td>{formatQuantity(row.forecast_30d_consumption, row.uom)}</td>
+                  <td>{formatDate(row.forecast_stockout_date)}</td>
+                  <td>{formatQuantity(row.forecast_reorder_quantity, row.uom)}</td>
+                  <td>{formatDate(row.forecast_order_trigger_date)}</td>
+                  <td>
+                    <span className={`status-badge ${row.risk_level.toLowerCase()}`}>
+                      {row.forecast_risk_score}
+                    </span>
+                  </td>
+                </>
+              ) : (
+                <>
+                  <td>{formatQuantity(row.available_quantity, row.uom)}</td>
+                  <td>{formatQuantity(row.planning_requirement_quantity, row.uom)}</td>
+                  <td>{formatQuantity(row.open_po_quantity, row.uom)}</td>
+                  <td>{formatQuantity(row.suggested_order_quantity, row.uom)}</td>
+                  <td>{view === 'stockoutRiskItems' ? `${row.days_of_cover} days` : formatDate(row.required_by_date)}</td>
+                  <td><span className={`status-badge ${row.risk_level.toLowerCase()}`}>{row.risk_level}</span></td>
+                </>
+              )}
             </tr>
           ))}
         </tbody>
@@ -185,6 +249,7 @@ function viewTitle(view) {
     productionShortages: 'Production Shortage View',
     openPoCoverage: 'Open PO Coverage',
     excessSlowMovingItems: 'Excess And Slow Moving Inventory',
+    forecastItems: 'Five Forecast Outputs',
   };
   return titles[view] || 'Inventory Analytics';
 }

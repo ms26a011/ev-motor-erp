@@ -648,6 +648,56 @@ a {
   margin-top: 18px;
 }
 
+.forecast-panel {
+  margin-bottom: 18px;
+}
+
+.forecast-card-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+}
+
+.forecast-card {
+  align-items: start;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: #172033;
+  cursor: pointer;
+  display: grid;
+  gap: 7px;
+  min-height: 118px;
+  padding: 14px;
+  text-align: left;
+}
+
+.forecast-card:hover,
+.forecast-card.active {
+  background: #f7fbff;
+  border-color: var(--blue);
+}
+
+.forecast-card svg {
+  color: var(--blue);
+}
+
+.forecast-card span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.forecast-card strong {
+  color: #111827;
+  font-size: 24px;
+}
+
+.forecast-card small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .analytics-item-cell {
   display: grid;
   gap: 4px;
@@ -1446,6 +1496,10 @@ select:focus,
     grid-template-columns: repeat(3, minmax(150px, 1fr));
   }
 
+  .forecast-card-grid {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
   .detail-panel {
     grid-template-columns: repeat(2, minmax(180px, 1fr));
   }
@@ -1470,6 +1524,7 @@ select:focus,
   .quick-nav-grid,
   .detail-panel,
   .criticality-grid,
+  .forecast-card-grid,
   .import-module-grid {
     grid-template-columns: 1fr;
   }

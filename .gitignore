@@ -28,6 +28,9 @@ pnpm-debug.log*
 # Document render previews
 docs/rendered_*/
 
+# Forecast model outputs
+backend/inventory_forecast_output.csv
+
 # Editor and OS files
 .DS_Store
 Thumbs.db

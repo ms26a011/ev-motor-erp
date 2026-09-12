@@ -145,11 +145,18 @@ export async function getInventoryAnalytics() {
   const allExcessSlowMovingItems = rows
     .filter((row) => row.avg_daily_consumption === 0 && row.available_quantity > Math.max(row.reorder_level * 2, row.safety_stock * 2, 0))
     .sort((a, b) => b.inventory_value - a.inventory_value);
+  const allForecastItems = rows
+    .filter((row) => row.forecast_daily_consumption > 0 || row.forecast_reorder_quantity > 0 || row.forecast_risk_score >= 45)
+    .sort((a, b) => b.forecast_risk_score - a.forecast_risk_score || b.forecast_30d_consumption - a.forecast_30d_consumption);
 
   return {
     generatedAt: new Date().toISOString(),
     summary: {
       totalActiveItems: rows.length,
+      forecastItems: allForecastItems.length,
+      forecast30DayConsumption: roundQuantity(rows.reduce((total, row) => total + row.forecast_30d_consumption, 0)),
+      forecastReorderQuantity: roundQuantity(rows.reduce((total, row) => total + row.forecast_reorder_quantity, 0)),
+      highForecastRiskItems: rows.filter((row) => row.forecast_risk_score >= 75).length,
       unavailableItems: allUnavailableItems.length,
       orderTodayItems: allOrderTodayItems.length,
       stockoutRiskItems: allStockoutRiskItems.length,
@@ -164,6 +171,7 @@ export async function getInventoryAnalytics() {
     productionShortages: limitRows(allProductionShortages),
     openPoCoverage: limitRows(allOpenPoCoverage),
     excessSlowMovingItems: limitRows(allExcessSlowMovingItems),
+    forecastItems: limitRows(allForecastItems),
   };
 }
 
@@ -175,6 +183,7 @@ function normalizeRow(row) {
   const availableQuantity = toNumber(row.available_quantity);
   const avgDailyConsumption = toNumber(row.avg_daily_consumption);
   const daysOfCover = avgDailyConsumption > 0 ? availableQuantity / avgDailyConsumption : null;
+  const forecast = buildForecast(row, availableQuantity, avgDailyConsumption);
   return {
     ...row,
     quantity_on_hand: toNumber(row.quantity_on_hand),
@@ -193,7 +202,50 @@ function normalizeRow(row) {
     suggested_order_quantity: toNumber(row.suggested_order_quantity),
     days_of_cover: daysOfCover === null ? null : Math.round(daysOfCover * 10) / 10,
     estimated_stockout_date: daysOfCover === null ? null : dateAfterDays(daysOfCover),
-    risk_level: riskLevel(row.criticality, availableQuantity, daysOfCover, toNumber(row.suggested_order_quantity)),
+    ...forecast,
+    risk_level: riskLevel(row.criticality, availableQuantity, daysOfCover, toNumber(row.suggested_order_quantity), forecast.forecast_risk_score),
+  };
+}
+
+function buildForecast(row, availableQuantity, avgDailyConsumption) {
+  const productionDailyDemand = toNumber(row.production_required_quantity) / 30;
+  const policyDailyDemand = Math.max(toNumber(row.reorder_level) + toNumber(row.safety_stock) - availableQuantity, 0) / 30;
+  const forecastDailyDemand = Math.max(
+    (avgDailyConsumption * 0.55) + (productionDailyDemand * 0.35) + (policyDailyDemand * 0.1),
+    0,
+  );
+  const stockoutDays = forecastDailyDemand > 0 ? Math.max(availableQuantity / forecastDailyDemand, 0) : null;
+  const forecast30DayConsumption = forecastDailyDemand * 30;
+  const forecast60DayConsumption = forecastDailyDemand * 60;
+  const reorderQuantity = Math.max(
+    forecast30DayConsumption + toNumber(row.safety_stock) - availableQuantity - toNumber(row.open_po_quantity),
+    toNumber(row.suggested_order_quantity),
+    0,
+  );
+  const forecastStockoutDate = stockoutDays === null ? null : dateAfterDays(stockoutDays);
+  const orderTriggerDate = forecastStockoutDate
+    ? dateBeforeDays(forecastStockoutDate, toNumber(row.lead_time_days) || 7)
+    : row.order_by_date;
+  const forecastRiskScore = forecastScore({
+    criticality: row.criticality,
+    availableQuantity,
+    forecastDailyDemand,
+    stockoutDays,
+    leadTimeDays: toNumber(row.lead_time_days) || 7,
+    reorderQuantity,
+  });
+
+  return {
+    forecast_daily_consumption: roundQuantity(forecastDailyDemand),
+    forecast_7d_consumption: roundQuantity(forecastDailyDemand * 7),
+    forecast_15d_consumption: roundQuantity(forecastDailyDemand * 15),
+    forecast_30d_consumption: roundQuantity(forecast30DayConsumption),
+    forecast_60d_consumption: roundQuantity(forecast60DayConsumption),
+    forecast_stockout_date: forecastStockoutDate,
+    forecast_reorder_quantity: roundQuantity(reorderQuantity),
+    forecast_order_trigger_date: orderTriggerDate,
+    forecast_risk_score: forecastRiskScore,
+    forecast_confidence: forecastConfidence(avgDailyConsumption, productionDailyDemand, row.required_by_date),
   };
 }
 
@@ -212,11 +264,15 @@ function normalizeCriticality(value) {
   return 'lowCritical';
 }
 
-function riskLevel(criticality, availableQuantity, daysOfCover, suggestedOrderQuantity) {
-  if (availableQuantity <= 0 || (suggestedOrderQuantity > 0 && normalizeCriticality(criticality) === 'highlyCritical')) {
+function riskLevel(criticality, availableQuantity, daysOfCover, suggestedOrderQuantity, forecastRiskScore = 0) {
+  if (
+    forecastRiskScore >= 75
+    || availableQuantity <= 0
+    || (suggestedOrderQuantity > 0 && normalizeCriticality(criticality) === 'highlyCritical')
+  ) {
     return 'High';
   }
-  if ((daysOfCover !== null && daysOfCover <= 15) || suggestedOrderQuantity > 0) {
+  if ((daysOfCover !== null && daysOfCover <= 15) || suggestedOrderQuantity > 0 || forecastRiskScore >= 45) {
     return 'Medium';
   }
   return 'Low';
@@ -247,6 +303,31 @@ function dateAfterDays(days) {
   const date = new Date();
   date.setDate(date.getDate() + Math.max(Math.floor(days), 0));
   return date.toISOString().slice(0, 10);
+}
+
+function dateBeforeDays(value, days) {
+  const date = new Date(value);
+  date.setDate(date.getDate() - Math.max(Math.floor(days), 0));
+  return date.toISOString().slice(0, 10);
+}
+
+function forecastScore({ criticality, availableQuantity, forecastDailyDemand, stockoutDays, leadTimeDays, reorderQuantity }) {
+  const criticalityScore = { highlyCritical: 35, semiCritical: 20, lowCritical: 8 }[normalizeCriticality(criticality)] || 8;
+  const availabilityScore = availableQuantity <= 0 ? 25 : Math.max(0, 25 - Math.min(availableQuantity / Math.max(forecastDailyDemand || 1, 1), 25));
+  const stockoutScore = stockoutDays === null ? 0 : Math.max(0, 25 - Math.min(stockoutDays, 25));
+  const leadTimeScore = Math.min(Math.max(leadTimeDays, 0), 20) * 0.5;
+  const reorderScore = reorderQuantity > 0 ? 5 : 0;
+  return Math.min(Math.round(criticalityScore + availabilityScore + stockoutScore + leadTimeScore + reorderScore), 100);
+}
+
+function forecastConfidence(avgDailyConsumption, productionDailyDemand, requiredByDate) {
+  if (avgDailyConsumption > 0 && productionDailyDemand > 0) return 'High';
+  if (avgDailyConsumption > 0 || (productionDailyDemand > 0 && requiredByDate && !String(requiredByDate).startsWith('9999-12-31'))) return 'Medium';
+  return 'Low';
+}
+
+function roundQuantity(value) {
+  return Math.round(toNumber(value) * 1000) / 1000;
 }
 
 function toNumber(value) {
