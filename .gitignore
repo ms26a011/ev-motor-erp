@@ -31,6 +31,9 @@ docs/rendered_*/
 # Forecast model outputs
 backend/inventory_forecast_output.csv
 
+# Local database exports
+ev_motor_erp_cloud*.sql
+
 # Editor and OS files
 .DS_Store
 Thumbs.db
