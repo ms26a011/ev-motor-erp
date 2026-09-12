@@ -27,7 +27,13 @@ import { ensureModule, erpModules } from './modules.js';
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+  origin(origin, callback) {
+    if (!origin || config.corsOrigins.includes(origin)) {
+      callback(null, true);
+      return;
+    }
+    callback(new Error('Origin is not allowed by ERP API CORS settings.'));
+  },
   credentials: true,
 }));
 app.use(express.json({ limit: '30mb' }));
@@ -336,8 +342,8 @@ app.use((error, req, res, next) => {
 
 Promise.all([ensureUserAccountTable(), refreshMetadata()])
   .then(() => {
-    app.listen(config.port, () => {
-      console.log(`EV Motor Manufacturing ERP API is running at http://localhost:${config.port}`);
+    app.listen(config.port, config.host, () => {
+      console.log(`EV Motor Manufacturing ERP API is running on ${config.host}:${config.port}`);
     });
   })
   .catch((error) => {

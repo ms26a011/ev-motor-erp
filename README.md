@@ -160,6 +160,14 @@ Frontend URL:
 http://localhost:5173
 ```
 
+## Cloud Deployment
+
+Use `CLOUD_DEPLOYMENT_GUIDE.md` for the cloud deployment checklist. The project is prepared for:
+
+- A managed MySQL database
+- Render backend API deployment
+- Vercel frontend deployment
+
 ## Phase 1 API Routes
 
 Each module supports:

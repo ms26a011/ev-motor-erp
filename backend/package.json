@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Node.js API backend for the EV Motor Manufacturing ERP.",
   "main": "src/server.js",
+  "packageManager": "pnpm@11.7.0",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
